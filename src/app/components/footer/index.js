@@ -1,11 +1,18 @@
 import Link from "next/link";
 import React from "react";
-
+import {
+  FaFacebook,
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedin,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa";
 export default function Footer() {
   return (
     <div className="footer py-8">
       <div className="max-w-7xl text-gray-500 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-        <div>
+        <div className="flex items-center">
           <Link href={"/"}>
             <img src="/logo.svg" alt="Logo" className="w-[200px]" />
           </Link>
@@ -25,13 +32,25 @@ export default function Footer() {
             <li className="hover:text-primary">
               <a href="tel:450 994-1275">450 994-1275</a>
             </li>
-            <li className="hover:text-primary">
-              RBQ # 5704-3705-01
-            </li>
+            <li className="hover:text-primary">RBQ # 5704-3705-01</li>
           </ul>
           <h4 className="mt-4 font-semibold mb-4 text-primary">Nous suivre</h4>
-
-
+          <div className="flex gap-2 text-black items-center">
+            <a
+              href="https://www.facebook.com/PVCO-Granby-507939555922825/?fref=ts"
+              target="_blank"
+              rel="nofollow"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/pvco-granby-34276510a/?originalSubdomain=ca"
+              target="_blank"
+              rel="nofollow"
+            >
+              <FaLinkedinIn />
+            </a>
+          </div>
         </div>
         <div className="border-l pl-4 border-gray-200">
           <h4 className="font-semibold mb-4 text-primary">Produits</h4>
