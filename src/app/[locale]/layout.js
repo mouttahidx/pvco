@@ -50,7 +50,6 @@ export default async function LocaleLayout({ children, params }) {
   return (
     <html lang={locale} {...mantineHtmlProps}>
       <head>
-        <ColorSchemeScript />
       </head>
       <body className="!bg-brand-white overflow-x-hidden !scroll-smooth">
         <MantineProvider theme={theme}>
