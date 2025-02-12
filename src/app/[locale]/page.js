@@ -44,7 +44,7 @@ export default function page({ locale }) {
             href="/produits/portes"
             className="md:row-span-2 bg-cover cursor-pointer group hover:scale-105 duration-500 rounded-t-3xl md:rounded-none md:rounded-s-3xl bg-doors relative"
           >
-            <div className="bg-black hover:bg-primary h-[200px] duration-500 bg-opacity-40 md:h-full rounded-t-3xl md:rounded-s-3xl p-4 ">
+            <div className="bg-black hover:bg-primary h-[200px] duration-500 bg-opacity-40 md:h-full rounded-t-3xl md:rounded-none md:rounded-s-3xl p-4 ">
               Portes
               <span className="text-8xl absolute inset-0 flex items-center justify-center group-hover:text-white duration-500 text-transparent">
                 +
@@ -110,7 +110,7 @@ export default function page({ locale }) {
             href="/produits/accessoires"
             className="md:col-start-4 md:row-start-2  bg-cover cursor-pointer hover:scale-105 duration-500 hover:bg-primary  md:rounded-none rounded-b-3xl md:rounded-br-3xl bg-accessories group "
           >
-            <div className="bg-black hover:bg-primary h-[200px] duration-500 bg-opacity-40 md:h-full relative p-4 rounded-b-3xl md:rounded-br-3xl">
+            <div className="bg-black hover:bg-primary h-[200px] duration-500 bg-opacity-40 md:h-full relative p-4 rounded-b-3xl md:rounded-none md:rounded-br-3xl">
               <span className="text-white">
                 Accessoires
                 <span className="text-8xl absolute inset-0 flex items-center justify-center group-hover:text-white duration-500 text-transparent">
