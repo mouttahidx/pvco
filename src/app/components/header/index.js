@@ -1,24 +1,37 @@
+"use client";
 import Link from "next/link";
+import Nav from "./Nav";
+import ButtonClient from "../ButtonClient";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [scrollTop, setScrollTop] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      setScrollTop(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="container mx-auto">
-      <div className="flex justify-between items-center p-4">
-        <Link href={"/"} className="flex-1">
-          <img src="/logo.svg" alt="Logo" className="w-[200px]" />
-        </Link>
-        <div className="flex-2 text-center">
-          <nav>
-            <Link href="/" className="mx-2">Home</Link>
-            <Link href="/about" className="mx-2">About</Link>
-            <Link href="/services" className="mx-2">Services</Link>
-            <Link href="/contact" className="mx-2">Contact</Link>
-          </nav>
-        </div>
-        <div className="flex-1 text-right">
-          <button className="px-4 py-2 bg-primary text-white rounded">Soumission</button>
+    <>
+      <div className={`fixed top-0 bg-white w-full z-30`} data-aos="fade-in">
+        <div className="container mx-auto flex justify-between items-center p-4">
+          <Link href={"/"} className="flex-1">
+            <img src="/logo.svg" alt="Logo" className="w-[200px]" />
+          </Link>
+          <Nav scrolled={scrollTop > 0 ? true : false} />
+          <div className="flex-1 text-right">
+            <ButtonClient text={"Soumission"} href={"/"} />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

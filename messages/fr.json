@@ -1,15 +1,18 @@
 {
   "Nav": {
     "home": "Accueil",
-    "aboutUs": "À propos de Sunspace",
+    "aboutUs": "À propos",
+    "contact":"Contact",
     "ourProducts": "Nos Produits",
     "blog": "Blogue",
     "contactUs": "Contact",
     "free_quote": "Soumission gratuite",
     "pergolas": "Pergolas",
     "sunrooms": "Sunrooms",
-    "homeShow": "Salons d'exposition",
-    "becomeDealer": "Devenir un détaillant Sunspace",
+    "portfolio": "Réalisations",
+    "services": "Services",
+    "careers": "Carrières",
+    "becomeDealer": "Devenir un détaillant",
     "findDealer": "Trouvez un détaillant",
     "quickLinks": "Liens rapides",
     "workingHours": "Heures de travail",
@@ -106,15 +109,15 @@
     "4_4_text": "Un support dédié à chaque étape du processus"
   },
   "AboutPage": {
-    "title": "À propos de Sunspace",
+    "title": "À propos",
     "meta_description": "À propos de Sunspace - Sunspace a commencé modestement en 1991. À ses débuts, les propriétaires se rendaient eux-mêmes sur le site du projet du client, mesuraient leur patio et dessinaient à la main la conception du solarium. Ils coupaient et assemblaient toutes les pièces et installaient les solariums eux-mêmes.",
-    "2_title": "À propos des solariums Sunspace",
-    "2_text": "Sunspace a commencé modestement en 1991. À ses débuts, les propriétaires se rendaient eux-mêmes sur le site du projet du client, mesuraient leur patio et dessinaient à la main la conception du solarium. Ils coupaient et assemblaient toutes les pièces et installaient les solariums eux-mêmes.<br /><br />Tout en perfectionnant les techniques de conception, de construction, d’assemblage et d’installation de superbes espaces de vie intérieur / extérieur, l'équipe Sunspace a consacré beaucoup de temps et d’effort à la recherche et au développement. Leur objectif était de concevoir un produit de la plus haute qualité tout en mettant en place le processus de fabrication le plus efficace. Cet engagement à offrir aux consommateurs le produit de la plus haute qualité à des prix abordables a porté ses fruits. En 1997, Sunspace s’est élargi pour faire appel à des détaillants indépendants afin de promouvoir et de vendre leurs produits au Canada et aux États-Unis. Nous sommes fiers de fournir un soutien considérable à nos représentants par le biais de la connaissance des produits et de la formation à l'installation, des séminaires d'information et des représentants régionaux.<br /><br />La demande grandissante pour les produits Sunspace nous a incitée à déménager nos installations de fabrication en 2006 à Newcastle, en Ontario, dans ce qui est devenu une installation de plus de 150 000 pieds carrés. Cette expansion nous a permis d’intégrer davantage de processus de fabrication à l’interne, réduisant considérablement le temps nécessaire à la construction d’un solarium et garantissant le plus haut niveau de qualité de nos produits.<br /><br />La demande pour les produits Sunspace continue de croître et notre équipe continue de croître pour y répondre. N’est-il pas intéressant de noter que le prix d’un solarium Sunspace n’a que légèrement augmenté au cours des 20 dernières années, offrant ainsi à de plus en plus de propriétaires des options pour ajouter du confort à leur espace de vie! Les distributeurs Sunspace et leurs équipes d’installateurs formés à l’usine ont conçu et construit des espaces de vie intérieur / extérieur d’une valeur de plusieurs millions de pieds carrés, année après année.<br /><br />Contactez les solariums Sunspace dès aujourd'hui pour commencer à concrétiser vos rêves avec un espace de vie intérieur / extérieur personnalisé en fonction de votre propriété. C’est le luxe que vous méritez.",
+    "2_title": "Histoire de famille",
+    "2_text": "S’appuyant sur sa vaste expertise d’entrepreneur général, Alain Choinière fonde PVCO Granby le 1er février 2015, secondé par ses fils Éric et Michel. L’entreprise familiale se spécialise dans l’installation de portes et fenêtres ainsi que dans des projets de rénovation connexes.<br /><br />Cumulant plus de 40 ans d’expérience dans le domaine de la construction, une expertise qu’il a transmise à ses fils, M. Choinière a toujours eu à cœur la satisfaction de sa clientèle. Leur savoir-faire est complété par les compétences de techniciens en portes et fenêtres.<br /><br />Ensemble, ils peuvent donner vie à une vaste gamme de projets de rénovation, comme l’aménagement d’un solarium, un agrandissement, le changement de portes et fenêtres ou de revêtement extérieur, et bien plus!",
     "1icon": "Solution pour améliorer votre espace de vie",
     "2icon": "Solution pour profiter du grand air",
     "cta_title": "Contactez-nous <br />pour plus d'informations",
-    "3_title": "Un mot de notre Président",
-    "3_text": "L'Équipe Sunspace s'est engagé à fournir les plus hauts niveaux de service et de soutien à son réseau étendu de représentants indépendants Sunspace et WeatherMaster à travers le Canada et les États-Unis depuis plus de 25 ans. Notre objectif est de continuer à fournir aux propriétaires de maisons et d’entreprises une solution abordable pour réaliser leurs rêves d’un espace de vie intérieur / extérieur de grande qualité avec un design attrayant.<br /><br />Nous sommes extrêmement fiers de nos gammes de produits en expansion, du succès sans cesse croissant de nos excellents représentants Sunspace et du personnel travaillant qui constitue la famille Sunspace..<br /><br />Steven Hunt<br /><b>Président et PDG</b>"
+    "3_title": "Une entreprise fièrement québécoise",
+    "3_text": "Notre entreprise basée à Saint-Alphonse-de-Granby est fière de faire affaire principalement avec des fournisseurs québécois, comme Vaillancourt et Fenêtre Concept pour ses portes et fenêtres, Garaga pour les portes de garage, Camemat et Aluminium Almax pour les rampes.<br /><br />Axés sur la qualité de nos projets, nous mettons constamment à jour nos connaissances afin de rester à l’affût des dernières normes et tendances en matière de rénovation et d’installation de portes et fenêtres. De plus, vous trouverez chez nous un service à la clientèle inégalé à toutes les étapes de votre projet."
   },
   "OurProductsPage": {
     "title": "Nos produits",
@@ -967,6 +970,7 @@
     "installation_zip": "Code postale",
     "installation_state": "Province de l'installation",
     "installation_for": "Installation pour",
+    "poste":"Poste",
     "additional_infos": "Entrez toute information supplémentaire que vous souhaitez fournir",
     "house": "Maison",
     "cottage": "Chalet",

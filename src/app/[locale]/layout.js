@@ -1,4 +1,4 @@
-import "@/app/globals.css";
+import "../globals.css";
 import "@mantine/core/styles.css";
 import {
   ColorSchemeScript,
@@ -8,14 +8,17 @@ import {
 } from "@mantine/core";
 import Header from "../components/header";
 import Footer from "../components/footer";
-// import "aos/dist/aos.css";
-// import AOSInit from "@/app/components/AOSInit";
+
+import "aos/dist/aos.css";
+import AOSInit from "@/app/components/AOSInit";
+
 import { Noto_Sans } from "next/font/google";
 import { NavigationProgress } from "@mantine/nprogress";
 import { getMessages, setRequestLocale } from "next-intl/server";
-import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
+import { routing } from "@/i18n/routing";
+
 export async function generateMetadata() {
   return {
     title: `${process.env.NEXT_PUBLIC_APP_NAME}`,
@@ -46,19 +49,21 @@ export default async function LocaleLayout({ children, params }) {
   const messages = await getMessages();
 
   // Enable static rendering
-
   return (
     <html lang={locale} {...mantineHtmlProps}>
       <head>
+        <link rel="icon" type="image/x-icon" href="/favicon.png" />
+
         <ColorSchemeScript defaultColorScheme="light" />
       </head>
       <body className="overflow-x-hidden !scroll-smooth">
         <MantineProvider theme={theme}>
-          <NavigationProgress />
           <NextIntlClientProvider messages={messages}>
+            <AOSInit />
             <Header />
             {/* <AOSInit /> */}
-            <main className="lg:pt-16">{children}</main>
+          <NavigationProgress />
+            <main className="">{children}</main>
             <Footer />
           </NextIntlClientProvider>
         </MantineProvider>
