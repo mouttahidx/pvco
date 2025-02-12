@@ -114,7 +114,7 @@ export default function page({ locale }) {
                 width={1200}
                 height={1200}
                 alt="logo royer"
-                src={"/img/sunspace_logo.webp"}
+                src={"/img/sunspace.webp"}
                 className="w-full"
               />
               <Image
