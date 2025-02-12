@@ -25,7 +25,6 @@ export default function PortfolioGallery() {
     "/img/10-new.webp",
     "/img/11-new.webp",
     "/img/12-new.webp",
-   
   ];
 
   const large = [
@@ -53,6 +52,7 @@ export default function PortfolioGallery() {
           onClick={() => setIndex(i)}
         >
           <Image
+            unoptimized
             alt="porte"
             src={slide}
             width={1200}

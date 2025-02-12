@@ -102,6 +102,7 @@ export default function page({ locale }) {
             </h2>
             <div className="grid grid-cols-3 items-center gap-10">
               <Image
+                unoptimized
                 width={1200}
                 height={1200}
                 alt="logo royer"
@@ -109,6 +110,7 @@ export default function page({ locale }) {
                 className="w-full"
               />
               <Image
+                unoptimized
                 width={1200}
                 height={1200}
                 alt="logo royer"
@@ -116,6 +118,7 @@ export default function page({ locale }) {
                 className="w-full"
               />
               <Image
+                unoptimized
                 width={1200}
                 height={1200}
                 alt="logo royer"
@@ -123,6 +126,7 @@ export default function page({ locale }) {
                 className="w-full"
               />
               <Image
+                unoptimized
                 width={1200}
                 height={1200}
                 alt="logo royer"
@@ -134,6 +138,7 @@ export default function page({ locale }) {
         </div>
         <div className="grid grid-cols-2 items-end">
           <Image
+            unoptimized
             width={1200}
             height={820}
             src={"/img/hands.webp"}

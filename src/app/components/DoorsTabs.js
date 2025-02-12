@@ -29,6 +29,7 @@ export default function DoorsTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/product (3).webp"}
@@ -106,6 +107,7 @@ export default function DoorsTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/patio-new.webp"}
@@ -193,6 +195,7 @@ export default function DoorsTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/product (3).webp"}

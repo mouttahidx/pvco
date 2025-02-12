@@ -25,6 +25,7 @@ export default function Gallery() {
           onClick={() => setIndex(i)}
         >
           <Image
+            unoptimized
             alt="porte"
             src={slide}
             width={1200}

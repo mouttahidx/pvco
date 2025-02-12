@@ -20,6 +20,7 @@ export default function AccessoriesTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/access1-new.webp"}
@@ -46,6 +47,7 @@ export default function AccessoriesTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/access2-new.webp"}
@@ -74,6 +76,7 @@ export default function AccessoriesTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/product (1).webp"}
@@ -100,6 +103,7 @@ export default function AccessoriesTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/access3-new.webp"}

@@ -28,6 +28,7 @@ export default function SolariumTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/solarium1-new.webp"}
@@ -70,6 +71,7 @@ export default function SolariumTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/solarium2-new.webp"}

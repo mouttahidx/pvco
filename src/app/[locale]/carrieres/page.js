@@ -86,6 +86,7 @@ export default function page({ locale }) {
           </p>
         </div>
         <Image
+          unoptimized
           width={1800}
           height={1000}
           src={"/img/workers.webp"}
@@ -112,6 +113,7 @@ export default function page({ locale }) {
       <section className="my-24">
         <div className="grid grid-cols-2 items-end">
           <Image
+            unoptimized
             width={1200}
             height={820}
             src={"/img/hands.webp"}

@@ -21,6 +21,7 @@ export default function WindowsTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/windows/window3.jpg"}
@@ -106,6 +107,7 @@ export default function WindowsTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/windows/window5-new.webp"}
@@ -201,6 +203,7 @@ export default function WindowsTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/windows/window4.jpg"}
@@ -272,6 +275,7 @@ export default function WindowsTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/windows/window6-new.webp"}
@@ -331,6 +335,7 @@ export default function WindowsTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/windows/window7-new.webp"}

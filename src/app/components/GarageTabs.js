@@ -11,6 +11,7 @@ export default function GarageTabs() {
       data-aos-duration="1000"
     >
       <Image
+        unoptimized
         width={1800}
         height={1000}
         src={"/img/product (6).webp"}
@@ -45,12 +46,16 @@ export default function GarageTabs() {
           </Tabs.List>
           <Tabs.Panel value="acier">
             <p className="py-10">
-            Les portes de garage en acier sont robustes et reconnues pour leur durabilité. Elles présentent également une excellente efficacité énergétique.
+              Les portes de garage en acier sont robustes et reconnues pour leur
+              durabilité. Elles présentent également une excellente efficacité
+              énergétique.
             </p>
           </Tabs.Panel>
           <Tabs.Panel value="ALUMINIUM">
             <p className="py-10">
-            Nos portes de garage en aluminium sont très performantes et sont à privilégier pour les très grandes ouvertures (plus de 14 pieds ou 4,3 m).
+              Nos portes de garage en aluminium sont très performantes et sont à
+              privilégier pour les très grandes ouvertures (plus de 14 pieds ou
+              4,3 m).
             </p>
           </Tabs.Panel>
         </Tabs>

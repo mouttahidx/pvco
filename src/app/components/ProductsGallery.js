@@ -8,9 +8,8 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import { FaExpand } from "react-icons/fa";
 
-export default function ProductsGallery({slides}) {
+export default function ProductsGallery({ slides }) {
   const [index, setIndex] = useState(-1);
-
 
   return (
     <>
@@ -21,6 +20,7 @@ export default function ProductsGallery({slides}) {
           onClick={() => setIndex(i)}
         >
           <Image
+            unoptimized
             alt={slide.alt}
             src={slide.src}
             width={1200}

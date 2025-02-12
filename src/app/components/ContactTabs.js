@@ -3,19 +3,18 @@ import { Tabs } from "@mantine/core";
 import Image from "next/image";
 import ContactForm from "./ContactForm";
 
-export default function ContactTabs({translations}) {
+export default function ContactTabs({ translations }) {
   return (
     <Tabs defaultValue="first" color="#FD6941" className="shadow rounded-3xl">
       <Tabs.List grow justify="center">
         <Tabs.Tab value="first">Demande de soumission</Tabs.Tab>
         <Tabs.Tab value="second">Service après-vente</Tabs.Tab>
         <Tabs.Tab value="third">Nous contacter</Tabs.Tab>
-        
       </Tabs.List>
 
       <Tabs.Panel value="first">
         <section className="p-8 py-16 max-w-4xl mx-auto">
-        <ContactForm translations={translations} theme={"dark"} />
+          <ContactForm translations={translations} theme={"dark"} />
         </section>
       </Tabs.Panel>
 
@@ -27,6 +26,7 @@ export default function ContactTabs({translations}) {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/services/tab2-new.webp"}
@@ -59,6 +59,7 @@ export default function ContactTabs({translations}) {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/services/tab3-new.webp"}
@@ -82,8 +83,6 @@ export default function ContactTabs({translations}) {
           </div>
         </section>
       </Tabs.Panel>
-
-     
     </Tabs>
   );
 }

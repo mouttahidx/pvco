@@ -28,6 +28,7 @@ export default function BalconyTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/product (2).webp"}
@@ -89,6 +90,7 @@ export default function BalconyTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/balcony-new.webp"}

@@ -17,6 +17,7 @@ export default function ExteriorTabs() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/product (8).webp"}
@@ -32,11 +33,9 @@ export default function ExteriorTabs() {
               construction et à notre sens de l’écoute, nous vous accompagnerons
               dans cet important projet de rénovation.
             </p>
-          
           </div>
         </section>
       </Tabs.Panel>
-
     </Tabs>
   );
 }

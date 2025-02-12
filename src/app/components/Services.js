@@ -22,6 +22,7 @@ export default function Services() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/services/services-new.webp"}
@@ -54,6 +55,7 @@ export default function Services() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/services/tab2-new.webp"}
@@ -86,6 +88,7 @@ export default function Services() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/services/tab3-new.webp"}
@@ -118,6 +121,7 @@ export default function Services() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/services/tab4-new.webp"}
@@ -152,6 +156,7 @@ export default function Services() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/services/tab5-new.webp"}
@@ -185,6 +190,7 @@ export default function Services() {
           data-aos-duration="1000"
         >
           <Image
+            unoptimized
             width={1800}
             height={1000}
             src={"/img/services/tab6-new.webp"}
