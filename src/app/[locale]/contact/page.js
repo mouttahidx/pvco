@@ -53,9 +53,9 @@ export default function page({ locale }) {
     <>
       {/* Slider */}
       <section className="bg-homeSlider bg-cover bg-center">
-        <div className="bg-black bg-opacity-45 pt-56 py-40 ">
-          <div className="text-white text-left grid grid-cols-2 items-start max-w-7xl mx-auto justify-start">
-            <h1 className="text-5xl text-left font-bold mb-6">
+        <div className="bg-black bg-opacity-45 px-4 pt-32 md:pt-56 py-40 ">
+          <div className="text-white text-left grid md:grid-cols-2 items-start max-w-7xl mx-auto justify-start">
+            <h1 className="text-4xl md:text-5xl text-left font-bold mb-6">
               Nous contacter
             </h1>
             <div className="flex flex-col items-start gap-10 mb-14">

@@ -5,6 +5,7 @@ import {
   createTheme,
   mantineHtmlProps,
   MantineProvider,
+  useMantineColorScheme,
 } from "@mantine/core";
 import Header from "../components/header";
 import Footer from "../components/footer";
@@ -47,6 +48,7 @@ export default async function LocaleLayout({ children, params }) {
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
+ 
 
   // Enable static rendering
   return (

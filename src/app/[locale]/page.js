@@ -16,20 +16,20 @@ export default function page({ locale }) {
     <>
       {/* Slider */}
       <section className="bg-homeSlider bg-cover bg-center">
-        <div className="bg-black bg-opacity-45 pt-56 py-32 text-white text-center">
+        <div className="bg-black bg-opacity-45 px-4 pt-32 md:pt-56 py-32 text-white text-center">
           <h1 className="text-2xl max-w-6xl mx-auto mb-6">
             Entrepreneur spécialisé en portes et fenêtres
           </h1>
-          <h2 className="text-6xl font-bold max-w-6xl mx-auto leading-snug mb-8">
+          <h2 className="text-4xl md:text-6xl font-bold max-w-6xl mx-auto leading-snug mb-8">
             40 ans d’expertise dans le domaine de la construction
           </h2>
-          <ButtonClient text={"En savoir plus"} href={"/"} />
+          <ButtonClient text={"En savoir plus"} href={"/services"} />
         </div>
       </section>
 
       {/* Nos produits */}
-      <section className="max-w-6xl mx-auto my-16">
-        <div className="grid grid-cols-2">
+      <section className="max-w-6xl mx-auto my-20 px-4">
+        <div className="grid gap-y-8 md:grid-cols-2">
           <h2 className="text-4xl font-bold">Nos produits</h2>
           <p>
             Nous vous proposons une vaste gamme de portes, de fenêtres, de
@@ -39,12 +39,12 @@ export default function page({ locale }) {
             fonctionnalité!
           </p>
         </div>
-        <div className="w-full grid grid-cols-4 grid-rows-2 gap-4 mt-16 text-white font-semibold text-xl h-[600px]">
+        <div className="w-full grid md:grid-cols-4 md:grid-rows-2 gap-4 mt-16 text-white font-semibold text-xl md:h-[600px]">
           <Link
             href="/produits/portes"
-            className="row-span-2 bg-cover cursor-pointer group hover:scale-105 duration-500  rounded-s-3xl bg-doors relative"
+            className="md:row-span-2 bg-cover cursor-pointer group hover:scale-105 duration-500 rounded-t-3xl md:rounded-none md:rounded-s-3xl bg-doors relative"
           >
-            <div className="bg-black hover:bg-primary duration-500 bg-opacity-40 h-full  rounded-s-3xl p-4 ">
+            <div className="bg-black hover:bg-primary h-[200px] duration-500 bg-opacity-40 md:h-full rounded-t-3xl md:rounded-s-3xl p-4 ">
               Portes
               <span className="text-8xl absolute inset-0 flex items-center justify-center group-hover:text-white duration-500 text-transparent">
                 +
@@ -55,7 +55,7 @@ export default function page({ locale }) {
             href="/produits/portes-de-garage"
             className=" bg-cover cursor-pointer group hover:scale-105 duration-500 hover:bg-primary bg-doorsGarage relative"
           >
-            <div className="bg-black hover:bg-primary duration-500 bg-opacity-40 h-full relative p-4">
+            <div className="bg-black hover:bg-primary h-[200px] duration-500 bg-opacity-40 md:h-full relative p-4">
               Portes de garage
               <span className="text-8xl absolute inset-0 flex items-center justify-center group-hover:text-white duration-500 text-transparent">
                 +
@@ -66,7 +66,7 @@ export default function page({ locale }) {
             href="/produits/fenetres"
             className=" bg-cover cursor-pointer group hover:scale-105 duration-500 hover:bg-primary bg-windows"
           >
-            <div className="bg-black hover:bg-primary duration-500 bg-opacity-40 h-full relative p-4">
+            <div className="bg-black hover:bg-primary h-[200px] duration-500 bg-opacity-40 md:h-full relative p-4">
               Fenêtres
               <span className="text-8xl absolute inset-0 flex items-center justify-center group-hover:text-white duration-500 text-transparent">
                 +
@@ -75,9 +75,9 @@ export default function page({ locale }) {
           </Link>
           <Link
             href="/produits/balcons-et-rampes"
-            className=" bg-cover cursor-pointer group hover:scale-105 duration-500 hover:bg-primary rounded-tr-3xl bg-balcons"
+            className=" bg-cover cursor-pointer group hover:scale-105 duration-500 hover:bg-primary md:rounded-tr-3xl bg-balcons"
           >
-            <div className="bg-black hover:bg-primary duration-500 bg-opacity-40 h-full relative p-4 rounded-tr-3xl">
+            <div className="bg-black hover:bg-primary h-[200px] duration-500 bg-opacity-40 md:h-full relative p-4 md:rounded-tr-3xl">
               Balcons et rampes
               <span className="text-8xl absolute inset-0 flex items-center justify-center group-hover:text-white duration-500 text-transparent">
                 +
@@ -86,9 +86,9 @@ export default function page({ locale }) {
           </Link>
           <Link
             href="/produits/solariums"
-            className="col-start-2 row-start-2  bg-cover cursor-pointer group hover:scale-105 duration-500 hover:bg-primary bg-solarium"
+            className="md:col-start-2 md:row-start-2  bg-cover cursor-pointer group hover:scale-105 duration-500 hover:bg-primary bg-solarium"
           >
-            <div className="bg-black hover:bg-primary duration-500 bg-opacity-40 h-full relative p-4">
+            <div className="bg-black hover:bg-primary h-[200px] duration-500 bg-opacity-40 md:h-full relative p-4">
               Solariums
               <span className="text-8xl absolute inset-0 flex items-center justify-center group-hover:text-white duration-500 text-transparent">
                 +
@@ -97,9 +97,9 @@ export default function page({ locale }) {
           </Link>
           <Link
             href="/produits/revetements-exterieurs"
-            className="col-start-3 row-start-2  bg-cover cursor-pointer group hover:scale-105 duration-500 hover:bg-primary bg-exterior"
+            className="md:col-start-3 md:row-start-2  bg-cover cursor-pointer group hover:scale-105 duration-500 hover:bg-primary bg-exterior"
           >
-            <div className="bg-black hover:bg-primary duration-500 bg-opacity-40 h-full relative p-4">
+            <div className="bg-black hover:bg-primary h-[200px] duration-500 bg-opacity-40 md:h-full relative p-4">
               Revêtements extérieurs
               <span className="text-8xl absolute inset-0 flex items-center justify-center group-hover:text-white duration-500 text-transparent">
                 +
@@ -108,9 +108,9 @@ export default function page({ locale }) {
           </Link>
           <Link
             href="/produits/accessoires"
-            className="col-start-4 row-start-2  bg-cover cursor-pointer hover:scale-105 duration-500 hover:bg-primary rounded-br-3xl bg-accessories group "
+            className="md:col-start-4 md:row-start-2  bg-cover cursor-pointer hover:scale-105 duration-500 hover:bg-primary  md:rounded-none rounded-b-3xl md:rounded-br-3xl bg-accessories group "
           >
-            <div className="bg-black hover:bg-primary duration-500 bg-opacity-40 h-full relative p-4 rounded-br-3xl">
+            <div className="bg-black hover:bg-primary h-[200px] duration-500 bg-opacity-40 md:h-full relative p-4 rounded-b-3xl md:rounded-br-3xl">
               <span className="text-white">
                 Accessoires
                 <span className="text-8xl absolute inset-0 flex items-center justify-center group-hover:text-white duration-500 text-transparent">
@@ -123,19 +123,21 @@ export default function page({ locale }) {
       </section>
 
       {/* Nos services */}
-      <section className="max-w-6xl mx-auto my-20">
-        <div className="grid grid-cols-2">
-          <h2 className="text-4xl font-bold">On s’occupe de tout</h2>
+      <section className="max-w-6xl mx-auto my-20 px-4">
+        <div className="grid gap-12 md:grid-cols-2">
+          <h2 className="text-4xl font-bold text-center md:text-left">
+            On s’occupe de tout
+          </h2>
           <ButtonClient
             text={"Voir nos services"}
-            href={"/"}
+            href={"/services"}
             variant="outline"
-            className={"!w-fit justify-self-end"}
+            className={"!w-fit justify-self-center md:justify-self-end"}
           />
         </div>
-        <div className="grid grid-cols-3 mt-6 gap-x-6">
+        <div className="grid text-center md:text-left md:grid-cols-3 mt-6 gap-x-6 just">
           <div className="flex flex-col">
-            <span className="bg-primary flex justify-center items-center w-[100px] h-[100px] rounded-full mt-14">
+            <span className="bg-primary flex justify-center items-center w-[100px] h-[100px] rounded-full mt-14 mx-auto md:ml-0">
               <FaCalculator size="24" className="fill-white" />
             </span>
             <h3 className="font-semibold my-4">Estimation des coûts</h3>
@@ -146,7 +148,7 @@ export default function page({ locale }) {
           </div>
 
           <div className="flex flex-col">
-            <span className="bg-primary flex justify-center items-center w-[100px] h-[100px] rounded-full mt-14">
+            <span className="bg-primary flex justify-center items-center w-[100px] h-[100px] rounded-full mt-14 mx-auto md:ml-0">
               <FaHandshake size="24" className="fill-white" />
             </span>
             <h3 className="font-semibold my-4">Service après-ventes</h3>
@@ -157,7 +159,7 @@ export default function page({ locale }) {
           </div>
 
           <div className="flex flex-col">
-            <span className="bg-primary flex justify-center items-center w-[100px] h-[100px] rounded-full mt-14">
+            <span className="bg-primary flex justify-center items-center w-[100px] h-[100px] rounded-full mt-14 mx-auto md:ml-0">
               <FaFileSignature size="24" className="fill-white" />
             </span>
             <h3 className="font-semibold my-4">Service conseil</h3>
@@ -171,7 +173,7 @@ export default function page({ locale }) {
 
       {/* Slider workers */}
       <section className="bg-workers bg-cover bg-center bg-fixed">
-        <div className="bg-black bg-opacity-60 py-32 text-white text-center">
+        <div className="bg-black bg-opacity-60 py-32 text-white text-center px-4">
           <h3 className="text-5xl font-bold max-w-3xl mx-auto leading-snug mb-8">
             Une entreprise familiale
           </h3>
@@ -188,34 +190,37 @@ export default function page({ locale }) {
       </section>
 
       {/* Nos realisations */}
-      <section className="max-w-6xl mx-auto my-20">
-        <div className="grid grid-cols-2">
-          <h2 className="text-4xl font-bold">Nos réalisations</h2>
+      <section className="max-w-6xl mx-auto my-20 px-4">
+        <div className="grid gap-12 md:grid-cols-2">
+          <h2 className="text-4xl font-bold text-center md:text-left">
+            Nos réalisations
+          </h2>
           <ButtonClient
             text={"Voir toutes nos réalisations"}
-            href={"/"}
+            href={"/realisations"}
             variant="outline"
-            className={"!w-fit justify-self-end"}
+            className={"!w-fit justify-self-center md:justify-self-end"}
           />
         </div>
-        <div className="grid grid-cols-3 mt-12 gap-x-2">
+
+        <div className="grid gap-2  md:grid-cols-3 mt-12 gap-x-2">
           <Gallery />
         </div>
       </section>
 
       {/* testimonials */}
-      <section className="max-w-6xl mx-auto my-20">
+      <section className="max-w-6xl mx-auto my-20 px-4">
         <Testimonials />
       </section>
 
       {/* Detaillants + CTA */}
-      <section className="my-20 bg-brand-gray">
-        <div className="max-w-6xl mx-auto py-16">
-          <div className="grid grid-cols-2">
-            <h2 className="text-4xl font-bold">
+      <section className="my-20 bg-brand-gray ">
+        <div className="max-w-6xl mx-auto py-16 px-4">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+            <h2 className="text-4xl font-bold text-center md:text-left">
               Détaillant autorisé des fournisseurs suivants :
             </h2>
-            <div className="grid grid-cols-3 items-center gap-10">
+            <div className="grid grid-cols-2 md:grid-cols-3 items-center gap-10">
               <Image
                 unoptimized
                 width={1200}
@@ -251,16 +256,16 @@ export default function page({ locale }) {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 items-end">
+        <div className="grid md:grid-cols-2 items-end bg-[#D2D6E3] md:bg-white">
           <Image
             unoptimized
             width={1200}
             height={820}
             src={"/img/hands.webp"}
             alt="hands shaking"
-            className="relative rounded-tr-3xl h-[600px] !w-[120%] object-cover"
+            className="relative md:rounded-tr-3xl h-[350px] md:h-[600px] !w-[120%] object-cover"
           />
-          <div className="text-white p-24 bg-primary rounded-tl-3xl -ml-24 z-10">
+          <div className="text-white md:p-24 bg-primary rounded-tl-3xl md:-ml-24 z-10 px-4 py-10">
             <h3 className="max-w-lg text-2xl mb-6">
               Pour tous vos projets d’aménagement
             </h3>
@@ -272,7 +277,7 @@ export default function page({ locale }) {
               color="#ffffff"
               variant="outline"
               href={"/"}
-              className={"mt-14"}
+              className={"mt-8 md:mt-14"}
             />
           </div>
         </div>

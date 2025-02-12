@@ -3,8 +3,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import MobileDrawer from "./MobileDrawer";
-import FreeQuote from "./FreeQuote";
-import LanguageSelect from "./LanguageSelect";
+import { Link } from "@/i18n/routing";
 
 export default function StickyMobileMenu({ translations }) {
   const [scrollTop, setScrollTop] = useState(0);
@@ -25,13 +24,12 @@ export default function StickyMobileMenu({ translations }) {
     return (
       <div className="px-4 fixed left-0 items-center top-0 z-50 w-full bg-white shadow flex justify-between py-2 overflow-x-hidden">
         <MobileDrawer translations={translations} />
-        <a
-          href="#contact"
-          className="ml-5 border-primary border-2 uppercase font-bold duration-200 bg-primary lg:text-brand-black hover:bg-white hover:text-black text-center p-2 rounded text-xs xl:text-sm"
+        <Link
+          href="/contact"
+          className="ml-5 border-primary border-2 uppercase font-bold duration-200 bg-primary text-white text-center p-2 rounded text-xs xl:text-sm"
         >
           {translations['free_quote']}
-        </a>
-        <LanguageSelect />
+        </Link>
       </div>
     );
   }

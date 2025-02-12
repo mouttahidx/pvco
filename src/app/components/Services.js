@@ -16,7 +16,7 @@ export default function Services() {
 
       <Tabs.Panel value="first">
         <section
-          className="pt-8 xl:pt-16 px-1 max-w-6xl mx-auto grid gap-x-16 md:grid-cols-2 items-center"
+          className="pt-12 xl:pt-16 px-4 max-w-6xl mx-auto grid gap-x-16 md:grid-cols-2 items-center"
           data-aos="fade-in"
           data-aos-delay="300"
           data-aos-duration="1000"
@@ -49,7 +49,7 @@ export default function Services() {
 
       <Tabs.Panel value="second">
         <section
-          className="pt-8 xl:pt-16 px-1 max-w-6xl mx-auto grid gap-x-16 md:grid-cols-2 items-center"
+          className="pt-12 xl:pt-16 px-4 max-w-6xl mx-auto grid gap-x-16 md:grid-cols-2 items-center"
           data-aos="fade-in"
           data-aos-delay="300"
           data-aos-duration="1000"
@@ -82,7 +82,7 @@ export default function Services() {
 
       <Tabs.Panel value="third">
         <section
-          className="pt-8 xl:pt-16 px-1 max-w-6xl mx-auto grid gap-x-16 md:grid-cols-2 items-center"
+          className="pt-12 xl:pt-16 px-4 max-w-6xl mx-auto grid gap-x-16 md:grid-cols-2 items-center"
           data-aos="fade-in"
           data-aos-delay="300"
           data-aos-duration="1000"
@@ -115,7 +115,7 @@ export default function Services() {
 
       <Tabs.Panel value="four">
         <section
-          className="pt-8 xl:pt-16 px-1 max-w-6xl mx-auto grid gap-x-16 md:grid-cols-2 items-center"
+          className="pt-12 xl:pt-16 px-4 max-w-6xl mx-auto grid gap-x-16 md:grid-cols-2 items-center"
           data-aos="fade-in"
           data-aos-delay="300"
           data-aos-duration="1000"
@@ -150,7 +150,7 @@ export default function Services() {
 
       <Tabs.Panel value="five">
         <section
-          className="pt-8 xl:pt-16 px-1 max-w-6xl mx-auto grid gap-x-16 md:grid-cols-2 items-center"
+          className="pt-12 xl:pt-16 px-4 max-w-6xl mx-auto grid gap-x-16 md:grid-cols-2 items-center"
           data-aos="fade-in"
           data-aos-delay="300"
           data-aos-duration="1000"
@@ -184,7 +184,7 @@ export default function Services() {
 
       <Tabs.Panel value="six">
         <section
-          className="pt-8 xl:pt-16 px-1 max-w-6xl mx-auto grid gap-x-16 md:grid-cols-2 items-center"
+          className="pt-12 xl:pt-16 px-4 max-w-6xl mx-auto grid gap-x-16 md:grid-cols-2 items-center"
           data-aos="fade-in"
           data-aos-delay="300"
           data-aos-duration="1000"

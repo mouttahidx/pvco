@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "./Nav";
 import ButtonClient from "../ButtonClient";
 import { useEffect, useState } from "react";
+import MobileHeader from "./MobileHeader";
 
 export default function Header() {
   const [scrollTop, setScrollTop] = useState(0);
@@ -21,7 +22,7 @@ export default function Header() {
 
   return (
     <>
-      <div className={`fixed top-0 bg-white w-full z-30`} data-aos="fade-in">
+      <div className={`hidden lg:block fixed top-0 bg-white w-full z-30`} data-aos="fade-in">
         <div className="container mx-auto flex justify-between items-center p-4">
           <Link href={"/"} className="flex-1">
             <img src="/logo.svg" alt="Logo" className="w-[200px]" />
@@ -32,6 +33,7 @@ export default function Header() {
           </div>
         </div>
       </div>
+        <MobileHeader />
     </>
   );
 }

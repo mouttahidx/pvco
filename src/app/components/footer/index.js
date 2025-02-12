@@ -1,23 +1,19 @@
 import Link from "next/link";
 import React from "react";
 import {
-  FaFacebook,
   FaFacebookF,
-  FaInstagram,
-  FaLinkedin,
   FaLinkedinIn,
-  FaTwitter,
 } from "react-icons/fa";
 export default function Footer() {
   return (
     <div className="footer py-8">
-      <div className="container text-gray-500 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-        <div className="flex items-center">
+      <div className="container text-gray-500 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 px-4 text-center md:text-left">
+        <div className="flex justify-center md:justify-start items-center w-full">
           <Link href={"/"}>
             <img src="/logo.svg" alt="Logo" className="w-[200px]" />
           </Link>
         </div>
-        <div className="col-span-2">
+        <div className="md:col-span-2">
           <h3 className="font-semibold mb-4 text-primary">Nous joindre</h3>
           <ul>
             <li className="mb-2 hover:text-primary">
@@ -35,7 +31,7 @@ export default function Footer() {
             <li className="hover:text-primary">RBQ # 5704-3705-01</li>
           </ul>
           <h3 className="mt-4 font-semibold mb-4 text-primary">Nous suivre</h3>
-          <div className="flex gap-2 text-black items-center">
+          <div className="flex gap-2 text-black items-center justify-center md:justify-start">
             <a
               href="https://www.facebook.com/PVCO-Granby-507939555922825/?fref=ts"
               target="_blank"
@@ -52,7 +48,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="border-l pl-4 border-gray-200">
+        <div className="md:border-l md:pl-4 border-gray-200">
           <h3 className="font-semibold mb-4 text-primary">Produits</h3>
           <ul className="flex flex-col gap-1">
             <li className="mb-1 text-xs">
@@ -99,7 +95,10 @@ export default function Footer() {
           </Link>
 
           <p className="text-xs text-gray-300 mt-6">
-            © PVCO Grandby 2025 | Création par VIA Communication
+            © PVCO Grandby 2025 |{" "}
+            <a href="https://viacommunication.com/" target="_blank">
+              Création par VIA Communication
+            </a>
           </p>
           <p className="text-xs text-gray-300 mt-1">
             Politique de confidentialité

@@ -30,9 +30,9 @@ export default function Gallery() {
             src={slide}
             width={1200}
             height={1200}
-            className={`w-full h-[400px] object-cover ${
-              i === 0 && "rounded-s-3xl"
-            } ${i === slides.length - 1 && "rounded-e-3xl"}`}
+            className={`w-full h-[250px] md:h-[400px] object-cover ${
+              i === 0 && "md:rounded-s-3xl"
+            } ${i === slides.length - 1 && "md:rounded-e-3xl"}`}
           />
           <FaExpand
             className="fill-primary absolute hidden group-hover:block duration-800 top-4 right-4"

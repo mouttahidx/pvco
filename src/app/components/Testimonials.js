@@ -6,11 +6,13 @@ import { FaStar } from "react-icons/fa";
 export default function Testimonials() {
   return (
     <Carousel
-      slideSize="70%"
-      orientation="vertical"
-      slideGap="md"
-      withControls={1}
-      height={450}
+      slideSize="100%"
+      orientation="horizontal"
+      slideGap="xs"
+      loop
+      align={"start"}
+      withControls={false}
+      withIndicators={true}
     >
       <Carousel.Slide>
         <div className="bg-brand-gray flex h-full justify-center items-center w-full">

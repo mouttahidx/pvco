@@ -53,9 +53,9 @@ export default function page({ locale }) {
     <>
       {/* Slider */}
       <section className="bg-careersSlider bg-cover bg-center">
-        <div className="bg-black bg-opacity-45 pt-56 py-32 text-white text-center">
+        <div className="bg-black bg-opacity-45 px-4 pt-32 md:pt-56 py-32 text-white text-center">
           <h1 className="text-2xl max-w-6xl mx-auto mb-6">Carrières</h1>
-          <h2 className="text-6xl font-bold max-w-6xl mx-auto leading-snug mb-8">
+          <h2 className="text-4xl md:text-6xl font-bold max-w-6xl mx-auto leading-snug mb-8">
             Faites carrière chez nous
           </h2>
         </div>
@@ -63,7 +63,7 @@ export default function page({ locale }) {
 
       {/* about section */}
       <section
-        className="pt-8 xl:pt-16 px-1 max-w-6xl mx-auto grid gap-x-16 md:grid-cols-2 items-center"
+        className="pt-8 xl:pt-16 px-4 max-w-6xl mx-auto grid gap-x-16 md:grid-cols-2 items-center"
         data-aos="fade-in"
         data-aos-delay="300"
         data-aos-duration="1000"
@@ -95,10 +95,10 @@ export default function page({ locale }) {
         />
       </section>
 
-      {/* Nos services */}
-      <section className="max-w-6xl mx-auto my-20">
-        <div className="grid grid-cols-2">
-          <h2 className="text-4xl font-bold">Postes disponibles</h2>
+      {/* Postes dispo */}
+      <section className="max-w-6xl mx-auto my-20 px-4">
+        <div className="grid gap-6 md:grid-cols-2">
+          <h2 className="text-4xl font-bold text-left">Postes disponibles</h2>
           <p>
             Nous sommes toujours à la recherche d’employés fiables, rigoureux et
             passionnés par leur métier afin de pourvoir différents postes au fil
@@ -110,17 +110,17 @@ export default function page({ locale }) {
       </section>
 
       {/* Detaillants + CTA */}
-      <section className="my-24">
-        <div className="grid grid-cols-2 items-end">
+      <section className="my-20 bg-brand-gray ">
+        <div className="grid md:grid-cols-2 items-end bg-[#D2D6E3] md:bg-white">
           <Image
             unoptimized
             width={1200}
             height={820}
             src={"/img/hands.webp"}
             alt="hands shaking"
-            className="relative rounded-tr-3xl h-[700px] !w-[120%] object-cover"
+            className="relative md:rounded-tr-3xl h-[350px] md:h-[600px] !w-[120%] object-cover"
           />
-          <div className="text-white p-24 bg-primary rounded-tl-3xl -ml-24 z-10">
+          <div className="text-white md:p-24 bg-primary rounded-tl-3xl md:-ml-24 z-10 px-4 py-10">
             <h2 className="max-w-3xl w-full text-4xl font-bold leading-snug mb-10 text-center">
               Candidature spontanée
             </h2>

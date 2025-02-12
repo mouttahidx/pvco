@@ -21,7 +21,7 @@ export default function ButtonClient({
       component={Link}
       href={href}
       variant={variant}
-      className={" !h-fit !px-5 !py-3 text-black !rounded-full " + className}
+      className={" !h-fit !px-5 !py-3 text-white !rounded-full " + className}
       color={color}
       size={size}
       target={target && "_blank"}

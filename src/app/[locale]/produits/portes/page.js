@@ -28,7 +28,7 @@ export default function page({ locale }) {
     <>
       {/* Slider */}
       <section className="bg-doors bg-cover bg-center">
-        <div className="bg-black bg-opacity-45 pt-56 py-32 text-white text-center">
+        <div className="bg-black bg-opacity-45 px-4 pt-32 md:pt-56 py-32 text-white text-center">
           <span className="text-2xl max-w-6xl mx-auto mb-6">Produits</span>
           <h1 className="text-6xl font-bold max-w-6xl mx-auto leading-snug mb-8">
             Découvrez nos portes
@@ -36,7 +36,7 @@ export default function page({ locale }) {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto my-16">
+      <section className="max-w-6xl mx-auto my-20 px-4">
         <DoorsTabs />
       </section>
 
@@ -57,7 +57,7 @@ export default function page({ locale }) {
       </section>
 
       {/* Nos services */}
-      <section className="max-w-6xl mx-auto my-20">
+      <section className="max-w-6xl mx-auto my-20 px-4">
         <div className="grid grid-cols-2">
           <h2 className="text-4xl font-bold">On s’occupe de tout</h2>
           <ButtonClient
