@@ -15,7 +15,18 @@ export default function page({ locale }) {
   return (
     <>
       {/* Slider */}
-      <section className="bg-homeSlider bg-cover bg-center h-screen">
+      <section className="bg-cover bg-center h-screen relative">
+        <div className="absolute -z-10 w-full h-full">
+          <Image
+            src="/img/homeSlider.webp"
+            fill
+            quality={100}
+            className="w-full h-screen object-cover"
+            alt="PVCO Entrepreneur spécialisé en portes et fenêtres"
+            priority={true}
+            unoptimized
+          />
+        </div>
         <div className="bg-black bg-opacity-65 px-4 pt-32 md:pt-56 py-32 text-white text-center h-full flex flex-col justify-center items-center">
           <h1 className="text-2xl max-w-6xl mx-auto mb-6">
             Entrepreneur spécialisé en portes et fenêtres
@@ -276,7 +287,6 @@ export default function page({ locale }) {
               text={"Demande de soumission"}
               color="#ffffff"
               variant="outline"
-              
               href={"/contact"}
               className={"mt-8 md:mt-14"}
             />
