@@ -104,11 +104,11 @@ export default function QuoteForm({ translations, theme = "light" }) {
             blob = { file: newBlob.url, pathname: newBlob.pathname };
           }
 
-          // if (!recaptchaRef.current) {
-          //   toast.error(translations["recaptcha_error"]);
-          //   setLoading(false);
-          //   return false;
-          // }
+          if (!recaptchaRef.current) {
+            toast.error(translations["recaptcha_error"]);
+            setLoading(false);
+            return false;
+          }
 
           try {
             send(values);
@@ -224,7 +224,7 @@ export default function QuoteForm({ translations, theme = "light" }) {
           }}
         />
         <ReCAPTCHA
-          sitekey="6LdBvJ4qAAAAAE0gtA7rQyT_gGGee17HqRAr-P4p"
+          siteKey={env.process.RECAPTCHA_KEY}
           onChange={(token) => {
             changed(token || "");
           }}

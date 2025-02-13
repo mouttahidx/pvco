@@ -19,7 +19,7 @@ export default function CareerForm({ translations, theme = "light" }) {
   const router = useRouter();
   const cvRef = useRef();
   let blob = null;
-  
+
   async function sendEmail(data) {
     const res = await axios.post("/api/career", {
       ...data,
@@ -99,19 +99,17 @@ export default function CareerForm({ translations, theme = "light" }) {
             });
 
             const newBlob = await response.json();
-            blob = {file:newBlob.url,pathname:newBlob.pathname};
+            blob = { file: newBlob.url, pathname: newBlob.pathname };
           }
 
-          // if (!recaptchaRef.current) {
-          //   toast.error(translations["recaptcha_error"]);
-          //   setLoading(false);
-          //   return false;
-          // }
+          if (!recaptchaRef.current) {
+            toast.error(translations["recaptcha_error"]);
+            setLoading(false);
+            return false;
+          }
 
           try {
-
             send(values);
-            
           } catch (error) {}
         })}
         className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 lg:gap-x-4 gap-y-4"
@@ -199,7 +197,7 @@ export default function CareerForm({ translations, theme = "light" }) {
           }}
         />
         <ReCAPTCHA
-          sitekey="6LdBvJ4qAAAAAE0gtA7rQyT_gGGee17HqRAr-P4p"
+          siteKey={env.process.RECAPTCHA_KEY}
           onChange={(token) => {
             changed(token || "");
           }}

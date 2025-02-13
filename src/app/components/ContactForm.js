@@ -91,11 +91,11 @@ export default function ContactForm({
         onSubmit={form.onSubmit(async (values) => {
           setLoading(true);
 
-          // if (!recaptchaRef.current) {
-          //   toast.error(translations["recaptcha_error"]);
-          //   setLoading(false);
-          //   return false;
-          // }
+          if (!recaptchaRef.current) {
+            toast.error(translations["recaptcha_error"]);
+            setLoading(false);
+            return false;
+          }
 
           try {
             send(values);
@@ -165,7 +165,7 @@ export default function ContactForm({
           classNames={{ input: "textInput" }}
         />
         <ReCAPTCHA
-          sitekey="6LdBvJ4qAAAAAE0gtA7rQyT_gGGee17HqRAr-P4p"
+          siteKey={env.process.RECAPTCHA_KEY}
           onChange={(token) => {
             changed(token || "");
           }}

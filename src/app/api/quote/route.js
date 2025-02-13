@@ -12,7 +12,7 @@ export async function POST(request) {
       pass: process.env.EMAIL_PASSWORD,
     },
   });
-  console.log("here")
+  
   const { email, name, phone, service, additional_infos, fileAttached } = await request.json();
   const attachs = fileAttached ? [{
     filename: fileAttached.pathname,
@@ -21,7 +21,7 @@ export async function POST(request) {
   const mailOptions = {
     from: process.env.EMAIL,
     to: ["info@pvcogranby.com"],
-    // cc: email, (uncomment this line if you want to send a copy to the sender)
+    cc: "mahdi@viacommunication.com",
     subject: `PVCO - Demande de soumission (${email})`,
     attachments: attachs,
     html: `
