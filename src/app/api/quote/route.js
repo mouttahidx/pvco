@@ -20,7 +20,7 @@ export async function POST(request) {
   }] : [];
   const mailOptions = {
     from: process.env.EMAIL,
-    to: ["mahdi@viacommunication.com"],
+    to: ["info@pvcogranby.com"],
     // cc: email, (uncomment this line if you want to send a copy to the sender)
     subject: `PVCO - Demande de soumission (${email})`,
     attachments: attachs,

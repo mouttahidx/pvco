@@ -23,8 +23,8 @@ import { routing } from "@/i18n/routing";
 export async function generateMetadata() {
   return {
     title: `${process.env.NEXT_PUBLIC_APP_NAME}`,
-    description: `${process.env.NEXT_PUBLIC_APP_NAME}`,
-    robots: "noindex",
+    description: `${process.env.NEXT_PUBLIC_APP_NAME} - Nous vous proposons une vaste gamme de portes, de fenêtres, de rampes, de portes de garage, de solariums et de revêtements extérieurs pour tous les types de résidences et de commerces. Notre objectif : embellir votre propriété tout en maximisant sa fonctionnalité!`,
+    // robots: "noindex",
   };
 }
 
@@ -48,7 +48,6 @@ export default async function LocaleLayout({ children, params }) {
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
- 
 
   // Enable static rendering
   return (
@@ -64,7 +63,7 @@ export default async function LocaleLayout({ children, params }) {
             <AOSInit />
             <Header />
             {/* <AOSInit /> */}
-          <NavigationProgress />
+            <NavigationProgress />
             <main className="">{children}</main>
             <Footer />
           </NextIntlClientProvider>

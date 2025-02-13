@@ -13,11 +13,11 @@ export async function POST(request) {
     },
   });
   console.log("here")
-  const { email, name, phone, poste, additional_infos, subject } = await request.json();
+  const { email, name, phone, additional_infos, subject } = await request.json();
 
   const mailOptions = {
     from: process.env.EMAIL,
-    to: ["mahdi@viacommunication.com"],
+    to: ["info@pvcogranby.com"],
     // cc: email, (uncomment this line if you want to send a copy to the sender)
     subject: `PVCO - ${subject} (${email})`,
     html: `
