@@ -197,7 +197,7 @@ export default function CareerForm({ translations, theme = "light" }) {
           }}
         />
         <ReCAPTCHA
-          siteKey={env.process.RECAPTCHA_KEY}
+          siteKey={process.env.RECAPTCHA_KEY}
           onChange={(token) => {
             changed(token || "");
           }}
