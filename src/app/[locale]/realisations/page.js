@@ -20,7 +20,7 @@ export default function page({ locale }) {
     <>
       {/* Slider */}
       <section className="bg-portfolioSlider bg-cover bg-center">
-        <div className="bg-black bg-opacity-45 px-4 pt-32 md:pt-56 py-32 text-white text-center">
+        <div className="bg-black bg-opacity-65 px-4 pt-32 md:pt-56 py-32 text-white text-center">
           <h1 className="text-2xl max-w-6xl mx-auto mb-6">Réalisations</h1>
           <h2 className="text-4xl md:text-6xl font-bold max-w-6xl mx-auto leading-snug mb-8">
             Voyez ce que nous pouvons réaliser pour vous!{" "}

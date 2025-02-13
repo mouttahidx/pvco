@@ -27,7 +27,7 @@ export default function page({ locale }) {
     <>
       {/* Slider */}
       <section className="bg-windows bg-cover bg-center">
-        <div className="bg-black bg-opacity-45 px-4 pt-32 md:pt-56 py-32 text-white text-center">
+        <div className="bg-black bg-opacity-65 px-4 pt-32 md:pt-56 py-32 text-white text-center">
           <span className="text-2xl max-w-6xl mx-auto mb-6">Produits</span>
           <h1 className="text-4xl md:text-6xl font-bold max-w-6xl mx-auto leading-snug mb-8">
             Découvrez nos fenêtres
@@ -56,7 +56,7 @@ export default function page({ locale }) {
         </div>
       </section>
 
-    {/* Nos services */}
+      {/* Nos services */}
       <section className="max-w-6xl mx-auto my-20 px-4">
         <div className="grid gap-12 md:grid-cols-2">
           <h2 className="text-4xl font-bold text-center md:text-left">

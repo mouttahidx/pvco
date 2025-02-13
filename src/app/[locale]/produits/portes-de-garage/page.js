@@ -23,7 +23,7 @@ export default function page({ locale }) {
     <>
       {/* Slider */}
       <section className="bg-doorsGarage bg-cover bg-center">
-        <div className="bg-black bg-opacity-45 px-4 pt-32 md:pt-56 py-32 text-white text-center">
+        <div className="bg-black bg-opacity-65 px-4 pt-32 md:pt-56 py-32 text-white text-center">
           <span className="text-2xl max-w-6xl mx-auto mb-6">Produits</span>
           <h1 className="text-4xl md:text-6xl font-bold max-w-6xl mx-auto leading-snug mb-8">
             Découvrez nos portes de garage
@@ -46,7 +46,6 @@ export default function page({ locale }) {
           </p>
         </div>
 
-      
         <div className="pb-16 pt-24 text-center">
           <ButtonClient
             text={"Créez votre porte"}
@@ -57,7 +56,6 @@ export default function page({ locale }) {
           />
         </div>
       </section>
-
 
       {/* Nos services */}
       <section className="max-w-6xl mx-auto my-20 px-4">

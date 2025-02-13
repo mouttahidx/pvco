@@ -16,7 +16,7 @@ export default function page({ locale }) {
     <>
       {/* Slider */}
       <section className="bg-homeSlider bg-cover bg-center h-screen">
-        <div className="bg-black bg-opacity-45 px-4 pt-32 md:pt-56 py-32 text-white text-center h-full flex flex-col justify-center items-center">
+        <div className="bg-black bg-opacity-65 px-4 pt-32 md:pt-56 py-32 text-white text-center h-full flex flex-col justify-center items-center">
           <h1 className="text-2xl max-w-6xl mx-auto mb-6">
             Entrepreneur spécialisé en portes et fenêtres
           </h1>
