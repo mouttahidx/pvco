@@ -224,7 +224,7 @@ export default function QuoteForm({ translations, theme = "light" }) {
           }}
         />
         <ReCAPTCHA
-          siteKey={process.env.RECAPTCHA_KEY}
+          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY}
           onChange={(token) => {
             changed(token || "");
           }}

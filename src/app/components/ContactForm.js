@@ -165,7 +165,7 @@ export default function ContactForm({
           classNames={{ input: "textInput" }}
         />
         <ReCAPTCHA
-          siteKey={process.env.RECAPTCHA_KEY}
+          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY}
           onChange={(token) => {
             changed(token || "");
           }}
