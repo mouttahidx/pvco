@@ -19,7 +19,7 @@ export default function page({ locale }) {
     <>
       {/* Slider */}
       <section className="bg-black bg-cover bg-center">
-        <div className="bg-black bg-opacity-85 px-4 pt-32 md:pt-56 py-32 text-white text-center">
+        <div className="bg-black bg-opacity-55 px-4 pt-32 md:pt-56 py-32 text-white text-center">
           <h1 className="text-4xl md:text-6xl font-bold max-w-6xl mx-auto leading-snug mb-8">
             Termes et conditions
           </h1>
