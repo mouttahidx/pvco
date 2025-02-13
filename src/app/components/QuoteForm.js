@@ -19,7 +19,7 @@ export default function QuoteForm({ translations, theme = "light" }) {
   const router = useRouter();
   const cvRef = useRef();
   let blob = null;
-  
+
   async function sendEmail(data) {
     const res = await axios.post("/api/quote", {
       ...data,
@@ -39,7 +39,7 @@ export default function QuoteForm({ translations, theme = "light" }) {
       phone: "",
       email: "",
       poste: "",
-      service:"",
+      service: "",
       additional_infos: "",
     },
     validate: {
@@ -68,7 +68,7 @@ export default function QuoteForm({ translations, theme = "light" }) {
         email: "",
         poste: "",
         additional_infos: "",
-        service:""
+        service: "",
       });
 
       setError(false);
@@ -117,6 +117,8 @@ export default function QuoteForm({ translations, theme = "light" }) {
         className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 lg:gap-x-4 gap-y-4"
       >
         <TextInput
+          classNames={{ input: "textInput" }}
+          variant="filled"
           withAsterisk
           size="md"
           radius={"xl"}
@@ -130,6 +132,8 @@ export default function QuoteForm({ translations, theme = "light" }) {
         />
 
         <TextInput
+          classNames={{ input: "textInput" }}
+          variant="filled"
           size="md"
           radius={"xl"}
           withAsterisk
@@ -144,6 +148,8 @@ export default function QuoteForm({ translations, theme = "light" }) {
         />
 
         <TextInput
+          classNames={{ input: "textInput" }}
+          variant="filled"
           size="md"
           radius={"xl"}
           withAsterisk
@@ -158,6 +164,8 @@ export default function QuoteForm({ translations, theme = "light" }) {
 
         <Select
           size="md"
+          classNames={{ input: "textInput" }}
+          variant="filled"
           radius={"xl"}
           withAsterisk
           placeholder={"Type de service"}
@@ -173,12 +181,16 @@ export default function QuoteForm({ translations, theme = "light" }) {
             { label: "Fenêtres", value: "Fenêtres" },
             { label: "Balcons et rampes", value: "Balcons et rampes" },
             { label: "Solariums", value: "Solariums" },
-            { label: "Revêtements d'extérieurs", value: "Revêtements d'extérieurs" },
+            {
+              label: "Revêtements d'extérieurs",
+              value: "Revêtements d'extérieurs",
+            },
             { label: "Accessoires", value: "Accessoires" },
           ]}
         />
 
         <FileInput
+          variant="filled"
           placeholder="Sélectionnez des fichiers"
           accept="document/pdf,document/docx"
           leftSection={<FaFileUpload />}
@@ -186,17 +198,20 @@ export default function QuoteForm({ translations, theme = "light" }) {
           clearable
           radius={"xl"}
           size="md"
-          className="md:col-span-2"
+          className="md:col-span-2 !text-black"
           styles={{
             error: {
               color: theme === "light" ? "white" : "red",
             },
           }}
+          classNames={{ input: "textInput" }}
           onChange={(e) => {
             cvRef.current = e;
           }}
         />
         <TextInput
+          classNames={{ input: "textInput" }}
+          variant="filled"
           size="md"
           radius={"xl"}
           placeholder={translations["additional_infos"]}

@@ -12,6 +12,7 @@ export default function DoorsTabs() {
       styles={{
         tab: {
           marginRight: "16px",
+          fontSize: "1rem",
         },
       }}
     >

@@ -25,7 +25,7 @@ export default function ProductsGallery({ slides }) {
             src={slide.src}
             width={1200}
             height={1200}
-            className={`w-full h-[400px] object-cover ${
+            className={`w-full h-[250px] md:h-[400px] object-cover ${
               i === 0 && "rounded-s-3xl"
             } ${i === slides.length - 1 && "rounded-e-3xl"}`}
           />

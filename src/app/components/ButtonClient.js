@@ -13,7 +13,7 @@ export default function ButtonClient({
   size = "sm",
   target
 }) {
-  const textColor = variant === "filled" ? 'text-white': 'text-primary';
+  const textColor = variant === "filled" && 'text-white';
   return (
     <Button
       data-aos="fade-in"
@@ -22,7 +22,7 @@ export default function ButtonClient({
       component={Link}
       href={href}
       variant={variant}
-      className={" !h-fit !px-5 !py-3 !rounded-full " + textColor+" " + className}
+      className={" !h-fit !px-5 !py-3 !rounded-full " + textColor +" " + className}
       color={color}
       size={size}
       target={target && "_blank"}

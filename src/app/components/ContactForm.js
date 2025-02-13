@@ -104,6 +104,7 @@ export default function ContactForm({
         className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 lg:gap-x-4 gap-y-4"
       >
         <TextInput
+          variant="filled"
           withAsterisk
           size="md"
           radius={"xl"}
@@ -114,10 +115,12 @@ export default function ContactForm({
               color: "white",
             },
           }}
-          className="col-span-2"
+          className="col-span-2 placeholder-shown:!text-black"
+          classNames={{ input: "textInput" }}
         />
 
         <TextInput
+          variant="filled"
           size="md"
           radius={"xl"}
           withAsterisk
@@ -129,9 +132,11 @@ export default function ContactForm({
               color: "white",
             },
           }}
+          classNames={{ input: "textInput" }}
         />
 
         <TextInput
+          variant="filled"
           size="md"
           radius={"xl"}
           withAsterisk
@@ -142,11 +147,11 @@ export default function ContactForm({
               color: "white",
             },
           }}
+          classNames={{ input: "textInput" }}
         />
 
-    
-
         <TextInput
+          variant="filled"
           size="md"
           radius={"xl"}
           placeholder={translations["additional_infos"]}
@@ -157,6 +162,7 @@ export default function ContactForm({
               color: "white",
             },
           }}
+          classNames={{ input: "textInput" }}
         />
         <ReCAPTCHA
           sitekey="6LdBvJ4qAAAAAE0gtA7rQyT_gGGee17HqRAr-P4p"

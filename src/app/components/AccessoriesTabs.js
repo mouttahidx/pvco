@@ -4,7 +4,18 @@ import Image from "next/image";
 
 export default function AccessoriesTabs() {
   return (
-    <Tabs defaultValue="1" color="#FD6941" variant="pills" radius={"xl"}>
+    <Tabs
+      defaultValue="1"
+      color="#FD6941"
+      variant="pills"
+      radius={"xl"}
+      styles={{
+        tab: {
+          marginRight: "16px",
+          fontSize: "1rem",
+        },
+      }}
+    >
       <Tabs.List justify="center">
         <Tabs.Tab value="1">Poignées et plaques d’adresse</Tabs.Tab>
         <Tabs.Tab value="2">Scellant et uréthane professionnel</Tabs.Tab>

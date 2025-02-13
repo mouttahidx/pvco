@@ -29,7 +29,7 @@ export default function Header() {
           </Link>
           <Nav scrolled={scrollTop > 0 ? true : false} />
           <div className="flex-1 text-right">
-            <ButtonClient text={"Soumission"} href={"/"} />
+            <ButtonClient text={"Soumission"} href={"/contact"} />
           </div>
         </div>
       </div>

@@ -12,6 +12,7 @@ export default function BalconyTabs() {
       styles={{
         tab: {
           marginRight: "16px",
+          fontSize: "1rem",
         },
       }}
     >

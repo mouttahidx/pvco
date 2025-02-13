@@ -96,7 +96,7 @@ export default function page({ locale }) {
               text={"Demande de soumission"}
               color="#ffffff"
               variant="outline"
-              href={"/"}
+              href={"/contact"}
               className={"mt-8 md:mt-14"}
             />
           </div>

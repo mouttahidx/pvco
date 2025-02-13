@@ -2,6 +2,7 @@
 import { Link } from "@/i18n/routing";
 import { Menu } from "@mantine/core";
 import React, { useState } from "react";
+import { FaCircleXmark } from "react-icons/fa6";
 
 export default function OurProductsNav({ translations }) {
   const [show, setShow] = useState(false);
@@ -9,11 +10,12 @@ export default function OurProductsNav({ translations }) {
     setShow((curr) => !show);
   };
   return (
-    <span onClick={showProducts}>
+    <span onClick={showProducts} className="cursor-pointer hover:underline underline-offset-2">
       {translations["ourProducts"]}
 
       {show && (
-        <div className="w-full grid grid-cols-4 grid-rows-2 gap-4 mt-16 h-[85vh] text-white font-semibold text-xl fixed bg-white top-10 left-0 z-20 p-4">
+        <div data-aos="fade-down" className="w-full grid grid-cols-4 grid-rows-2 gap-4 mt-16 h-[85vh] text-white font-semibold text-xl fixed bg-white top-10 left-0 z-20 p-4">
+          <FaCircleXmark className="absolute fill-black right-5 -top-5 cursor-pointer hover:fill-primary duration-500" size={24} onClick={()=>{setShow(false)}} />
           <Link
             href="/produits/portes"
             className="row-span-2 bg-cover cursor-pointer group hover:scale-105 duration-500  rounded-s-3xl bg-doors relative"

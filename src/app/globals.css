@@ -16,6 +16,9 @@ body {
 }
 
 @layer components {
+  .textInput{
+    @apply placeholder:!text-black text-black
+  }
   .section-title {
     @apply bg-inherit font-bold text-black leading-normal text-2xl lg:text-4xl;
   }
@@ -47,7 +50,7 @@ body {
       overflow-x: hidden !important;
     }
     .no-tailwindcss-base a {
-      @apply text-dark-secondary;
+      @apply text-primary;
     }
     .no-tailwindcss-base td {
       display: table-cell;

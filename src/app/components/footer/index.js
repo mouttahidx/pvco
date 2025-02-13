@@ -1,9 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 export default function Footer() {
   return (
     <div className="footer py-8">
@@ -51,59 +48,89 @@ export default function Footer() {
         <div className="md:border-l md:pl-4 border-gray-200">
           <h3 className="font-semibold mb-4 text-primary">Produits</h3>
           <ul className="flex flex-col gap-1">
-            <li className="mb-1 text-xs">
-              <a href="#">Portes</a>
+            <li className="mb-2 text-xs">
+              <Link href={"/produits/portes"}>Portes</Link>
             </li>
-            <li className="mb-1 text-xs">
-              <a href="#">Portes de garage</a>
+            <li className="mb-2 text-xs">
+              <Link href={"/produits/portes-de-garage"}>Portes de garage</Link>
             </li>
-            <li className="mb-1 text-xs">
-              <a href="#">Fenêtres</a>
+            <li className="mb-2 text-xs">
+              <Link href={"/produits/fenetres"}>Fenêtres</Link>
             </li>
-            <li className="mb-1 text-xs">
-              <a href="#">Balcons et rampes</a>
+            <li className="mb-2 text-xs">
+              <Link href={"/produits/balcons-et-rampes"}>
+                Balcons et rampes
+              </Link>
             </li>
-            <li className="mb-1 text-xs">
-              <a href="#">Solariums</a>
+            <li className="mb-2 text-xs">
+              <Link href={"/produits/solariums"}>Solariums</Link>
             </li>
-            <li className="mb-1 text-xs">
-              <a href="#">Revêtements extérieurs</a>
+            <li className="mb-2 text-xs">
+              <Link href={"/produits/revetements-exterieurs"}>
+                Revêtements extérieurs
+              </Link>
             </li>
-            <li className="mb-1 text-xs">
-              <a href="#">Accessoires</a>
+            <li className="mb-2 text-xs">
+              <Link href={"/produits/accessoires"}>Accessoires</Link>
             </li>
-            <li className="mb-1 text-xs">
-              <a href="#">Pergola</a>
-            </li>
+            {/* <li className="mb-1 text-xs">
+              <Link href={"/produits/pergolas"}>Pergola</Link>
+            </li> */}
           </ul>
         </div>
         <div>
-          <Link href="/" className="font-semibold mb-4 text-primary block ">
+          <Link
+            href="/a-propos"
+            className="font-semibold mb-4 text-primary block "
+          >
             À propos
           </Link>
-          <Link href="/" className="font-semibold mb-4 text-primary block ">
+          <Link
+            href="/services"
+            className="font-semibold mb-4 text-primary block "
+          >
             Services
           </Link>
-          <Link href="/" className="font-semibold mb-4 text-primary block ">
+          <Link
+            href="/realisations"
+            className="font-semibold mb-4 text-primary block "
+          >
             Réalisations
           </Link>
-          <Link href="/" className="font-semibold mb-4 text-primary block ">
+          <Link
+            href="/carrieres"
+            className="font-semibold mb-4 text-primary block "
+          >
             Carrières
           </Link>
-          <Link href="/" className="font-semibold mb-4 text-primary block ">
+          <Link
+            href="/contact"
+            className="font-semibold mb-4 text-primary block "
+          >
             Contact
           </Link>
-
-          <p className="text-xs text-gray-300 mt-6">
+          <span className="text-xs text-gray-300 mt-6 block">
             © PVCO Grandby 2025 |{" "}
-            <a href="https://viacommunication.com/" target="_blank">
+            <a
+              href="https://viacommunication.com/"
+              target="_blank"
+              className="text-primary"
+            >
               Création par VIA Communication
             </a>
-          </p>
-          <p className="text-xs text-gray-300 mt-1">
+          </span>
+          <Link
+            href={"/politique-de-confidentialite"}
+            className="text-xs text-gray-300 mt-1 block"
+          >
             Politique de confidentialité
-          </p>
-          <p className="text-xs text-gray-300 mt-1">Termes et Conditions</p>
+          </Link>
+          <Link
+            href={"/termes-et-conditions"}
+            className="text-xs text-gray-300 mt-1"
+          >
+            Termes et conditions
+          </Link>{" "}
         </div>
       </div>
     </div>

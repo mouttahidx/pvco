@@ -25,7 +25,7 @@ export default function page({ locale }) {
       <section className="bg-doorsGarage bg-cover bg-center">
         <div className="bg-black bg-opacity-45 px-4 pt-32 md:pt-56 py-32 text-white text-center">
           <span className="text-2xl max-w-6xl mx-auto mb-6">Produits</span>
-          <h1 className="text-6xl font-bold max-w-6xl mx-auto leading-snug mb-8">
+          <h1 className="text-4xl md:text-6xl font-bold max-w-6xl mx-auto leading-snug mb-8">
             Découvrez nos portes de garage
           </h1>
         </div>
@@ -36,15 +36,17 @@ export default function page({ locale }) {
       </section>
 
       {/* Nos realisations */}
-      <section className="max-w-6xl mx-auto my-20 mt-32">
-        <div className="grid grid-cols-2">
-          <h2 className="text-4xl font-bold">Nos produits</h2>
+      <section className="max-w-6xl mx-auto my-20 mt-32 px-4">
+        <div className="grid gap-6 md:grid-cols-2">
+          <h2 className="text-4xl font-bold text-left">Nos produits </h2>
           <p>
             Robustes et durables, nos portes de garage sont soigneusement
             sélectionnées pour la qualité de leur conception. Personnalisez-les
             avec des fenêtres ou la couleur de votre choix!
           </p>
         </div>
+
+      
         <div className="pb-16 pt-24 text-center">
           <ButtonClient
             text={"Créez votre porte"}
@@ -56,20 +58,23 @@ export default function page({ locale }) {
         </div>
       </section>
 
+
       {/* Nos services */}
       <section className="max-w-6xl mx-auto my-20 px-4">
-        <div className="grid grid-cols-2">
-          <h2 className="text-4xl font-bold">On s’occupe de tout</h2>
+        <div className="grid gap-12 md:grid-cols-2">
+          <h2 className="text-4xl font-bold text-center md:text-left">
+            On s’occupe de tout
+          </h2>
           <ButtonClient
             text={"Voir nos services"}
-            href={"/"}
+            href={"/services"}
             variant="outline"
-            className={"!w-fit justify-self-end"}
+            className={"!w-fit justify-self-center md:justify-self-end"}
           />
         </div>
-        <div className="grid grid-cols-3 mt-6 gap-x-6">
+        <div className="grid text-center md:text-left md:grid-cols-3 mt-6 gap-x-6 just">
           <div className="flex flex-col">
-            <span className="bg-primary flex justify-center items-center w-[100px] h-[100px] rounded-full mt-14">
+            <span className="bg-primary flex justify-center items-center w-[100px] h-[100px] rounded-full mt-14 mx-auto md:ml-0">
               <FaCalculator size="24" className="fill-white" />
             </span>
             <h3 className="font-semibold my-4">Estimation des coûts</h3>
@@ -80,7 +85,7 @@ export default function page({ locale }) {
           </div>
 
           <div className="flex flex-col">
-            <span className="bg-primary flex justify-center items-center w-[100px] h-[100px] rounded-full mt-14">
+            <span className="bg-primary flex justify-center items-center w-[100px] h-[100px] rounded-full mt-14 mx-auto md:ml-0">
               <FaHandshake size="24" className="fill-white" />
             </span>
             <h3 className="font-semibold my-4">Service après-ventes</h3>
@@ -91,7 +96,7 @@ export default function page({ locale }) {
           </div>
 
           <div className="flex flex-col">
-            <span className="bg-primary flex justify-center items-center w-[100px] h-[100px] rounded-full mt-14">
+            <span className="bg-primary flex justify-center items-center w-[100px] h-[100px] rounded-full mt-14 mx-auto md:ml-0">
               <FaFileSignature size="24" className="fill-white" />
             </span>
             <h3 className="font-semibold my-4">Service conseil</h3>
@@ -104,13 +109,13 @@ export default function page({ locale }) {
       </section>
 
       {/* Detaillants + CTA */}
-      <section className="my-20 bg-brand-gray">
-        <div className="max-w-6xl mx-auto py-16">
-          <div className="grid grid-cols-2">
-            <h2 className="text-4xl font-bold">
+      <section className="my-20 bg-brand-gray ">
+        <div className="max-w-6xl mx-auto py-16 px-4">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+            <h2 className="text-4xl font-bold text-center md:text-left">
               Détaillant autorisé des fournisseurs suivants :
             </h2>
-            <div className="grid grid-cols-3 items-center gap-10">
+            <div className="grid grid-cols-2 md:grid-cols-3 items-center gap-10">
               <Image
                 unoptimized
                 width={1200}
@@ -146,16 +151,16 @@ export default function page({ locale }) {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 items-end">
+        <div className="grid md:grid-cols-2 items-end bg-[#D2D6E3] md:bg-white">
           <Image
             unoptimized
             width={1200}
             height={820}
             src={"/img/hands.webp"}
             alt="hands shaking"
-            className="relative rounded-tr-3xl h-[600px] !w-[120%] object-cover"
+            className="relative md:rounded-tr-3xl h-[350px] md:h-[600px] !w-[120%] object-cover"
           />
-          <div className="text-white p-24 bg-primary rounded-tl-3xl -ml-24 z-10">
+          <div className="text-white md:p-24 bg-primary rounded-tl-3xl md:-ml-24 z-10 px-4 py-10">
             <h3 className="max-w-lg text-2xl mb-6">
               Pour tous vos projets d’aménagement
             </h3>
@@ -166,8 +171,8 @@ export default function page({ locale }) {
               text={"Demande de soumission"}
               color="#ffffff"
               variant="outline"
-              href={"/"}
-              className={"mt-14"}
+              href={"/contact"}
+              className={"mt-8 md:mt-14"}
             />
           </div>
         </div>

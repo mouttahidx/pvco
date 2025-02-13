@@ -15,8 +15,8 @@ export default function page({ locale }) {
   return (
     <>
       {/* Slider */}
-      <section className="bg-homeSlider bg-cover bg-center">
-        <div className="bg-black bg-opacity-45 px-4 pt-32 md:pt-56 py-32 text-white text-center">
+      <section className="bg-homeSlider bg-cover bg-center h-screen">
+        <div className="bg-black bg-opacity-45 px-4 pt-32 md:pt-56 py-32 text-white text-center h-full flex flex-col justify-center items-center">
           <h1 className="text-2xl max-w-6xl mx-auto mb-6">
             Entrepreneur spécialisé en portes et fenêtres
           </h1>
@@ -185,7 +185,7 @@ export default function page({ locale }) {
             fenêtres, comme la conception de solariums et d’agrandissements et
             le remplacement de revêtement extérieur.
           </p>
-          <ButtonClient text={"En savoir plus"} href={"/"} />
+          <ButtonClient text={"En savoir plus"} href={"/a-propos"} />
         </div>
       </section>
 
@@ -276,7 +276,8 @@ export default function page({ locale }) {
               text={"Demande de soumission"}
               color="#ffffff"
               variant="outline"
-              href={"/"}
+              
+              href={"/contact"}
               className={"mt-8 md:mt-14"}
             />
           </div>
