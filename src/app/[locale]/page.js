@@ -27,7 +27,7 @@ export default function page({ locale }) {
             unoptimized
           />
         </div>
-        <div className="bg-black bg-opacity-65 px-4 pt-32 md:pt-56 py-32 text-white text-center h-full flex flex-col justify-center items-center">
+        <div className="bg-black bg-opacity-85 px-4 pt-32 md:pt-56 py-32 text-white text-center h-full flex flex-col justify-center items-center">
           <h1 className="text-2xl max-w-6xl mx-auto mb-6">
             Entrepreneur spécialisé en portes et fenêtres
           </h1>
