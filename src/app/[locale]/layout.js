@@ -5,7 +5,6 @@ import {
   createTheme,
   mantineHtmlProps,
   MantineProvider,
-  useMantineColorScheme,
 } from "@mantine/core";
 import Header from "../components/header";
 import Footer from "../components/footer";
@@ -14,7 +13,6 @@ import "aos/dist/aos.css";
 import AOSInit from "@/app/components/AOSInit";
 
 import { Noto_Sans } from "next/font/google";
-import { NavigationProgress } from "@mantine/nprogress";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
@@ -62,8 +60,6 @@ export default async function LocaleLayout({ children, params }) {
           <NextIntlClientProvider messages={messages}>
             <AOSInit />
             <Header />
-            {/* <AOSInit /> */}
-            <NavigationProgress />
             <main className="">{children}</main>
             <Footer />
           </NextIntlClientProvider>
