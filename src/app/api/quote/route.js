@@ -1,28 +1,6 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
-import { promisify } from "util";
-import formidable from "formidable";
-import fs from "fs/promises";
-import path from "path";
 
-// Disable bodyParser for file handling
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
-
-// Function to parse form data (files & fields)
-async function parseForm(request) {
-  const form = new formidable.IncomingForm({ uploadDir: "/tmp", keepExtensions: true });
-
-  return new Promise((resolve, reject) => {
-    form.parse(request, (err, fields, files) => {
-      if (err) reject(err);
-      else resolve({ fields, files });
-    });
-  });
-}
 export async function POST(request) {
   const transport = nodemailer.createTransport({
     pool: true,
@@ -34,16 +12,18 @@ export async function POST(request) {
       pass: process.env.EMAIL_PASSWORD,
     },
   });
-  const formData = await request.formData();
-  console.log(formData)
-  // const { email, name, phone, poste, additional_infos, cv } = await request.json();
-
-  return
+  console.log("here")
+  const { email, name, phone, service, additional_infos, fileAttached } = await request.json();
+  const attachs = fileAttached ? [{
+    filename: fileAttached.pathname,
+    path: fileAttached.url,
+  }] : [];
   const mailOptions = {
     from: process.env.EMAIL,
     to: ["mahdi@viacommunication.com"],
     // cc: email, (uncomment this line if you want to send a copy to the sender)
-    subject: `PVCO - Demande d'emploi (${email})`,
+    subject: `PVCO - Demande de soumission (${email})`,
+    attachments: attachs,
     html: `
     <!doctype html>
 <html lang="en">
@@ -351,13 +331,12 @@ export async function POST(request) {
           <div class="content">
 
             <!-- START CENTERED WHITE CONTAINER -->
-            <span class="preheader">Nouvelle demande - Devenir revendeur</span>
+            <span class="preheader">Nouvelle demande de soumission</span>
             <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="main">
 
               <!-- START MAIN CONTENT AREA -->
               <tr>
                 <td class="wrapper">
-                  <p>Nouvelle demande:</p>
                   </br>
                   </br>
                   <p>Nom: <b>${name}</b></p>
@@ -366,7 +345,7 @@ export async function POST(request) {
                   </br>
                   <p>Courriel: <b>${email}</b></p>
                   </br>
-                  <p>Poste: <b>${poste}</b></p>
+                  <p>Service: <b>${service}</b></p>
                   <p>Message: <b>${additional_infos}</b></p>
                   
                   </br>
@@ -417,6 +396,7 @@ export async function POST(request) {
     await sendMailPromise();
     return NextResponse.json({ message: "Email sent" });
   } catch (err) {
+    console.log(err)
     return NextResponse.json({ error: err }, { status: 500 });
   }
   // return res.status(200).json({ data: email + " " + message });

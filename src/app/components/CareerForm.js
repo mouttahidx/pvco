@@ -11,21 +11,19 @@ import { useLocale } from "next-intl";
 import { useRouter } from "@/i18n/routing";
 import { FaFileUpload } from "react-icons/fa";
 
-export default function ContactForm({
-  translations,
-  theme = "light",
-  subject = "Contact",
-}) {
+export default function CareerForm({ translations, theme = "light" }) {
   const [loading, setLoading] = useState(false);
   const recaptchaRef = useRef("");
   const [error, setError] = useState(false);
   const locale = useLocale();
   const router = useRouter();
-
+  const cvRef = useRef();
+  let blob = null;
+  
   async function sendEmail(data) {
-    const res = await axios.post("/api/contact", {
+    const res = await axios.post("/api/career", {
       ...data,
-      subject,
+      cv: blob,
     });
 
     if (res.status == 200) {
@@ -40,6 +38,7 @@ export default function ContactForm({
       name: "",
       phone: "",
       email: "",
+      poste: "",
       additional_infos: "",
     },
     validate: {
@@ -51,6 +50,7 @@ export default function ContactForm({
         )
           ? null
           : translations["phone_error"],
+      poste: isNotEmpty(translations["required_error"]),
     },
   });
 
@@ -65,6 +65,7 @@ export default function ContactForm({
         name: "",
         phone: "",
         email: "",
+        poste: "",
         additional_infos: "",
       });
 
@@ -90,6 +91,16 @@ export default function ContactForm({
       <form
         onSubmit={form.onSubmit(async (values) => {
           setLoading(true);
+          if (cvRef.current) {
+            const file = cvRef.current[0];
+            const response = await fetch(`/api/upload?filename=${file.name}`, {
+              method: "POST",
+              body: file,
+            });
+
+            const newBlob = await response.json();
+            blob = {file:newBlob.url,pathname:newBlob.pathname};
+          }
 
           // if (!recaptchaRef.current) {
           //   toast.error(translations["recaptcha_error"]);
@@ -98,7 +109,9 @@ export default function ContactForm({
           // }
 
           try {
+
             send(values);
+            
           } catch (error) {}
         })}
         className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 lg:gap-x-4 gap-y-4"
@@ -114,7 +127,6 @@ export default function ContactForm({
               color: "white",
             },
           }}
-          className="col-span-2"
         />
 
         <TextInput
@@ -144,8 +156,36 @@ export default function ContactForm({
           }}
         />
 
-    
-
+        <TextInput
+          size="md"
+          radius={"xl"}
+          withAsterisk
+          placeholder={translations["poste"]}
+          {...form.getInputProps("poste")}
+          styles={{
+            error: {
+              color: "white",
+            },
+          }}
+        />
+        <FileInput
+          placeholder="Sélectionnez des fichiers"
+          accept="document/pdf,document/docx"
+          leftSection={<FaFileUpload />}
+          multiple
+          clearable
+          radius={"xl"}
+          size="md"
+          className="md:col-span-2"
+          styles={{
+            error: {
+              color: "white",
+            },
+          }}
+          onChange={(e) => {
+            cvRef.current = e;
+          }}
+        />
         <TextInput
           size="md"
           radius={"xl"}

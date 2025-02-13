@@ -1,5 +1,5 @@
 import nodemailer from "nodemailer";
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 export async function POST(request) {
   const transport = nodemailer.createTransport({
@@ -12,13 +12,14 @@ export async function POST(request) {
       pass: process.env.EMAIL_PASSWORD,
     },
   });
-  const { email, name, phone, company, territory } = await request.json();
+  console.log("here")
+  const { email, name, phone, poste, additional_infos, subject } = await request.json();
 
   const mailOptions = {
     from: process.env.EMAIL,
-    to: ["oontact-us@sunspacesunrooms.com"],
+    to: ["mahdi@viacommunication.com"],
     // cc: email, (uncomment this line if you want to send a copy to the sender)
-    subject: `Sunspace Corporate - Demande: Devenir revendeur (${email})`,
+    subject: `PVCO - ${subject} (${email})`,
     html: `
     <!doctype html>
 <html lang="en">
@@ -326,13 +327,13 @@ export async function POST(request) {
           <div class="content">
 
             <!-- START CENTERED WHITE CONTAINER -->
-            <span class="preheader">Nouvelle demande - Devenir revendeur</span>
+            <span class="preheader">Nouveau message</span>
             <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="main">
 
               <!-- START MAIN CONTENT AREA -->
               <tr>
                 <td class="wrapper">
-                  <p>Nouvelle demande:</p>
+                  <p>Nouveau message:</p>
                   </br>
                   </br>
                   <p>Nom: <b>${name}</b></p>
@@ -341,8 +342,7 @@ export async function POST(request) {
                   </br>
                   <p>Courriel: <b>${email}</b></p>
                   </br>
-                  <p>Entreprise: <b>${company}</b></p>
-                  <p>Térritoire: <b>${territory}</b></p>
+                  <p>Message: <b>${additional_infos}</b></p>
                   
                   </br>
                   </br>
@@ -392,6 +392,7 @@ export async function POST(request) {
     await sendMailPromise();
     return NextResponse.json({ message: "Email sent" });
   } catch (err) {
+    console.log(err)
     return NextResponse.json({ error: err }, { status: 500 });
   }
   // return res.status(200).json({ data: email + " " + message });

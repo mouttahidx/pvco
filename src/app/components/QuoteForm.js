@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Button, FileInput, Loader, TextInput } from "@mantine/core";
+import { Button, FileInput, Loader, Select, TextInput } from "@mantine/core";
 import { hasLength, isEmail, isNotEmpty, useForm } from "@mantine/form";
 import axios from "axios";
 import { FaArrowRight } from "react-icons/fa6";
@@ -11,21 +11,19 @@ import { useLocale } from "next-intl";
 import { useRouter } from "@/i18n/routing";
 import { FaFileUpload } from "react-icons/fa";
 
-export default function ContactForm({
-  translations,
-  theme = "light",
-  subject = "Contact",
-}) {
+export default function QuoteForm({ translations, theme = "light" }) {
   const [loading, setLoading] = useState(false);
   const recaptchaRef = useRef("");
   const [error, setError] = useState(false);
   const locale = useLocale();
   const router = useRouter();
-
+  const cvRef = useRef();
+  let blob = null;
+  
   async function sendEmail(data) {
-    const res = await axios.post("/api/contact", {
+    const res = await axios.post("/api/quote", {
       ...data,
-      subject,
+      fileAttached: blob,
     });
 
     if (res.status == 200) {
@@ -40,6 +38,8 @@ export default function ContactForm({
       name: "",
       phone: "",
       email: "",
+      poste: "",
+      service:"",
       additional_infos: "",
     },
     validate: {
@@ -51,6 +51,7 @@ export default function ContactForm({
         )
           ? null
           : translations["phone_error"],
+      service: isNotEmpty(translations["required_error"]),
     },
   });
 
@@ -65,7 +66,9 @@ export default function ContactForm({
         name: "",
         phone: "",
         email: "",
+        poste: "",
         additional_infos: "",
+        service:""
       });
 
       setError(false);
@@ -90,6 +93,16 @@ export default function ContactForm({
       <form
         onSubmit={form.onSubmit(async (values) => {
           setLoading(true);
+          if (cvRef.current) {
+            const file = cvRef.current[0];
+            const response = await fetch(`/api/upload?filename=${file.name}`, {
+              method: "POST",
+              body: file,
+            });
+
+            const newBlob = await response.json();
+            blob = { file: newBlob.url, pathname: newBlob.pathname };
+          }
 
           // if (!recaptchaRef.current) {
           //   toast.error(translations["recaptcha_error"]);
@@ -111,10 +124,9 @@ export default function ContactForm({
           {...form.getInputProps("name")}
           styles={{
             error: {
-              color: "white",
+              color: theme === "light" ? "white" : "red",
             },
           }}
-          className="col-span-2"
         />
 
         <TextInput
@@ -126,7 +138,7 @@ export default function ContactForm({
           {...form.getInputProps("phone")}
           styles={{
             error: {
-              color: "white",
+              color: theme === "light" ? "white" : "red",
             },
           }}
         />
@@ -139,13 +151,51 @@ export default function ContactForm({
           {...form.getInputProps("email")}
           styles={{
             error: {
-              color: "white",
+              color: theme === "light" ? "white" : "red",
             },
           }}
         />
 
-    
+        <Select
+          size="md"
+          radius={"xl"}
+          withAsterisk
+          placeholder={"Type de service"}
+          styles={{
+            error: {
+              color: theme === "light" ? "white" : "red",
+            },
+          }}
+          {...form.getInputProps("service")}
+          data={[
+            { label: "Portes", value: "portes" },
+            { label: "Portes de garage", value: "Portes de garage" },
+            { label: "Fenêtres", value: "Fenêtres" },
+            { label: "Balcons et rampes", value: "Balcons et rampes" },
+            { label: "Solariums", value: "Solariums" },
+            { label: "Revêtements d'extérieurs", value: "Revêtements d'extérieurs" },
+            { label: "Accessoires", value: "Accessoires" },
+          ]}
+        />
 
+        <FileInput
+          placeholder="Sélectionnez des fichiers"
+          accept="document/pdf,document/docx"
+          leftSection={<FaFileUpload />}
+          multiple
+          clearable
+          radius={"xl"}
+          size="md"
+          className="md:col-span-2"
+          styles={{
+            error: {
+              color: theme === "light" ? "white" : "red",
+            },
+          }}
+          onChange={(e) => {
+            cvRef.current = e;
+          }}
+        />
         <TextInput
           size="md"
           radius={"xl"}
@@ -154,7 +204,7 @@ export default function ContactForm({
           className="md:col-span-2"
           styles={{
             error: {
-              color: "white",
+              color: theme === "light" ? "white" : "red",
             },
           }}
         />

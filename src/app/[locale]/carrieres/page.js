@@ -4,7 +4,7 @@ import { FaCalculator, FaFileSignature, FaHandshake } from "react-icons/fa";
 import Image from "next/image";
 import ButtonClient from "@/app/components/ButtonClient";
 import { useTranslations } from "next-intl";
-import ContactForm from "@/app/components/ContactForm";
+import CareerForm from "@/app/components/CareerForm";
 
 export const metadata = {
   title: process.env.NEXT_PUBLIC_APP_NAME + " | Carrières",
@@ -124,7 +124,7 @@ export default function page({ locale }) {
             <h2 className="max-w-3xl w-full text-4xl font-bold leading-snug mb-10 text-center">
               Candidature spontanée
             </h2>
-            <ContactForm translations={translations} />
+            <CareerForm translations={translations} />
           </div>
         </div>
       </section>
