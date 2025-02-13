@@ -2,6 +2,7 @@
 import { Link } from "@/i18n/routing";
 import { Menu } from "@mantine/core";
 import React, { useState } from "react";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import { FaCircleXmark } from "react-icons/fa6";
 
 export default function OurProductsNav({ translations }) {
@@ -10,8 +11,8 @@ export default function OurProductsNav({ translations }) {
     setShow((curr) => !show);
   };
   return (
-    <span onClick={showProducts} className="cursor-pointer hover:underline underline-offset-2">
-      {translations["ourProducts"]}
+    <span onClick={showProducts} className="cursor-pointer hover:underline underline-offset-2 flex items-center gap-x-1">
+      {translations["ourProducts"]} {show ? <FaAngleUp /> : <FaAngleDown />}
 
       {show && (
         <div data-aos="fade-down" className="w-full grid grid-cols-4 grid-rows-2 gap-4 mt-16 h-[85vh] text-white font-semibold text-xl fixed bg-white top-10 left-0 z-20 p-4">
