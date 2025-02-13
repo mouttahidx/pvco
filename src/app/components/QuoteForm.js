@@ -235,7 +235,7 @@ export default function QuoteForm({ translations, theme = "light" }) {
           type="submit"
           size="md"
           radius={"xl"}
-          className="disabled:cursor-wait md:col-span-2 bg-primary mx-auto hover:bg-dark-secondary text-black hover:text-white duration-500 !rounded-full"
+          className="disabled:cursor-wait md:col-span-2 bg-primary mx-auto hover:bg-dark-secondary text-white hover:text-primary duration-500 !rounded-full"
           disabled={loading}
           variant="outline"
           color={theme === "light" ? "white" : "#FD6941"}
