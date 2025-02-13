@@ -19,9 +19,10 @@ export default function page({ locale }) {
         <div className="absolute -z-10 w-full h-full">
           <Image
             src="/img/homeSlider.webp"
-            fill
+            width={1400}
+            height={900}
             quality={100}
-            className="w-full h-screen object-cover"
+            className="w-full h-full object-cover"
             alt="PVCO Entrepreneur spécialisé en portes et fenêtres"
             priority={true}
             unoptimized
