@@ -26,7 +26,7 @@ export default function StickyMobileMenu({ translations }) {
         <MobileDrawer translations={translations} />
         <Link
           href="/contact"
-          className="ml-5 border-primary border-2 uppercase font-bold duration-200 bg-primary text-white text-center p-2 rounded text-xs xl:text-sm"
+          className="ml-5 rounded-3xl  border-primary border-2 uppercase font-bold duration-200 bg-primary text-black text-center p-2 border-black text-xs xl:text-sm"
         >
           {translations['free_quote']}
         </Link>

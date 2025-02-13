@@ -7,7 +7,13 @@ export default function Footer() {
       <div className="container text-gray-500 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 px-4 text-center md:text-left">
         <div className="flex justify-center md:justify-start items-center w-full">
           <Link href={"/"}>
-            <img src="/logo.svg" alt="Logo" className="w-[200px]" width={200} height={100} />
+            <img
+              src="/logo.svg"
+              alt="Logo"
+              className="w-[200px]"
+              width={200}
+              height={100}
+            />
           </Link>
         </div>
         <div className="md:col-span-2">
@@ -109,6 +115,18 @@ export default function Footer() {
           >
             Contact
           </Link>
+          <Link
+            href={"/politique-de-confidentialite"}
+            className="text-sm text-gray-400 mt-1 block"
+          >
+            Politique de confidentialité
+          </Link>
+          <Link
+            href={"/termes-et-conditions"}
+            className="text-sm text-gray-400 mt-3 block"
+          >
+            Termes et conditions
+          </Link>
           <span className="text-xs text-gray-300 mt-6 block">
             © PVCO Grandby 2025 |{" "}
             <a
@@ -118,19 +136,7 @@ export default function Footer() {
             >
               Création par VIA Communication
             </a>
-          </span>
-          <Link
-            href={"/politique-de-confidentialite"}
-            className="text-xs text-gray-300 mt-1 block"
-          >
-            Politique de confidentialité
-          </Link>
-          <Link
-            href={"/termes-et-conditions"}
-            className="text-xs text-gray-300 mt-1"
-          >
-            Termes et conditions
-          </Link>{" "}
+          </span>{" "}
         </div>
       </div>
     </div>

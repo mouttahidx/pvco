@@ -75,12 +75,12 @@ export default function MobileHeader() {
             />
           </Link>
           <div className="col-span-3 flex  items-center justify-end">
-            <a
+            <Link
               href="#contact"
-              className="border-primary border-2 uppercase font-bold duration-200 bg-primary  text-white text-center p-2 rounded text-xs xl:text-sm mr-4"
+              className="border-primary border-2 uppercase font-bold duration-200 bg-primary  text-black rounded-3xl border-black text-center p-2 text-xs xl:text-sm mr-4"
             >
               {t("free_quote")}
-            </a>
+            </Link>
             <MobileDrawer translations={translations} />
           </div>
         </div>
