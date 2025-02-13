@@ -22,10 +22,19 @@ export default function Header() {
 
   return (
     <>
-      <div className={`hidden lg:block fixed top-0 bg-white w-full z-30`} data-aos="fade-in">
+      <div
+        className={`hidden lg:block fixed top-0 bg-white w-full z-30`}
+        data-aos="fade-in"
+      >
         <div className="container mx-auto flex justify-between items-center p-4">
           <Link href={"/"} className="flex-1">
-            <img src="/logo.svg" alt="Logo" className="w-[200px]" />
+            <img
+              src="/logo.svg"
+              alt="Logo"
+              className="w-[200px]"
+              width={200}
+              height={100}
+            />
           </Link>
           <Nav scrolled={scrollTop > 0 ? true : false} />
           <div className="flex-1 text-right">
@@ -33,7 +42,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-        <MobileHeader />
+      <MobileHeader />
     </>
   );
 }

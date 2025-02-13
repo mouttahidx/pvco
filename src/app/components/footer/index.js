@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container text-gray-500 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 px-4 text-center md:text-left">
         <div className="flex justify-center md:justify-start items-center w-full">
           <Link href={"/"}>
-            <img src="/logo.svg" alt="Logo" className="w-[200px]" />
+            <img src="/logo.svg" alt="Logo" className="w-[200px]" width={200} height={100} />
           </Link>
         </div>
         <div className="md:col-span-2">
