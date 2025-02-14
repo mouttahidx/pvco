@@ -1,19 +1,12 @@
 import { setRequestLocale } from "next-intl/server";
 import React from "react";
-import { FaCalculator, FaFileSignature, FaHandshake } from "react-icons/fa";
-import Image from "next/image";
-import ButtonClient from "@/app/components/ButtonClient";
-import Gallery from "@/app/components/Gallery";
-
 import { useTranslations } from "next-intl";
-import PortfolioGallery from "@/app/components/PortfolioGallery";
-import Services from "@/app/components/Services";
 import ContactTabs from "@/app/components/ContactTabs";
 
 export const metadata = {
   title: process.env.NEXT_PUBLIC_APP_NAME + " | Contact",
 };
-export default function page({ locale }) {
+export default function Page({ locale }) {
   setRequestLocale(locale);
   const form = useTranslations("Form");
   const translations = {
@@ -27,27 +20,10 @@ export default function page({ locale }) {
     name: form("name"),
     email: form("email"),
     phone: form("phone"),
-    installation_city: form("installation_city"),
-    installation_country: form("installation_country"),
-    installation_zip: form("installation_zip"),
-    installation_state: form("installation_state"),
-    installation_for: form("installation_for"),
     additional_infos: form("additional_infos"),
     send: form("send"),
     required_error: form("required_error"),
     free_quote: form("free_quote"),
-    house: form("house"),
-    cottage: form("cottage"),
-    rv: form("rv"),
-    windows: form("windows"),
-    sunrooms: form("sunrooms"),
-    patio: form("patio"),
-    raillings: form("raillings"),
-    screenrooms: form("screenrooms"),
-    decking: form("decking"),
-    enclosures: form("enclosures"),
-    title: form("title"),
-    subtitle: form("subtitle"),
   };
   return (
     <>

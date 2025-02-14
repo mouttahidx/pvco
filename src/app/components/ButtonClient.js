@@ -2,7 +2,6 @@
 
 import { Link } from "@/i18n/routing";
 import { Button } from "@mantine/core";
-import React from "react";
 
 export default function ButtonClient({
   href,
@@ -11,7 +10,8 @@ export default function ButtonClient({
   variant = "filled",
   color = "#FD6941",
   size = "sm",
-  target
+  target,
+  locale
 }) {
   const textColor = variant === "filled" && '!text-black !border-black';
   return (
@@ -20,6 +20,7 @@ export default function ButtonClient({
       data-aos-delay="100"
       data-aos-duration="400"
       component={Link}
+      locale={locale}
       href={href}
       variant={variant}
       className={" !h-fit !px-5 !py-3 !rounded-full font-semibold " + textColor +" " + className}

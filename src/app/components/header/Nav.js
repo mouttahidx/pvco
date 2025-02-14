@@ -47,12 +47,12 @@ export default function Nav() {
   return (
     <nav className="flex items-center gap-x-4 text-black text-xs xl:text-sm font-semibold uppercase">
       <OurProductsNav translations={translations} />
+      <DropDownServices translations={translations} />
       <NavigationLink href="/services">{t("services")}</NavigationLink>
       <NavigationLink href="/realisations">{t("portfolio")}</NavigationLink>
       <NavigationLink href="/a-propos">{t("aboutUs")}</NavigationLink>
       <NavigationLink href="/carrieres">{t("careers")}</NavigationLink>
       <NavigationLink href="/contact">{t("contact")}</NavigationLink>
-      {/* <DropDownServices translations={translations} /> */}
       {/* <FreeQuote /> */}
 
       {/* <LanguageSelect /> */}

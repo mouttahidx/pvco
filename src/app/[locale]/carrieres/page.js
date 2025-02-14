@@ -9,7 +9,7 @@ import CareerForm from "@/app/components/CareerForm";
 export const metadata = {
   title: process.env.NEXT_PUBLIC_APP_NAME + " | Carrières",
 };
-export default function page({ locale }) {
+export default function Page({ locale }) {
   setRequestLocale(locale);
   const t = useTranslations("AboutPage");
   const n = useTranslations("Nav");
@@ -26,27 +26,9 @@ export default function page({ locale }) {
     name: form("name"),
     email: form("email"),
     phone: form("phone"),
-    installation_city: form("installation_city"),
-    installation_country: form("installation_country"),
-    installation_zip: form("installation_zip"),
-    installation_state: form("installation_state"),
-    installation_for: form("installation_for"),
     additional_infos: form("additional_infos"),
     send: form("send"),
     required_error: form("required_error"),
-    free_quote: form("free_quote"),
-    house: form("house"),
-    cottage: form("cottage"),
-    rv: form("rv"),
-    windows: form("windows"),
-    sunrooms: form("sunrooms"),
-    patio: form("patio"),
-    raillings: form("raillings"),
-    screenrooms: form("screenrooms"),
-    decking: form("decking"),
-    enclosures: form("enclosures"),
-    title: form("title"),
-    subtitle: form("subtitle"),
   };
 
   return (

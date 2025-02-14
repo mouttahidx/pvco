@@ -3,7 +3,7 @@ import React from "react";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 export default function Footer() {
   return (
-    <div className="footer py-8">
+    <div className="footer py-16">
       <div className="container text-gray-500 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 px-4 text-center md:text-left">
         <div className="flex justify-center md:justify-start items-center w-full">
           <Link href={"/"}>

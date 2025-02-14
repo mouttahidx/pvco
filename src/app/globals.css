@@ -59,8 +59,16 @@ body {
     .no-tailwindcss-base tr {
       vertical-align: top;
     }
-    .no-tailwindcss-base strong{
-      display:block
+    .no-tailwindcss-base .elementor-element-c7e296c .e-con-inner{
+      @apply grid md:grid-cols-3
+    }
+
+    .no-tailwindcss-base svg{
+      width:64px;
+    }
+
+    .no-tailwindcss-base .elementor-heading-title{
+      @apply text-primary
     }
    
     @media screen and (max-width: 885px) {

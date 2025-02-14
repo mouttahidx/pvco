@@ -1,25 +1,25 @@
 {
   "links": [
-    "/our-products/sunrooms",
-    "/our-products/weathermaster",
-    "/our-products/weathermaster/weathermaster-plus",
-    "/our-products/railing-systems",
-    "/our-products/patio-covers",
-    "/our-products/decking-systems",
-    "/our-products/rv-resort-living",
-    "/our-products/interior-glass-railings",
-    "/our-products/sunwall-privacy-windbreak",
-    "/our-products/shades-screens",
-    "/our-products/walls-under-porch-conversion",
-    "/our-products/privacy-fencing",
-    "/our-products/commercial",
-    "/our-products/pergolas"
+    "/produits/sunrooms",
+    "/produits/weathermaster",
+    "/produits/weathermaster/weathermaster-plus",
+    "/produits/railing-systems",
+    "/produits/patio-covers",
+    "/produits/decking-systems",
+    "/produits/rv-resort-living",
+    "/produits/interior-glass-railings",
+    "/produits/sunwall-privacy-windbreak",
+    "/produits/shades-screens",
+    "/produits/walls-under-porch-conversion",
+    "/produits/privacy-fencing",
+    "/produits/commercial",
+    "/produits/pergolas"
   ],
   "sunrooms_models": [
-    "/our-products/sunrooms/model-100-screenrooms",
-    "/our-products/sunrooms/model-200-weathermaster-sunroom",
-    "/our-products/sunrooms/model-300-3-season-sunrooms",
-    "/our-products/sunrooms/model-400-insulated-sunrooms"
+    "/produits/sunrooms/model-100-screenrooms",
+    "/produits/sunrooms/model-200-weathermaster-sunroom",
+    "/produits/sunrooms/model-300-3-season-sunrooms",
+    "/produits/sunrooms/model-400-insulated-sunrooms"
   ],
  
   "weathermaster_models": [

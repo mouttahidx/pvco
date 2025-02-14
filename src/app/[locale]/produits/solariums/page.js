@@ -7,15 +7,22 @@ import { FaCalculator, FaFileSignature } from "react-icons/fa";
 import { FaHandshake } from "react-icons/fa6";
 import SolariumTabs from "@/app/components/SolariumTabs";
 import ProductsGallery from "@/app/components/ProductsGallery";
+import Product from "@/app/components/Product";
+import data from "@/utils/productsData.json";
+import EndOfPageCTA from "@/app/components/EndOfPageCTA";
 
 export const metadata = {
   title: process.env.NEXT_PUBLIC_APP_NAME + " | Solariums",
 };
-export default function page({ locale }) {
+export default function Page({ locale }) {
   setRequestLocale(locale);
-  const t = useTranslations("AboutPage");
-  const n = useTranslations("Nav");
-  const btn = useTranslations("Btn");
+  const p = useTranslations("SunroomsModels");
+  const models_images = [
+    // "/img/sunrooms/sunspace-screenroom-model-100-banner-3.jpg",
+    "/img/sunrooms/sunspace-sunroom-model-200-banner-2.jpg",
+    "/img/sunrooms/sunspace-sunroom-model-300-banner-2.jpg",
+    // "/img/sunrooms/sunspace-sunroom-model-400-banner-2.jpg",
+  ];
   const slides = [
     { src: "/img/14-new.webp", alt: "Solariums PVCO" },
     { src: "/img/13-new.webp", alt: "Solariums PVCO" },
@@ -49,8 +56,27 @@ export default function page({ locale }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 mt-12 gap-x-2">
-          <ProductsGallery slides={slides} />
+        <div className="flex flex-wrap gap-y-10 gap-4 xl:gap-8  mt-16 justify-between">
+          {[
+            {
+              link: data.sunrooms_models[1],
+              title: p(`p${2}_title`),
+              desc: p(`p${2}_desc`),
+            },
+            {
+              link: data.sunrooms_models[2],
+              title: p(`p${3}_title`),
+              desc: p(`p${3}_desc`),
+            },
+          ].map((_, i) => (
+            <Product
+              key={i}
+              link={_.link}
+              img={models_images[i]}
+              title={_.title}
+              desc={_.desc}
+            />
+          ))}
         </div>
       </section>
 
@@ -104,74 +130,7 @@ export default function page({ locale }) {
       </section>
 
       {/* Detaillants + CTA */}
-      <section className="my-20 bg-brand-gray ">
-        <div className="max-w-6xl mx-auto py-16 px-4">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-            <h2 className="text-4xl font-bold text-center md:text-left">
-              Détaillant autorisé des fournisseurs suivants :
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 items-center gap-10">
-              <Image
-                unoptimized
-                width={1200}
-                height={1200}
-                alt="logo royer"
-                src={"/img/RW.png"}
-                className="w-full"
-              />
-              <Image
-                unoptimized
-                width={1200}
-                height={1200}
-                alt="logo royer"
-                src={"/img/sunspace.webp"}
-                className="w-full"
-              />
-              <Image
-                unoptimized
-                width={1200}
-                height={1200}
-                alt="logo royer"
-                src={"/img/vaillancourt.png"}
-                className="w-full"
-              />
-              <Image
-                unoptimized
-                width={1200}
-                height={1200}
-                alt="logo royer"
-                src={"/img/LOGO-ROYER.png"}
-                className="w-full"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="grid md:grid-cols-2 items-end bg-[#D2D6E3] md:bg-white">
-          <Image
-            unoptimized
-            width={1200}
-            height={820}
-            src={"/img/hands.webp"}
-            alt="hands shaking"
-            className="relative md:rounded-tr-3xl h-[350px] md:h-[600px] !w-[120%] object-cover"
-          />
-          <div className="text-white md:p-24 bg-primary rounded-tl-3xl md:-ml-24 z-10 px-4 py-10">
-            <h3 className="max-w-lg text-2xl mb-6">
-              Pour tous vos projets d’aménagement
-            </h3>
-            <h2 className="max-w-lg text-5xl font-bold leading-snug mb-8">
-              Faites confiance à nos experts.
-            </h2>
-            <ButtonClient
-              text={"Demande de soumission"}
-              color="#ffffff"
-              variant="outline"
-              href={"/contact"}
-              className={"mt-8 md:mt-14"}
-            />
-          </div>
-        </div>
-      </section>
+      <EndOfPageCTA />
     </>
   );
 }

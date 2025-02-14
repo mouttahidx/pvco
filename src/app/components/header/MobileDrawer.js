@@ -6,6 +6,8 @@ import { useDisclosure } from "@mantine/hooks";
 import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
 import Logo from "./Logo";
+import data from "@/utils/productsData.json";
+
 
 export default function MobileDrawer({ translations }) {
   const [opened, { open, close }] = useDisclosure(false);
@@ -91,7 +93,7 @@ export default function MobileDrawer({ translations }) {
           <Accordion defaultValue="">
             <Accordion.Item key="" value={"products"}>
               <Accordion.Control className="hover:bg-primary rounded duration-300">
-                <Link href="#">{translations["products"]}</Link>
+                {translations["products"]}
               </Accordion.Control>
               <Accordion.Panel>
                 <div className="w-full flex flex-col">
@@ -105,6 +107,53 @@ export default function MobileDrawer({ translations }) {
                       {product.text}
                     </Link>
                   ))}
+                </div>
+              </Accordion.Panel>
+            </Accordion.Item>
+          </Accordion>
+          <Accordion defaultValue="">
+            <Accordion.Item key="" value={"sunspace product"}>
+              <Accordion.Control className="hover:bg-primary rounded duration-300">
+                Produits Sunspace
+              </Accordion.Control>
+              <Accordion.Panel>
+                <div className="w-full flex flex-col">
+                  <Accordion defaultValue="">
+                    <Accordion.Item key="" value={"sunspace product"}>
+                      <Accordion.Control className="hover:bg-primary rounded duration-300">
+                        Solariums
+                      </Accordion.Control>
+                      <Accordion.Panel>
+                        <div className="w-full flex flex-col">
+                          <Link
+                            className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                            component={Link}
+                            href={data.sunrooms_models[1]}
+                            key={translations["s2"]}
+                          >
+                            {translations["s2"]}
+                          </Link>
+                          <Link
+                            className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                            component={Link}
+                            href={data.sunrooms_models[2]}
+                            key={translations["s3"]}
+                          >
+                            {translations["s3"]}
+                          </Link>
+                          
+                        </div>
+                      </Accordion.Panel>
+                    </Accordion.Item>
+                  </Accordion>
+                  <Link
+                    className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                    component={Link}
+                    href={data.links[data.links.length - 1]}
+                    key={translations["p14"]}
+                  >
+                    {translations["p14"]}
+                  </Link>
                 </div>
               </Accordion.Panel>
             </Accordion.Item>
