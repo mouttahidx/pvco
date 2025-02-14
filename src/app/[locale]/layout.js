@@ -22,7 +22,7 @@ export async function generateMetadata() {
   return {
     title: `${process.env.NEXT_PUBLIC_APP_NAME}`,
     description: `${process.env.NEXT_PUBLIC_APP_NAME} - Nous vous proposons une vaste gamme de portes, de fenêtres, de rampes, de portes de garage, de solariums et de revêtements extérieurs pour tous les types de résidences et de commerces. Notre objectif : embellir votre propriété tout en maximisant sa fonctionnalité!`,
-    // robots: "noindex",
+    robots: "noindex",
   };
 }
 
