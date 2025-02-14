@@ -1,6 +1,6 @@
 {
   "links": [
-    "/produits/sunrooms",
+    "/produits/solariums-sunspace",
     "/produits/weathermaster",
     "/produits/weathermaster/weathermaster-plus",
     "/produits/railing-systems",
@@ -16,10 +16,10 @@
     "/produits/pergolas"
   ],
   "sunrooms_models": [
-    "/produits/sunrooms/model-100-screenrooms",
-    "/produits/sunrooms/model-200-weathermaster-sunroom",
-    "/produits/sunrooms/model-300-3-season-sunrooms",
-    "/produits/sunrooms/model-400-insulated-sunrooms"
+    "/produits/solariums/model-100-screenrooms",
+    "/produits/solariums/modele-200-solarium-weathermaster",
+    "/produits/solariums/modele-300-solarium-3-saisons",
+    "/produits/solariums/model-400-insulated-solariums"
   ],
  
   "weathermaster_models": [

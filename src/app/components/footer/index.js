@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
@@ -7,12 +8,13 @@ export default function Footer() {
       <div className="container text-gray-500 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 px-4 text-center md:text-left">
         <div className="flex justify-center md:justify-start items-center w-full">
           <Link href={"/"}>
-            <img
+            <Image
               src="/logo.svg"
               alt="Logo"
               className="w-[200px]"
               width={200}
               height={100}
+              unoptimized
             />
           </Link>
         </div>
@@ -79,9 +81,9 @@ export default function Footer() {
             <li className="mb-2 text-xs">
               <Link href={"/produits/accessoires"}>Accessoires</Link>
             </li>
-            {/* <li className="mb-1 text-xs">
+            <li className="mb-1 text-xs">
               <Link href={"/produits/pergolas"}>Pergola</Link>
-            </li> */}
+            </li>
           </ul>
         </div>
         <div>
