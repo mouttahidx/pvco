@@ -28,6 +28,7 @@ export default function GalleryProductPage({ slides, large = [], title, three = 
             height={720}
             className="w-full object-cover h-[230px] lg:h-[200px] cursor-pointer rounded hover:shadow-xl duration-300"
             onClick={() => setIndex(i)}
+            unoptimized
           />
         ))}
       </div>

@@ -95,6 +95,7 @@ export default function PergolasPage() {
               height={720}
               className="w-full"
               alt={t("title")}
+              unoptimized
             />
             <Image
               src={
@@ -106,6 +107,7 @@ export default function PergolasPage() {
               height={720}
               className="w-full"
               alt={t("title")}
+              unoptimized
             />
             <Image
               src={
@@ -117,6 +119,7 @@ export default function PergolasPage() {
               height={720}
               className="w-full"
               alt={t("title")}
+              unoptimized
             />
             <Image
               src={
@@ -128,6 +131,7 @@ export default function PergolasPage() {
               height={720}
               className="w-full"
               alt={t("title")}
+              unoptimized
             />
           </div>
 
@@ -141,6 +145,7 @@ export default function PergolasPage() {
             height={720}
             className="w-full mt-4"
             alt={t("title")}
+            unoptimized
           />
         </div>
 
