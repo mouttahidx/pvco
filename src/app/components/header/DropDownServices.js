@@ -25,7 +25,7 @@ export default function DropDownServices({ translations }) {
           Produits Sunspace <FaAngleDown />
         </NavigationLink>
       </Menu.Target>
-      <Menu.Dropdown className="flex flex-col p-2 py-10">
+      <Menu.Dropdown className="flex flex-col p-2 py-2">
         {data.links.map((link, i) => {
           if (i === 0) {
             return (
