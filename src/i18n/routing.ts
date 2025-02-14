@@ -24,11 +24,11 @@ export const routing = defineRouting({
       fr: "/merci",
       en: "/thank-you",
     },
-    "/blog": {
+    "/blogue": {
       fr: "/blogue",
       en: "/blog",
     },
-    "/blog/[...slug]": {
+    "/blogue/[...slug]": {
       fr: "/blogue/[...slug]",
       en: "/blog/[...slug]",
     },

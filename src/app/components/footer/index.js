@@ -71,7 +71,7 @@ export default function Footer() {
               </Link>
             </li>
             <li className="mb-2 text-xs">
-              <Link href={"/produits/solariums"}>Solariums</Link>
+              <Link href={"/produits/solariums-sunspace"}>Solariums</Link>
             </li>
             <li className="mb-2 text-xs">
               <Link href={"/produits/revetements-exterieurs"}>
@@ -106,10 +106,10 @@ export default function Footer() {
             Réalisations
           </Link>
           <Link
-            href="/carrieres"
+            href="/blogue"
             className="font-semibold mb-4 text-primary block "
           >
-            Carrières
+            Blogue
           </Link>
           <Link
             href="/contact"
