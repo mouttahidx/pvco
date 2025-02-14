@@ -21,7 +21,7 @@ export default function DropDownServices({ translations }) {
       transitionProps={{ transition: "slide-up", duration: 250 }}
     >
       <Menu.Target>
-        <NavigationLink href={"#"} className="menu-item flex items-center gap-x-2">
+        <NavigationLink href={"#"} className="menu-item flex items-center gap-x-1">
           Produits Sunspace <FaAngleDown />
         </NavigationLink>
       </Menu.Target>

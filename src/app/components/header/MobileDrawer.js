@@ -192,7 +192,7 @@ export default function MobileDrawer({ translations }) {
 
             <Link
               href="/contact"
-              className=" py-2 mt-4 px-4 bg-primary rounded duration-300 w-full text-center font-bold text-white"
+              className=" py-2 mt-4 px-4 bg-primary duration-300 w-full text-center font-bold rounded-full border border-black text-black"
             >
               {translations["free_quote"]}
             </Link>

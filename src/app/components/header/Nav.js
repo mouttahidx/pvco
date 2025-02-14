@@ -45,7 +45,7 @@ export default function Nav() {
     p14: p("p14_title"),
   };
   return (
-    <nav className="flex items-center gap-x-4 text-black text-xs xl:text-sm font-semibold uppercase">
+    <nav className="flex items-center xl:gap-x-4 text-black text-xs xl:text-sm font-semibold uppercase grow justify-center">
       <OurProductsNav translations={translations} />
       <DropDownServices translations={translations} />
       <NavigationLink href="/services">{t("services")}</NavigationLink>

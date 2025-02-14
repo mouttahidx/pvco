@@ -4,6 +4,7 @@ import Nav from "./Nav";
 import ButtonClient from "../ButtonClient";
 import { useEffect, useState } from "react";
 import MobileHeader from "./MobileHeader";
+import Image from "next/image";
 
 export default function Header() {
   const [scrollTop, setScrollTop] = useState(0);
@@ -27,17 +28,18 @@ export default function Header() {
         data-aos="fade-in"
       >
         <div className="container mx-auto flex justify-between items-center p-4">
-          <Link href={"/"} className="flex-1">
-            <img
+          <Link href={"/"} className="">
+            <Image
               src="/logo.svg"
               alt="Logo"
-              className="w-[200px]"
+              className="w-[140px] xl:w-[200px]"
               width={200}
               height={100}
+              unoptimized
             />
           </Link>
           <Nav scrolled={scrollTop > 0 ? true : false} />
-          <div className="flex-1 text-right">
+          <div className="text-right">
             <ButtonClient text={"Soumission"} href={"/contact"} />
           </div>
         </div>

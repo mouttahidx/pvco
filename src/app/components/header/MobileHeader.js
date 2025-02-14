@@ -66,12 +66,13 @@ export default function MobileHeader() {
         {/* bottom div */}
         <div className="grid grid-cols-4 py-2 ">
           <Link href={"/"} rel="canonical">
-            <img
+            <Image
               src="/logo.svg"
               alt="Logo"
-              className="w-full"
+              className="w-[150px]"
               width={200}
               height={100}
+              unoptimized
             />
           </Link>
           <div className="col-span-3 flex  items-center justify-end">
