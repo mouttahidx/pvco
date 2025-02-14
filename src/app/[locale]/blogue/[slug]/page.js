@@ -125,8 +125,8 @@ async function getPost(slug) {
       'src="https://old.pvcogranby.com/wp-content/'
     );
     post.content.rendered = post.content.rendered.replace(
-      /"\/wp-content\//g,
-      '"https://old.pvcogranby.com/wp-content/'
+      /\/wp-content\//g,
+      'https://old.pvcogranby.com/wp-content/'
     );
     post.content.rendered = post.content.rendered.replace(
       /href="\/wp-content\//g,
