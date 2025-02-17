@@ -1,12 +1,10 @@
 import { setRequestLocale } from "next-intl/server";
 import React from "react";
-import Image from "next/image";
 import ButtonClient from "@/app/components/ButtonClient";
 import { useTranslations } from "next-intl";
 import { FaCalculator, FaFileSignature } from "react-icons/fa";
 import { FaHandshake } from "react-icons/fa6";
 import SolariumTabs from "@/app/components/SolariumTabs";
-import ProductsGallery from "@/app/components/ProductsGallery";
 import Product from "@/app/components/Product";
 import data from "@/utils/productsData.json";
 import EndOfPageCTA from "@/app/components/EndOfPageCTA";

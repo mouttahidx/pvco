@@ -29,7 +29,9 @@ export default function Sunrooms() {
         style={{ backgroundImage: "url('/img/weathermaster/banner.jpg')" }}
       >
         <div className="mx-auto max-w-7xl text-white">
-          <h1 className="text-3xl lg:text-4xl text-white bg-black bg-opacity-70 rounded w-fit px-2">{t("title")}</h1>
+          <h1 className="text-3xl lg:text-4xl text-white bg-black bg-opacity-70 rounded w-fit px-2">
+            {t("title")}
+          </h1>
         </div>
       </section>
 
@@ -43,7 +45,7 @@ export default function Sunrooms() {
           dangerouslySetInnerHTML={{ __html: t.raw("1_subtitle") }}
         />
 
-        <div className="flex flex-wrap gap-y-10 gap-4  xl:gap-8 mt-10 justify-center">
+        <div className="grid md:grid-cols-2 gap-10 mt-16">
           {[...Array(4)].map((_, i) => (
             <Product
               key={i}
