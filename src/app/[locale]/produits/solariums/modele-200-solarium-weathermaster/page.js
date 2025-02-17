@@ -29,8 +29,8 @@ export default function SunroomsModel200() {
             "url('/img/sunrooms/model200/sunspace-sunroom-model-200-banner-1.jpg')",
         }}
       >
-        <div className="mx-auto max-w-7xl text-white px-2">
-          <h1 className="text-3xl lg:text-4xl text-white bg-black bg-opacity-70 rounded w-fit px-2">
+        <div className="mx-auto max-w-7xl text-white px-2 text-center bg-black  rounded-3xl bg-opacity-75">
+          <h1 className="text-4xl md:text-5xl xl:text-6xl  font-bold max-w-6xl mx-auto leading-snug mb-8">
             {t("title")}
           </h1>
         </div>
@@ -121,9 +121,9 @@ export default function SunroomsModel200() {
         </div>
 
         {/* side bar */}
-        <div className="px-2 lg:px-0 gap-y-8 flex flex-col mt-8 lg:mt-0">
+        <div className="px-2 lg:px-0 gap-y-8 flex flex-col mt-8 lg:mt-0 rounded-t-3xl rounded-b-3xl">
           {/* Colors */}
-          <div className="p-8 bg-light-gray">
+          <div className="p-8 bg-light-gray rounded-3xl">
             <h2 className="text-dark-secondary text-lg">{t("colors_title")}</h2>
             <div className="bg-primary h-[2px] w-14 mt-1"></div>
             <h3 className="text-dark-secondary text-base mt-8">
@@ -224,7 +224,7 @@ export default function SunroomsModel200() {
           </div>
 
           {/* PDFs */}
-          <div className="p-8 bg-light-gray">
+          <div className="p-8 bg-light-gray rounded-3xl">
             <h2 className="text-dark-secondary text-lg">{t("pdf_download")}</h2>
             <div className="bg-primary h-[2px] w-14 mt-1"></div>
             <a

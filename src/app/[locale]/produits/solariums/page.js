@@ -18,10 +18,10 @@ export default function Page({ locale }) {
   setRequestLocale(locale);
   const p = useTranslations("SunroomsModels");
   const models_images = [
-    // "/img/sunrooms/sunspace-screenroom-model-100-banner-3.jpg",
+    "/img/sunrooms/sunspace-screenroom-model-100-banner-3.jpg",
     "/img/sunrooms/sunspace-sunroom-model-200-banner-2.jpg",
     "/img/sunrooms/sunspace-sunroom-model-300-banner-2.jpg",
-    // "/img/sunrooms/sunspace-sunroom-model-400-banner-2.jpg",
+    "/img/sunrooms/sunspace-sunroom-model-400-banner-2.jpg",
   ];
   const slides = [
     { src: "/img/14-new.webp", alt: "Solariums PVCO" },
@@ -34,7 +34,7 @@ export default function Page({ locale }) {
       <section className="bg-solarium bg-cover bg-center">
         <div className="bg-black bg-opacity-55 px-4 pt-32 md:pt-56 py-32 text-white text-center">
           <span className="text-2xl max-w-6xl mx-auto mb-6">Produits</span>
-          <h1 className="text-4xl md:text-6xl font-bold max-w-6xl mx-auto leading-snug mb-8">
+          <h1 className="text-4xl md:text-5xl xl:text-6xl  font-bold max-w-6xl mx-auto leading-snug mb-8">
             Découvrez nos solariums
           </h1>
         </div>
@@ -56,8 +56,13 @@ export default function Page({ locale }) {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-y-10 gap-4 xl:gap-8  mt-16 justify-between">
+        <div className="grid md:grid-cols-2 gap-10 mt-16">
           {[
+            {
+              link: data.sunrooms_models[0],
+              title: p(`p${1}_title`),
+              desc: p(`p${1}_desc`),
+            },
             {
               link: data.sunrooms_models[1],
               title: p(`p${2}_title`),
@@ -67,6 +72,11 @@ export default function Page({ locale }) {
               link: data.sunrooms_models[2],
               title: p(`p${3}_title`),
               desc: p(`p${3}_desc`),
+            },
+            {
+              link: data.sunrooms_models[3],
+              title: p(`p${4}_title`),
+              desc: p(`p${4}_desc`),
             },
           ].map((_, i) => (
             <Product

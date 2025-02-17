@@ -40,6 +40,10 @@ body {
   p,li{
     color:#777777;
   }
+
+  iframe{
+    @apply rounded-3xl
+  }
 }
 
 @layer utilities {

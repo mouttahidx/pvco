@@ -14,23 +14,21 @@ export async function generateMetadata() {
   };
 }
 
-export default async function Page({
-  params,
-}) {
+export default async function Page({ params }) {
   const t = await getTranslations("BlogPage");
   const translations = {
     previous: t("previous"),
     next: t("next"),
   };
 
-  const { posts,headers } = await getData();
+  const { posts, headers } = await getData();
   const { locale } = await params;
   return (
     <>
       {/* Slider */}
       <section className="bg-black bg-cover bg-center">
         <div className="bg-black bg-opacity-55 px-4 pt-32 md:pt-56 py-32 text-white text-center">
-          <h1 className="text-4xl md:text-6xl font-bold max-w-6xl mx-auto leading-snug mb-8">
+          <h1 className="text-4xl md:text-5xl xl:text-6xl  font-bold max-w-6xl mx-auto leading-snug mb-8">
             Blogue
           </h1>
         </div>
@@ -45,7 +43,7 @@ export default async function Page({
         />
       </section>
 
-       <EndOfPageCTA />
+      <EndOfPageCTA />
     </>
   );
 }
@@ -63,7 +61,7 @@ async function getData() {
       }
     );
     posts = res.data;
-    headers.total = res?.headers['x-wp-total'];
+    headers.total = res?.headers["x-wp-total"];
     headers.last_page = res?.headers["x-wp-totalpages"];
   } catch (error) {
     console.log(error);

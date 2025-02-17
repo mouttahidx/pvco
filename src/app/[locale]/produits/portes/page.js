@@ -29,7 +29,7 @@ export default function Page({ locale }) {
       <section className="bg-doors bg-cover bg-center">
         <div className="bg-black bg-opacity-55 px-4 pt-32 md:pt-56 py-32 text-white text-center">
           <span className="text-2xl max-w-6xl mx-auto mb-6">Produits</span>
-          <h1 className="text-4xl md:text-6xl font-bold max-w-6xl mx-auto leading-snug mb-8">
+          <h1 className="text-4xl md:text-5xl xl:text-6xl  font-bold max-w-6xl mx-auto leading-snug mb-8">
             Découvrez nos portes
           </h1>
         </div>

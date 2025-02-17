@@ -21,7 +21,7 @@ export default function Page({ locale }) {
       {/* Slider */}
       <section className="bg-black bg-cover bg-center">
         <div className="bg-black bg-opacity-55 px-4 pt-32 md:pt-56 py-32 text-white text-center">
-          <h1 className="text-4xl md:text-6xl font-bold max-w-6xl mx-auto leading-snug mb-8">
+          <h1 className="text-4xl md:text-5xl xl:text-6xl  font-bold max-w-6xl mx-auto leading-snug mb-8">
             Politique de confidentialité
           </h1>
         </div>

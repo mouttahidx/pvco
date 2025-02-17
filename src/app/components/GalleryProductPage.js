@@ -26,7 +26,7 @@ export default function GalleryProductPage({ slides, large = [], title, three = 
             src={slide.src}
             width={1200}
             height={720}
-            className="w-full object-cover h-[230px] lg:h-[200px] cursor-pointer rounded hover:shadow-xl duration-300"
+            className="w-full object-cover h-[230px] lg:h-[200px] cursor-pointer hover:shadow-xl duration-300 rounded-3xl"
             onClick={() => setIndex(i)}
             unoptimized
           />

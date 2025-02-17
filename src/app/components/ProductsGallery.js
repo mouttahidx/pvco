@@ -16,7 +16,7 @@ export default function ProductsGallery({ slides }) {
       {slides.map((slide, i) => (
         <div
           key={i}
-          className="flex flex-col relative group cursor-pointer "
+          className="flex flex-col relative group cursor-pointer"
           onClick={() => setIndex(i)}
         >
           <Image

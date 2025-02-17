@@ -50,10 +50,10 @@ export default function DropDownServices({ translations }) {
                   </NavigationLink>
                 </Menu.Target>
                 <Menu.Dropdown className="flex flex-col p-2">
-                  {/* <NavigationLink href={data.sunrooms_models[0]}>
+                  <NavigationLink href={data.sunrooms_models[0]}>
                     {translations["s1"]}
                   </NavigationLink>
-                  <Menu.Divider /> */}
+                  <Menu.Divider />
 
                   <NavigationLink href={data.sunrooms_models[1]}>
                     {translations["s2"]}
@@ -63,61 +63,61 @@ export default function DropDownServices({ translations }) {
                   <NavigationLink href={data.sunrooms_models[2]}>
                     {translations["s3"]}
                   </NavigationLink>
-                  {/* <Menu.Divider /> */}
+                  <Menu.Divider />
 
-                  {/* <NavigationLink href={data.sunrooms_models[3]}>
+                  <NavigationLink href={data.sunrooms_models[3]}>
                     {translations["s4"]}
-                  </NavigationLink> */}
+                  </NavigationLink>
                 </Menu.Dropdown>
               </Menu>
             );
           }
 
-          // if (i === 1) {
-          //   return (
-          //     <Menu
-          //       key={i}
-          //       shadow="md"
-          //       position="right-start"
-          //       offset={10}
-          //       withArrow
-          //       trigger="click-hover"
-          //       openDelay={50}
-          //       closeDelay={200}
-          //       width={300}
-          //       transitionProps={{ transition: "slide-up", duration: 250 }}
-          //     >
-          //       <Menu.Target>
-          //         <NavigationLink
-          //           href={link}
-          //           className="px-2 menu-item flex justify-between items-center"
-          //         >
-          //           {translations["p" + (i + 1)]}{" "}
-          //           <FaAngleRight className="size-3" />
-          //         </NavigationLink>
-          //       </Menu.Target>
-          //       <Menu.Dropdown className="flex flex-col p-2">
-          //         <NavigationLink href={data.weathermaster_models[0]}>
-          //           {translations["w1"]}
-          //         </NavigationLink>
-          //         <Menu.Divider />
-          //         <NavigationLink href={data.weathermaster_models[1]}>
-          //           {translations["w2"]}
-          //         </NavigationLink>
-          //         <Menu.Divider />
+          if (i === 1) {
+            return (
+              <Menu
+                key={i}
+                shadow="md"
+                position="right-start"
+                offset={10}
+                withArrow
+                trigger="click-hover"
+                openDelay={50}
+                closeDelay={200}
+                width={300}
+                transitionProps={{ transition: "slide-up", duration: 250 }}
+              >
+                <Menu.Target>
+                  <NavigationLink
+                    href={link}
+                    className="px-2 menu-item flex justify-between items-center"
+                  >
+                    {translations["p" + (i + 1)]}{" "}
+                    <FaAngleRight className="size-3" />
+                  </NavigationLink>
+                </Menu.Target>
+                <Menu.Dropdown className="flex flex-col p-2">
+                  <NavigationLink href={data.weathermaster_models[0]}>
+                    {translations["w1"]}
+                  </NavigationLink>
+                  <Menu.Divider />
+                  <NavigationLink href={data.weathermaster_models[1]}>
+                    {translations["w2"]}
+                  </NavigationLink>
+                  <Menu.Divider />
 
-          //         <NavigationLink href={data.weathermaster_models[2]}>
-          //           {translations["w3"]}
-          //         </NavigationLink>
-          //         <Menu.Divider />
+                  <NavigationLink href={data.weathermaster_models[2]}>
+                    {translations["w3"]}
+                  </NavigationLink>
+                  <Menu.Divider />
 
-          //         <NavigationLink href={data.weathermaster_models[3]}>
-          //           {translations["w4"]}
-          //         </NavigationLink>
-          //       </Menu.Dropdown>
-          //     </Menu>
-          //   );
-          // }
+                  <NavigationLink href={data.weathermaster_models[3]}>
+                    {translations["w4"]}
+                  </NavigationLink>
+                </Menu.Dropdown>
+              </Menu>
+            );
+          }
 
           // if (i === 3) {
           //   return (

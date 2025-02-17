@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import { Link } from "@/i18n/routing";
 import { XMarkIcon } from "@heroicons/react/16/solid";
@@ -7,7 +8,6 @@ import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
 import Logo from "./Logo";
 import data from "@/utils/productsData.json";
-
 
 export default function MobileDrawer({ translations }) {
   const [opened, { open, close }] = useDisclosure(false);
@@ -128,6 +128,14 @@ export default function MobileDrawer({ translations }) {
                           <Link
                             className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
                             component={Link}
+                            href={data.sunrooms_models[0]}
+                            key={translations["s1"]}
+                          >
+                            {translations["s1"]}
+                          </Link>
+                          <Link
+                            className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                            component={Link}
                             href={data.sunrooms_models[1]}
                             key={translations["s2"]}
                           >
@@ -141,7 +149,58 @@ export default function MobileDrawer({ translations }) {
                           >
                             {translations["s3"]}
                           </Link>
-                          
+                          <Link
+                            className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                            component={Link}
+                            href={data.sunrooms_models[3]}
+                            key={translations["s4"]}
+                          >
+                            {translations["s4"]}
+                          </Link>
+                        </div>
+                      </Accordion.Panel>
+                    </Accordion.Item>
+                  </Accordion>
+
+                  <Accordion defaultValue="">
+                    <Accordion.Item key="" value={"sunspace product"}>
+                      <Accordion.Control className="hover:bg-primary rounded duration-300">
+                        {translations['p2']}
+                      </Accordion.Control>
+                      <Accordion.Panel>
+                        <div className="w-full flex flex-col">
+                          <Link
+                            className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                            component={Link}
+                            href={data.weathermaster_models[0]}
+                            key={translations["w1"]}
+                          >
+                            {translations["w1"]}
+                          </Link>
+                          <Link
+                            className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                            component={Link}
+                            href={data.weathermaster_models[1]}
+                            key={translations["w2"]}
+                          >
+                            {translations["w2"]}
+                          </Link>
+                          <Link
+                            className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                            component={Link}
+                            href={data.weathermaster_models[2]}
+                            key={translations["w3"]}
+                          >
+                            {translations["w3"]}
+                          </Link>
+                          <Link
+                            className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                            component={Link}
+                            href={data.weathermaster_models[3]}
+                            key={translations["w4"]}
+                          >
+                            {translations["w4"]}
+                          </Link>
                         </div>
                       </Accordion.Panel>
                     </Accordion.Item>

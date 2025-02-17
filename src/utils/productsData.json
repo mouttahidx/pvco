@@ -16,27 +16,27 @@
     "/produits/pergolas"
   ],
   "sunrooms_models": [
-    "/produits/solariums/model-100-screenrooms",
+    "/produits/solariums/modele-100-piece-moustiquaire",
     "/produits/solariums/modele-200-solarium-weathermaster",
     "/produits/solariums/modele-300-solarium-3-saisons",
-    "/produits/solariums/model-400-insulated-solariums"
+    "/produits/solariums/modele-400-solarium-isole"
   ],
  
   "weathermaster_models": [
-    "/our-products/weathermaster/weathermaster-vertical-four-track-windows",
-    "/our-products/weathermaster/weathermaster-doors",
-    "/our-products/weathermaster/weathermaster-horizontal-four-track-windows",
-    "/our-products/weathermaster/weathermaster-plus"
+    "/produits/weathermaster/fenetres-verticales-weatherMaster-a-4-panneaux",
+    "/produits/weathermaster/portes-weathermaster",
+    "/produits/weathermaster/fenetres-horizontales-weathermaster-a-4-panneaux",
+    "/produits/weathermaster/weathermaster-plus"
   ],
   "railing_models":[
-    "/our-products/railing-systems/traditional-aluminum-railing",
-    "/our-products/railing-systems/traditional-glass-railing",
-    "/our-products/railing-systems/contemporary-glass-railing",
-    "/our-products/railing-systems/integrated-picket-railing"
+    "/produits/railing-systems/traditional-aluminum-railing",
+    "/produits/railing-systems/traditional-glass-railing",
+    "/produits/railing-systems/contemporary-glass-railing",
+    "/produits/railing-systems/integrated-picket-railing"
   ],
   "patio_models":[
-    "/our-products/patio-covers/insulated-roof-systems",
-    "/our-products/patio-covers/acrylic-patio-covers",
-    "/our-products/patio-covers/hybrid-patio-covers"
+    "/produits/patio-covers/insulated-roof-systems",
+    "/produits/patio-covers/acrylic-patio-covers",
+    "/produits/patio-covers/hybrid-patio-covers"
   ]
 }

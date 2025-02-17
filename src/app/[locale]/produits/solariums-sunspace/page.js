@@ -20,10 +20,10 @@ export default function Sunrooms() {
   const t = useTranslations("SunroomsPage");
   const p = useTranslations("SunroomsModels");
   const models_images = [
-    // "/img/sunrooms/sunspace-screenroom-model-100-banner-3.jpg",
+    "/img/sunrooms/sunspace-screenroom-model-100-banner-3.jpg",
     "/img/sunrooms/sunspace-sunroom-model-200-banner-2.jpg",
     "/img/sunrooms/sunspace-sunroom-model-300-banner-2.jpg",
-    // "/img/sunrooms/sunspace-sunroom-model-400-banner-2.jpg",
+    "/img/sunrooms/sunspace-sunroom-model-400-banner-2.jpg",
   ];
 
   return (
@@ -44,7 +44,7 @@ export default function Sunrooms() {
       </section>
 
       {/* Products section */}
-      <section className="py-16 px-4 max-w-7xl mx-auto flex justify-between flex-col items-center">
+      <section className="py-16 px-4 max-w-6xl mx-auto flex justify-between flex-col items-center">
         <h2 className="section-title max-w-2xl text-center mx-auto">
           {t("1_title")}
         </h2>
@@ -53,18 +53,28 @@ export default function Sunrooms() {
           dangerouslySetInnerHTML={{ __html: t.raw("1_subtitle") }}
         />
 
-        <div className="flex flex-wrap gap-y-10 gap-4  xl:gap-8 mt-10 justify-center">
+        <div className="grid md:grid-cols-2 gap-10 mt-16">
           {[
             {
-              link: data.sunrooms_models[1],
-              title: p(`p${2}_title`),
-              desc: p(`p${2}_desc`),
-            },
-            {
-              link: data.sunrooms_models[2],
-              title: p(`p${3}_title`),
-              desc: p(`p${3}_desc`),
-            },
+                         link: data.sunrooms_models[0],
+                         title: p(`p${1}_title`),
+                         desc: p(`p${1}_desc`),
+                       },
+                       {
+                         link: data.sunrooms_models[1],
+                         title: p(`p${2}_title`),
+                         desc: p(`p${2}_desc`),
+                       },
+                       {
+                         link: data.sunrooms_models[2],
+                         title: p(`p${3}_title`),
+                         desc: p(`p${3}_desc`),
+                       },
+                       {
+                         link: data.sunrooms_models[3],
+                         title: p(`p${4}_title`),
+                         desc: p(`p${4}_desc`),
+                       },
           ].map((_, i) => (
             <Product
               key={i}
