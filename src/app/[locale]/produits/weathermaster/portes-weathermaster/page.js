@@ -202,7 +202,7 @@ export default function WeatherMasterDoors() {
               }
               target="_blank"
             >
-              <div className="flex justify-between uppercase text-dark-secondary text-base mt-8 bg-white p-4">
+              <div className="flex justify-between uppercase text-dark-secondary text-base mt-8 bg-white p-4 rounded-3xl">
                 {t("title")}
                 <FaCloudDownloadAlt className="fill-primary size-6" />
               </div>

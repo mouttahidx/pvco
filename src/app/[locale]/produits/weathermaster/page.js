@@ -25,11 +25,11 @@ export default function Sunrooms() {
     <>
       {/* hero  */}
       <section
-        className="py-32 px-2 bg-no-repeat bg-cover bg-center"
+        className="lg:pt-56 py-32 px-2 bg-no-repeat bg-cover bg-center"
         style={{ backgroundImage: "url('/img/weathermaster/banner.jpg')" }}
       >
-        <div className="mx-auto max-w-7xl text-white">
-          <h1 className="text-3xl lg:text-4xl text-white bg-black bg-opacity-70 rounded w-fit px-2">
+        <div className="mx-auto max-w-7xl text-white h-full">
+          <h1 className="text-3xl lg:text-5xl mx-auto text-white bg-black bg-opacity-70 rounded w-fit px-2">
             {t("title")}
           </h1>
         </div>

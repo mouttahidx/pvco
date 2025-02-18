@@ -165,7 +165,7 @@ export default function MobileDrawer({ translations }) {
                   <Accordion defaultValue="">
                     <Accordion.Item key="" value={"sunspace product"}>
                       <Accordion.Control className="hover:bg-primary rounded duration-300">
-                        {translations['p2']}
+                        {translations["p2"]}
                       </Accordion.Control>
                       <Accordion.Panel>
                         <div className="w-full flex flex-col">
@@ -200,6 +200,50 @@ export default function MobileDrawer({ translations }) {
                             key={translations["w4"]}
                           >
                             {translations["w4"]}
+                          </Link>
+                        </div>
+                      </Accordion.Panel>
+                    </Accordion.Item>
+                  </Accordion>
+
+                  <Accordion defaultValue="">
+                    <Accordion.Item key="" value={"sunspace product"}>
+                      <Accordion.Control className="hover:bg-primary rounded duration-300">
+                        {translations["p4"]}
+                      </Accordion.Control>
+                      <Accordion.Panel>
+                        <div className="w-full flex flex-col">
+                          <Link
+                            className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                            component={Link}
+                            href={data.railing_models[0]}
+                            key={translations["r1"]}
+                          >
+                            {translations["r1"]}
+                          </Link>
+                          <Link
+                            className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                            component={Link}
+                            href={data.railing_models[1]}
+                            key={translations["r2"]}
+                          >
+                            {translations["r2"]}
+                          </Link>
+                          <Link
+                            className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                            component={Link}
+                            href={data.railing_models[2]}
+                            key={translations["r3"]}
+                          >
+                            {translations["r3"]}
+                          </Link>
+                          <Link
+                            className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                            component={Link}
+                            href={data.railing_models[3]}
+                            key={translations["r4"]}
+                          >
+                            {translations["r4"]}
                           </Link>
                         </div>
                       </Accordion.Panel>

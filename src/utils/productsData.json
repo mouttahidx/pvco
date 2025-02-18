@@ -3,7 +3,7 @@
     "/produits/solariums-sunspace",
     "/produits/weathermaster",
     "/produits/weathermaster/weathermaster-plus",
-    "/produits/railing-systems",
+    "/produits/systemes-de-rampes",
     "/produits/patio-covers",
     "/produits/decking-systems",
     "/produits/rv-resort-living",
@@ -29,10 +29,10 @@
     "/produits/weathermaster/weathermaster-plus"
   ],
   "railing_models":[
-    "/produits/railing-systems/traditional-aluminum-railing",
-    "/produits/railing-systems/traditional-glass-railing",
-    "/produits/railing-systems/contemporary-glass-railing",
-    "/produits/railing-systems/integrated-picket-railing"
+    "/produits/systemes-de-rampes/rampe-en-aluminium-traditionnelle",
+    "/produits/systemes-de-rampes/rampes-de-verre-traditionnelle",
+    "/produits/systemes-de-rampes/rampes-moderne-en-verre",
+    "/produits/systemes-de-rampes/rampes-integre"
   ],
   "patio_models":[
     "/produits/patio-covers/insulated-roof-systems",

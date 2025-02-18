@@ -119,51 +119,51 @@ export default function DropDownServices({ translations }) {
             );
           }
 
-          // if (i === 3) {
-          //   return (
-          //     <Menu
-          //       key={i}
-          //       shadow="md"
-          //       position="right-start"
-          //       offset={10}
-          //       withArrow
-          //       trigger="click-hover"
-          //       openDelay={50}
-          //       closeDelay={200}
-          //       width={300}
-          //       transitionProps={{ transition: "slide-up", duration: 250 }}
-          //     >
-          //       <Menu.Target>
-          //         <NavigationLink
-          //           href={link}
-          //           className="px-2 menu-item flex justify-between items-center"
-          //         >
-          //           {translations["p" + (i + 1)]}{" "}
-          //           <FaAngleRight className="size-3" />
-          //         </NavigationLink>
-          //       </Menu.Target>
-          //       <Menu.Dropdown className="flex flex-col p-2">
-          //         <NavigationLink href={data.railing_models[0]}>
-          //           {translations["r1"]}
-          //         </NavigationLink>
-          //         <Menu.Divider />
-          //         <NavigationLink href={data.railing_models[1]}>
-          //           {translations["r2"]}
-          //         </NavigationLink>
-          //         <Menu.Divider />
+          if (i === 3) {
+            return (
+              <Menu
+                key={i}
+                shadow="md"
+                position="right-start"
+                offset={10}
+                withArrow
+                trigger="click-hover"
+                openDelay={50}
+                closeDelay={200}
+                width={300}
+                transitionProps={{ transition: "slide-up", duration: 250 }}
+              >
+                <Menu.Target>
+                  <NavigationLink
+                    href={link}
+                    className="px-2 menu-item flex justify-between items-center"
+                  >
+                    {translations["p" + (i + 1)]}{" "}
+                    <FaAngleRight className="size-3" />
+                  </NavigationLink>
+                </Menu.Target>
+                <Menu.Dropdown className="flex flex-col p-2">
+                  <NavigationLink href={data.railing_models[0]}>
+                    {translations["r1"]}
+                  </NavigationLink>
+                  <Menu.Divider />
+                  <NavigationLink href={data.railing_models[1]}>
+                    {translations["r2"]}
+                  </NavigationLink>
+                  <Menu.Divider />
 
-          //         <NavigationLink href={data.railing_models[2]}>
-          //           {translations["r3"]}
-          //         </NavigationLink>
-          //         <Menu.Divider />
+                  <NavigationLink href={data.railing_models[2]}>
+                    {translations["r3"]}
+                  </NavigationLink>
+                  <Menu.Divider />
 
-          //         <NavigationLink href={data.railing_models[3]}>
-          //           {translations["r4"]}
-          //         </NavigationLink>
-          //       </Menu.Dropdown>
-          //     </Menu>
-          //   );
-          // }
+                  <NavigationLink href={data.railing_models[3]}>
+                    {translations["r4"]}
+                  </NavigationLink>
+                </Menu.Dropdown>
+              </Menu>
+            );
+          }
 
           // if (i === 4) {
           //   return (
