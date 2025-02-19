@@ -5,10 +5,11 @@ import ButtonClient from "../ButtonClient";
 import { useEffect, useState } from "react";
 import MobileHeader from "./MobileHeader";
 import Image from "next/image";
+import { useLocale } from "next-intl";
 
 export default function Header() {
   const [scrollTop, setScrollTop] = useState(0);
-
+  const locale = useLocale();
   useEffect(() => {
     const handleScroll = (event) => {
       setScrollTop(window.scrollY);
@@ -28,7 +29,7 @@ export default function Header() {
         data-aos="fade-in"
       >
         <div className="container mx-auto flex justify-between items-center p-4">
-          <Link href={"/"} className="">
+          <Link href={"/"} className="" locale={locale}>
             <Image
               src="/logo.svg"
               alt="Logo"

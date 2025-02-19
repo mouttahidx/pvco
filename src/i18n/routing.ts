@@ -13,7 +13,7 @@ export const routing = defineRouting({
   pathnames: {
     "/": {
       fr: "/",
-      en: "/en",
+      en: "/",
     },
     
     "/about-sunspace-sunrooms": {

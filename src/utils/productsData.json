@@ -4,14 +4,14 @@
     "/produits/weathermaster",
     "/produits/weathermaster/weathermaster-plus",
     "/produits/systemes-de-rampes",
-    "/produits/patio-covers",
+    "/produits/toiture-pour-patio",
     "/produits/decking-systems",
     "/produits/rv-resort-living",
     "/produits/interior-glass-railings",
     "/produits/sunwall-privacy-windbreak",
     "/produits/shades-screens",
     "/produits/walls-under-porch-conversion",
-    "/produits/privacy-fencing",
+    "/produits/cloture-dintimite",
     "/produits/commercial",
     "/produits/pergolas"
   ],
@@ -35,8 +35,8 @@
     "/produits/systemes-de-rampes/rampes-integre"
   ],
   "patio_models":[
-    "/produits/patio-covers/insulated-roof-systems",
-    "/produits/patio-covers/acrylic-patio-covers",
-    "/produits/patio-covers/hybrid-patio-covers"
+    "/produits/toiture-pour-patio/toiture-isolee",
+    "/produits/toiture-pour-patio/toiture-dacrylique-pour-patio",
+    "/produits/toiture-pour-patio/toiture-hybride-pour-patio"
   ]
 }
