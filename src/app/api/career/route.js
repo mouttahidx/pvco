@@ -12,7 +12,6 @@ export async function POST(request) {
       pass: process.env.EMAIL_PASSWORD,
     },
   });
-  console.log("here")
   const { email, name, phone, poste, additional_infos, cv } = await request.json();
   const attachs = cv ? [{
     filename: cv.pathname,
@@ -364,7 +363,7 @@ export async function POST(request) {
               
                 <tr>
                   <td class="content-block powered-by">
-                    Sunspacecorporate.com</a>
+                    <a href="${process.env.WEBSITE_URL}">${process.env.WEBSITE_URL}</a>
                   </td>
                 </tr>
               </table>

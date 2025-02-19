@@ -363,7 +363,7 @@ export async function POST(request) {
               
                 <tr>
                   <td class="content-block powered-by">
-                    Sunspacecorporate.com</a>
+                    <a href="${process.env.WEBSITE_URL}">${process.env.WEBSITE_URL}</a>
                   </td>
                 </tr>
               </table>

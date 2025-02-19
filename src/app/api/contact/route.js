@@ -12,8 +12,9 @@ export async function POST(request) {
       pass: process.env.EMAIL_PASSWORD,
     },
   });
-  console.log("here")
-  const { email, name, phone, additional_infos, subject } = await request.json();
+  console.log("here");
+  const { email, name, phone, additional_infos, subject } =
+    await request.json();
 
   const mailOptions = {
     from: process.env.EMAIL,
@@ -359,7 +360,7 @@ export async function POST(request) {
               
                 <tr>
                   <td class="content-block powered-by">
-                    Sunspacecorporate.com</a>
+                  <a href="${process.env.WEBSITE_URL}">${process.env.WEBSITE_URL}</a>
                   </td>
                 </tr>
               </table>
@@ -392,7 +393,7 @@ export async function POST(request) {
     await sendMailPromise();
     return NextResponse.json({ message: "Email sent" });
   } catch (err) {
-    console.log(err)
+    console.log(err);
     return NextResponse.json({ error: err }, { status: 500 });
   }
   // return res.status(200).json({ data: email + " " + message });
