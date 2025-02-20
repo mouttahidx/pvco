@@ -252,6 +252,46 @@ export default function MobileDrawer({ translations }) {
                   <Link
                     className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
                     component={Link}
+                    href={data.links[5]}
+                    key={translations["p6"]}
+                  >
+                    {translations["p6"]}
+                  </Link>
+                  <Link
+                    className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                    component={Link}
+                    href={data.links[6]}
+                    key={translations["p7"]}
+                  >
+                    {translations["p7"]}
+                  </Link>
+                  <Link
+                    className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                    component={Link}
+                    href={data.links[7]}
+                    key={translations["p8"]}
+                  >
+                    {translations["p8"]}
+                  </Link>
+                  <Link
+                    className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                    component={Link}
+                    href={data.links[8]}
+                    key={translations["p9"]}
+                  >
+                    {translations["p9"]}
+                  </Link>
+                  <Link
+                    className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                    component={Link}
+                    href={data.links[11]}
+                    key={translations["p12"]}
+                  >
+                    {translations["p12"]}
+                  </Link>
+                  <Link
+                    className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                    component={Link}
                     href={data.links[data.links.length - 1]}
                     key={translations["p14"]}
                   >

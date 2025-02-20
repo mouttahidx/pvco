@@ -3,7 +3,7 @@
 import { Menu } from "@mantine/core";
 import NavigationLink from "./NavLink";
 import data from "@/utils/productsData.json";
-import { FaAngleDown, FaAngleRight, FaAngleUp } from "react-icons/fa";
+import { FaAngleDown, FaAngleRight } from "react-icons/fa";
 
 export default function DropDownServices({ translations }) {
   return (
@@ -211,7 +211,19 @@ export default function DropDownServices({ translations }) {
           //   </NavigationLink>
           // );
         })}
-         <NavigationLink href={data.links[11]} key={'privacy fencing'}>
+        <NavigationLink href={data.links[5]} key={translations["p6"]}>
+          {translations["p6"]}
+        </NavigationLink>
+        <NavigationLink href={data.links[6]} key={translations["p7"]}>
+          {translations["p7"]}
+        </NavigationLink>
+        <NavigationLink href={data.links[7]} key={translations["p8"]}>
+          {translations["p8"]}
+        </NavigationLink>
+        <NavigationLink href={data.links[8]} key={translations["p9"]}>
+          {translations["p9"]}
+        </NavigationLink>
+         <NavigationLink href={data.links[11]} key={translations["p12"]}>
           {translations["p12"]}
         </NavigationLink>
         <NavigationLink href={data.links[13]} key={'pergolas'}>

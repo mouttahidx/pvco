@@ -31,7 +31,7 @@ export default function PatioModelAcrylic() {
             "url('/img/patio/acrylic/sunspace-acrylic-patio-cover-banner-1.jpg')",
         }}
       >
-         <div className="mx-auto max-w-7xl text-white px-2 text-center bg-black  rounded-3xl bg-opacity-75">
+        <div className="mx-auto max-w-7xl text-white px-2 text-center bg-black  rounded-3xl bg-opacity-75">
           <h1 className="text-4xl md:text-5xl xl:text-6xl  font-bold max-w-6xl mx-auto leading-snug mb-8">
             {t("title")}
           </h1>
@@ -188,14 +188,15 @@ export default function PatioModelAcrylic() {
           <div className="p-8 bg-light-gray rounded-3xl">
             <h2 className="text-dark-secondary text-lg">{t("pdf_download")}</h2>
             <div className="bg-primary h-[2px] w-14 mt-1"></div>
-            <a 
-            href={
-              locale === "en"
-                ? "/pdf/Sunspace-Patio-Covers.pdf"
-                : "/pdf/Sunspace-Patio-Covers_fr.pdf"
-            }
-            target="_blank">
-              <div className="flex justify-between uppercase text-dark-secondary text-base mt-8 bg-white p-4">
+            <a
+              href={
+                locale === "en"
+                  ? "/pdf/Sunspace-Patio-Covers.pdf"
+                  : "/pdf/Sunspace-Patio-Covers_fr.pdf"
+              }
+              target="_blank"
+            >
+              <div className="rounded-3xl flex justify-between uppercase text-dark-secondary text-base mt-8 bg-white p-4">
                 {t("title")}
                 <FaCloudDownloadAlt className="fill-primary size-6" />
               </div>
@@ -211,74 +212,73 @@ export default function PatioModelAcrylic() {
           <h3 className="text-dark-secondary text-lg ">{t("gallery_title")}</h3>
           <div className="bg-primary h-[2px] w-14 mt-1"></div>
 
-          <div className="mt-8">  
+          <div className="mt-8">
             <GalleryProductPage
               slides={[
-                {src: "/img/patio/acrylic/patio-acrylic (1).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (2).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (3).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (4).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (5).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (6).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (7).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (8).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (9).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (10).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (11).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (12).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (13).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (14).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (15).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (16).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (17).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (18).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (19).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (20).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (21).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (22).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (23).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (24).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (25).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (26).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (27).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (28).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (29).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (30).webp"},
+                { src: "/img/patio/acrylic/patio-acrylic (1).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (2).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (3).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (4).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (5).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (6).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (7).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (8).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (9).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (10).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (11).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (12).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (13).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (14).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (15).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (16).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (17).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (18).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (19).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (20).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (21).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (22).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (23).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (24).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (25).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (26).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (27).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (28).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (29).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (30).webp" },
               ]}
               large={[
-                {src: "/img/patio/acrylic/patio-acrylic (1).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (2).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (3).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (4).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (5).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (6).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (7).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (8).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (9).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (10).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (11).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (12).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (13).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (14).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (15).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (16).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (17).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (18).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (19).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (20).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (21).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (22).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (23).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (24).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (25).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (26).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (27).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (28).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (29).webp"},
-                {src: "/img/patio/acrylic/patio-acrylic (30).webp"},
+                { src: "/img/patio/acrylic/patio-acrylic (1).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (2).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (3).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (4).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (5).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (6).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (7).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (8).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (9).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (10).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (11).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (12).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (13).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (14).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (15).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (16).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (17).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (18).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (19).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (20).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (21).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (22).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (23).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (24).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (25).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (26).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (27).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (28).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (29).webp" },
+                { src: "/img/patio/acrylic/patio-acrylic (30).webp" },
               ]}
-              title={t('title')}
-
+              title={t("title")}
             />
           </div>
         </div>

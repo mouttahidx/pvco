@@ -219,7 +219,7 @@ export default function PatioModelHybrid() {
               }
               target="_blank"
             >
-              <div className="flex justify-between uppercase text-dark-secondary text-base mt-8 bg-white p-4">
+              <div className="rounded-3xl flex justify-between uppercase text-dark-secondary text-base mt-8 bg-white p-4">
                 {t("title")}
                 <FaCloudDownloadAlt className="fill-primary size-6" />
               </div>

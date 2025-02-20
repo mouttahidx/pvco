@@ -28,7 +28,7 @@ export default function PostCard({
         data-aos="fade-up"
       >
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <Link href={"/blog/" + slug} locale="en">
+          <Link href={"/blog/" + slug}>
             <div className="p-3 flex gap-3">
               <FaCalendarAlt className="inline fill-primary size-5 my-0 py-0" />
               <span className="">{moment(date).format("YYYY MMM DD")}</span>
@@ -53,7 +53,6 @@ export default function PostCard({
 
           <div className="flex items-center flex-wrap  py-4 px-3">
             <ButtonClient
-              locale="fr"
               size="sm"
               href={"/blogue/" + slug}
               className="text-white inline-flex items-center md:mb-2 lg:mb-0"
@@ -76,7 +75,7 @@ export default function PostCard({
         data-aos="fade-up"
       >
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden flex flex-col">
-          <Link href={"/blogue/" + slug } locale="fr" className="flex flex-col grow">
+          <Link href={"/blogue/" + slug } className="flex flex-col grow">
             <Image
               src={
                 image ? "https://old.pvcogranby.com" + image : "/img/1-new.webp"
@@ -105,7 +104,6 @@ export default function PostCard({
           </Link>
           <div className="flex items-center flex-wrap  py-4 px-3">
             <ButtonClient
-              locale="fr"
               size="sm"
               href={"/blogue/" + slug}
               className="text-white inline-flex items-center md:mb-2 lg:mb-0"
