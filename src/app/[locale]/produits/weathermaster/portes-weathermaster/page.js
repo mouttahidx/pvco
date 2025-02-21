@@ -159,6 +159,7 @@ export default function WeatherMasterDoors() {
                   height={100}
                   className="h-24 w-full"
                   alt={t("title")}
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2">
                   {t("smoke_grey")}
@@ -171,6 +172,7 @@ export default function WeatherMasterDoors() {
                   height={100}
                   className="h-24 w-full"
                   alt={t("title")}
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2">
                   {t("dark_grey")}
@@ -184,6 +186,7 @@ export default function WeatherMasterDoors() {
                   height={100}
                   className="h-24 w-full"
                   alt={t("title")}
+                  unoptimized
                 />{" "}
                 <h3 className="text-dark-secondary text-xs mt-2">
                   {t("bronze")}
