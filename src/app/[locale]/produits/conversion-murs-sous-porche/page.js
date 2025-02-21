@@ -98,6 +98,7 @@ export default function WallsPage() {
                 alt={t("porch_title")}
                 src="/img/walls-under/sunspace_porch_conversion.jpg"
                 className=" object-cover w-full h-[200px] rounded-t-lg"
+                unoptimized
               />
               <div className="flex flex-col p-4 gap-y-3 grow">
                 <h2 className="font-semibold text-dark-secondary text-base">
@@ -116,6 +117,8 @@ export default function WallsPage() {
                 alt={t("safety_title")}
                 src="/img/walls-under/sunspace_safety.jpg"
                 className=" object-cover w-full h-[200px] rounded-t-lg"
+                unoptimized
+
               />
               <div className="flex flex-col p-4 gap-y-3  grow">
                 <h2 className="font-semibold text-dark-secondary text-base">
@@ -134,6 +137,8 @@ export default function WallsPage() {
                 alt={t("walls_title")}
                 src="/img/walls-under/sunspace_walls_under.jpg"
                 className=" object-cover w-full h-[200px] rounded-t-lg"
+                unoptimized
+
               />
               <div className="flex flex-col p-4 gap-y-3 grow">
                 <h2 className="font-semibold text-dark-secondary text-base">
@@ -153,6 +158,8 @@ export default function WallsPage() {
                 alt={t("electrical_title")}
                 src="/img/walls-under/sunroom_wire_chases.jpg"
                 className=" object-cover w-full h-[200px] rounded-t-lg"
+                unoptimized
+
               />
               <div className="flex flex-col p-4 gap-y-3  grow">
                 <h2 className="font-semibold text-dark-secondary text-base">
