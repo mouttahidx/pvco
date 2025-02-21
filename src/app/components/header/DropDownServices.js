@@ -205,30 +205,13 @@ export default function DropDownServices({ translations }) {
             );
           }
 
-          // return (
-          //   <NavigationLink href={link} key={i}>
-          //     {translations["p" + (i + 1)]}
-          //   </NavigationLink>
-          // );
+          return (
+            <NavigationLink href={link} key={i}>
+              {translations["p" + (i + 1)]}
+            </NavigationLink>
+          );
         })}
-        <NavigationLink href={data.links[5]} key={translations["p6"]}>
-          {translations["p6"]}
-        </NavigationLink>
-        <NavigationLink href={data.links[6]} key={translations["p7"]}>
-          {translations["p7"]}
-        </NavigationLink>
-        <NavigationLink href={data.links[7]} key={translations["p8"]}>
-          {translations["p8"]}
-        </NavigationLink>
-        <NavigationLink href={data.links[8]} key={translations["p9"]}>
-          {translations["p9"]}
-        </NavigationLink>
-         <NavigationLink href={data.links[11]} key={translations["p12"]}>
-          {translations["p12"]}
-        </NavigationLink>
-        <NavigationLink href={data.links[13]} key={'pergolas'}>
-          {translations["p14"]}
-        </NavigationLink>
+
       </Menu.Dropdown>
     </Menu>
   );

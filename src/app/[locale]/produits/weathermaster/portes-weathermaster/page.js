@@ -1,6 +1,7 @@
 import ButtonClient from "@/app/components/ButtonClient";
 import Gallery from "@/app/components/Gallery";
 import GalleryProductPage from "@/app/components/GalleryProductPage";
+import ProductPageCTA from "@/app/components/ProductPageCTA";
 import { Link } from "@/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -210,32 +211,7 @@ export default function WeatherMasterDoors() {
           </div>
 
           {/* CTA */}
-          <div className="flex flex-col rounded-3xl">
-            <div className="bg-primary text-center p-8 font-semibold text-white rounded-t-3xl">
-              <h2 className="text-lg">{t("cta_title")}</h2>
-            </div>
-            <div className="flex flex-col items-center gap-y-5 px-8 py-12 bg-brand-gray rounded-b-3xl">
-              <h3 className="text-center font-semib text-primary capitalize">
-                {t("cta_text")}
-              </h3>
-              <div className="text-center text-black font-semibold text-xl">
-                <a
-                  className="block lg:hidden"
-                  href={"tel:" + process.env.NEXT_PUBLIC_PHONE}
-                >
-                  {process.env.NEXT_PUBLIC_PHONE}
-                </a>
-                <span
-                  className="hidden lg:block"
-                  href={"tel:" + process.env.NEXT_PUBLIC_PHONE}
-                >
-                  {process.env.NEXT_PUBLIC_PHONE}
-                </span>
-              </div>
-              <p className="text-black text-xs text-center">{t("cta_desc")}</p>
-              <ButtonClient text={btn("contactUs")} href={"/contact"} />
-            </div>
-          </div>
+          <ProductPageCTA />
         </div>
 
         {/* gallery */}

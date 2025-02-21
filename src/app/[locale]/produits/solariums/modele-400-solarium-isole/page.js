@@ -1,5 +1,6 @@
 import ButtonClient from "@/app/components/ButtonClient";
 import Gallery from "@/app/components/Gallery";
+import GalleryProductPage from "@/app/components/GalleryProductPage";
 import { Link } from "@/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -216,7 +217,7 @@ export default function SunroomsModel400() {
           <h3 className="text-dark-secondary text-lg ">{t("gallery_title")}</h3>
           <div className="bg-primary h-[2px] w-14 mt-1"></div>
           <div className="mt-8">
-            <Gallery
+            <GalleryProductPage
               slides={[
                 { src: "/img/sunrooms/model400/sunrooms-model400 (1).webp" },
                 { src: "/img/sunrooms/model400/sunrooms-model400 (2).webp" },

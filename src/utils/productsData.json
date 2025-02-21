@@ -9,8 +9,8 @@
     "/produits/la-vie-en-vehicule-recreatif",
     "/produits/rampes-de-verre-pour-linterieur",
     "/produits/sunwall-ecran-de-confidentialite",
-    "/produits/shades-screens",
-    "/produits/walls-under-porch-conversion",
+    "/produits/pare-soleil",
+    "/produits/conversion-murs-sous-porche",
     "/produits/cloture-dintimite",
     "/produits/commercial",
     "/produits/pergolas"
@@ -21,7 +21,6 @@
     "/produits/solariums/modele-300-solarium-3-saisons",
     "/produits/solariums/modele-400-solarium-isole"
   ],
- 
   "weathermaster_models": [
     "/produits/weathermaster/fenetres-verticales-weatherMaster-a-4-panneaux",
     "/produits/weathermaster/portes-weathermaster",

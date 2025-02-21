@@ -20,7 +20,6 @@ export default function ButtonClient({
       data-aos-delay="100"
       data-aos-duration="400"
       component={Link}
-      locale={locale}
       href={href}
       variant={variant}
       className={" !h-fit !px-5 !py-3 !rounded-full font-semibold " + textColor +" " + className}

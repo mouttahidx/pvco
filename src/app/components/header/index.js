@@ -29,7 +29,7 @@ export default function Header() {
         data-aos="fade-in"
       >
         <div className="container mx-auto flex justify-between items-center p-4">
-          <Link href={"/"} className="" locale={locale}>
+          <Link href={"/"} className="">
             <Image
               src="/logo.svg"
               alt="Logo"

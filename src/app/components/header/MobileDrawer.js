@@ -206,6 +206,15 @@ export default function MobileDrawer({ translations }) {
                     </Accordion.Item>
                   </Accordion>
 
+                  <Link
+                    className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                    component={Link}
+                    href={data.links[2]}
+                    key={translations["p3"]}
+                  >
+                    {translations["p3"]}
+                  </Link>
+
                   <Accordion defaultValue="">
                     <Accordion.Item key="" value={"sunspace product"}>
                       <Accordion.Control className="hover:bg-primary rounded duration-300">
@@ -249,6 +258,44 @@ export default function MobileDrawer({ translations }) {
                       </Accordion.Panel>
                     </Accordion.Item>
                   </Accordion>
+
+                  <Accordion defaultValue="">
+                    <Accordion.Item key="" value={"sunspace product"}>
+                      <Accordion.Control className="hover:bg-primary rounded duration-300">
+                        {translations["p5"]}
+                      </Accordion.Control>
+                      <Accordion.Panel>
+                        <div className="w-full flex flex-col">
+                          <Link
+                            className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                            component={Link}
+                            href={data.patio_models[0]}
+                            key={translations["pc1"]}
+                          >
+                            {translations["pc1"]}
+                          </Link>
+                          <Link
+                            className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                            component={Link}
+                            href={data.patio_models[1]}
+                            key={translations["pc2"]}
+                          >
+                            {translations["pc2"]}
+                          </Link>
+                          <Link
+                            className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                            component={Link}
+                            href={data.patio_models[2]}
+                            key={translations["pc3"]}
+                          >
+                            {translations["pc3"]}
+                          </Link>
+                          
+                        </div>
+                      </Accordion.Panel>
+                    </Accordion.Item>
+                  </Accordion>
+                  
                   <Link
                     className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
                     component={Link}
@@ -257,6 +304,7 @@ export default function MobileDrawer({ translations }) {
                   >
                     {translations["p6"]}
                   </Link>
+
                   <Link
                     className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
                     component={Link}
@@ -280,6 +328,22 @@ export default function MobileDrawer({ translations }) {
                     key={translations["p9"]}
                   >
                     {translations["p9"]}
+                  </Link>
+                  <Link
+                    className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                    component={Link}
+                    href={data.links[9]}
+                    key={translations["p10"]}
+                  >
+                    {translations["p10"]}
+                  </Link>
+                  <Link
+                    className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
+                    component={Link}
+                    href={data.links[10]}
+                    key={translations["p11"]}
+                  >
+                    {translations["p11"]}
                   </Link>
                   <Link
                     className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
