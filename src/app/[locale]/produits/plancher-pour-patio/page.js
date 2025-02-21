@@ -32,7 +32,7 @@ export default function DeckingPage() {
             "url('/img/decking/sunspace-alumaDeck-banner-1.jpg')",
         }}
       >
-         <div className="mx-auto max-w-7xl text-white px-2 text-center bg-black  rounded-3xl bg-opacity-75">
+        <div className="mx-auto max-w-7xl text-white px-2 text-center bg-black  rounded-3xl bg-opacity-75">
           <h1 className="text-4xl md:text-5xl xl:text-6xl  font-bold max-w-6xl mx-auto leading-snug mb-8">
             {t("title")}
           </h1>
@@ -48,7 +48,8 @@ export default function DeckingPage() {
             width={1200}
             height={720}
             className="w-full rounded-3xl"
-            unoptimized          />
+            unoptimized
+          />
           <h2 className="section-title mt-8">{t("1_title")}</h2>
           <div
             dangerouslySetInnerHTML={{ __html: t.raw("1_text") }}
@@ -123,6 +124,7 @@ export default function DeckingPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2 ">
                   {t("grey")}
@@ -135,6 +137,7 @@ export default function DeckingPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2 ">
                   {t("cedar")}
@@ -147,6 +150,7 @@ export default function DeckingPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2 ">
                   {t("grey_woodgrain")}
@@ -159,6 +163,7 @@ export default function DeckingPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2 ">
                   {t("sand")}
@@ -171,6 +176,7 @@ export default function DeckingPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2 ">
                   {t("taupe")}
@@ -183,6 +189,7 @@ export default function DeckingPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2 ">
                   {t("spruce")}
@@ -205,7 +212,6 @@ export default function DeckingPage() {
               lang="en"
             >
               <div className="rounded-3xl flex justify-between uppercase text-dark-secondary text-base mt-8 bg-white p-4">
-
                 {t("title")}
                 <FaCloudDownloadAlt className="fill-primary size-6" />
               </div>
@@ -245,7 +251,6 @@ export default function DeckingPage() {
                 { src: "/img/decking/alumadeck (19).webp" },
                 { src: "/img/decking/alumadeck (20).webp" },
                 { src: "/img/decking/alumadeck (21).webp" },
-
               ]}
               large={[
                 { src: "/img/decking/alumadeck (1).webp" },

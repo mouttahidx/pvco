@@ -161,6 +161,7 @@ export default function PatioModelHybrid() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2">
                   {t("clear")}
@@ -173,6 +174,7 @@ export default function PatioModelHybrid() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2">
                   {t("bronze")}
@@ -185,6 +187,7 @@ export default function PatioModelHybrid() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2">
                   {t("solar_cool")}
@@ -199,6 +202,7 @@ export default function PatioModelHybrid() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2">
                   {t("pearl")}

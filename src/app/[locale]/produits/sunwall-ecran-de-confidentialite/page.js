@@ -161,6 +161,7 @@ export default function SunwallPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2">
                   {t("solar_cool")}
@@ -175,6 +176,7 @@ export default function SunwallPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2">
                   {t("pearl")}
@@ -196,7 +198,6 @@ export default function SunwallPage() {
               target="_blank"
             >
               <div className="rounded-3xl flex justify-between uppercase text-dark-secondary text-base mt-8 bg-white p-4">
-
                 {t("title")}
                 <FaCloudDownloadAlt className="fill-primary size-6" />
               </div>
