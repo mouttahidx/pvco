@@ -157,6 +157,7 @@ export default function SunshadesPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -172,6 +173,7 @@ export default function SunshadesPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -187,6 +189,7 @@ export default function SunshadesPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -200,6 +203,7 @@ export default function SunshadesPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -215,6 +219,7 @@ export default function SunshadesPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -230,6 +235,7 @@ export default function SunshadesPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -243,6 +249,7 @@ export default function SunshadesPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -258,6 +265,7 @@ export default function SunshadesPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -273,6 +281,7 @@ export default function SunshadesPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -288,6 +297,7 @@ export default function SunshadesPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -352,7 +362,7 @@ export default function SunshadesPage() {
           </div>
 
           {/* CTA */}
-         <ProductPageCTA />
+          <ProductPageCTA />
         </div>
 
         {/* gallery */}

@@ -226,6 +226,7 @@ export default function WallsPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -239,6 +240,7 @@ export default function WallsPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -252,6 +254,7 @@ export default function WallsPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -265,6 +268,7 @@ export default function WallsPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -278,6 +282,7 @@ export default function WallsPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -291,6 +296,7 @@ export default function WallsPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3
                   className="text-dark-secondary text-xs mt-2"
@@ -310,6 +316,7 @@ export default function WallsPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2 ">
                   {t("clear")}
@@ -322,6 +329,7 @@ export default function WallsPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2">
                   {t("smoke_grey")}
@@ -334,6 +342,7 @@ export default function WallsPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />
                 <h3 className="text-dark-secondary text-xs mt-2">
                   {t("dark_grey")}
@@ -347,6 +356,7 @@ export default function WallsPage() {
                   width={100}
                   height={100}
                   className="h-24 w-full"
+                  unoptimized
                 />{" "}
                 <h3 className="text-dark-secondary text-xs mt-2">
                   {t("bronze")}
@@ -480,8 +490,8 @@ export default function WallsPage() {
             <div className="bg-primary h-[2px] w-14 mt-1"></div>
 
             <div className="mt-8">
-            <GalleryProductPage
-              slides={[
+              <GalleryProductPage
+                slides={[
                   { src: "/img/walls-under/wallsunder (1).webp" },
                   { src: "/img/walls-under/wallsunder (2).webp" },
                   { src: "/img/walls-under/wallsunder (3).webp" },
@@ -528,8 +538,8 @@ export default function WallsPage() {
             </h3>
             <div className="bg-primary h-[2px] w-14 mt-1"></div>
             <div className="mt-8">
-            <GalleryProductPage
-              slides={[
+              <GalleryProductPage
+                slides={[
                   { src: "/img/walls-under/wallsunder (17).webp" },
                   { src: "/img/walls-under/wallsunder (18).webp" },
                   { src: "/img/walls-under/wallsunder (19).webp" },
