@@ -19,7 +19,7 @@ export async function POST(request) {
   const mailOptions = {
     from: process.env.EMAIL,
     to: ["info@pvcogranby.com"],
-    // cc: email, (uncomment this line if you want to send a copy to the sender)
+    cc: "mahdi@viacommunication.com",
     subject: `PVCO - ${subject} (${email})`,
     html: `
     <!doctype html>

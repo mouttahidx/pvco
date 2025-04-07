@@ -986,7 +986,8 @@
     "raillings": "raillings",
     "screenrooms": "screenrooms",
     "decking": "decking",
-    "enclosures": "enclosures"
+    "enclosures": "enclosures",
+    "poste":"Job"
   },
   "privacyPage":{
     "title":"Privacy Policy",

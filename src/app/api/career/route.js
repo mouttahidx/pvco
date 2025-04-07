@@ -12,15 +12,20 @@ export async function POST(request) {
       pass: process.env.EMAIL_PASSWORD,
     },
   });
-  const { email, name, phone, poste, additional_infos, cv } = await request.json();
-  const attachs = cv ? [{
-    filename: cv.pathname,
-    path: cv.url,
-  }] : [];
+  const { email, name, phone, poste, additional_infos, cv } =
+    await request.json();
+  const attachs = cv
+    ? [
+        {
+          filename: cv.pathname,
+          path: cv.url,
+        },
+      ]
+    : [];
   const mailOptions = {
     from: process.env.EMAIL,
     to: ["info@pvcogranby.com"],
-    // cc: email, (uncomment this line if you want to send a copy to the sender)
+    cc: "mahdi@viacommunication.com",
     subject: `PVCO - Demande d'emploi (${email})`,
     attachments: attachs,
     html: `
@@ -396,7 +401,7 @@ export async function POST(request) {
     await sendMailPromise();
     return NextResponse.json({ message: "Email sent" });
   } catch (err) {
-    console.log(err)
+    console.log(err);
     return NextResponse.json({ error: err }, { status: 500 });
   }
   // return res.status(200).json({ data: email + " " + message });
