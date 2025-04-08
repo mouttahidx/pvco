@@ -15,8 +15,8 @@ export async function POST(request) {
   
   const { email, name, phone, service, additional_infos, fileAttached } = await request.json();
   const attachs = fileAttached ? [{
-    filename: fileAttached.pathname,
-    path: fileAttached.url,
+    path: fileAttached.pathname,
+    file: fileAttached.file,
   }] : [];
   const mailOptions = {
     from: process.env.EMAIL,
