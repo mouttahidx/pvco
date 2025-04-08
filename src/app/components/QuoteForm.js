@@ -15,8 +15,7 @@ export default function QuoteForm({ translations, theme = "light" }) {
   const [loading, setLoading] = useState(false);
   const recaptchaRef = useRef("");
   const [error, setError] = useState(false);
-  const locale = useLocale();
-  const router = useRouter();
+
   const cvRef = useRef();
   let blob = null;
 
@@ -93,6 +92,12 @@ export default function QuoteForm({ translations, theme = "light" }) {
       <form
         onSubmit={form.onSubmit(async (values) => {
           setLoading(true);
+          
+          if (!recaptchaRef.current) {
+            toast.error(translations["recaptcha_error"]);
+            setLoading(false);
+            return false;
+          }
           if (cvRef.current) {
             const file = cvRef.current[0];
             const response = await fetch(`/api/upload?filename=${file.name}`, {
@@ -101,14 +106,12 @@ export default function QuoteForm({ translations, theme = "light" }) {
             });
 
             const newBlob = await response.json();
-            blob = { file: newBlob.url, pathname: newBlob.pathname };
+            console.log(newBlob);
+            if(newBlob.url){
+              blob = { file: newBlob.url, pathname: newBlob.pathname };
+            }
           }
 
-          if (!recaptchaRef.current) {
-            toast.error(translations["recaptcha_error"]);
-            setLoading(false);
-            return false;
-          }
 
           try {
             send(values);
