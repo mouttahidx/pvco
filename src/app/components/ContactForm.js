@@ -9,7 +9,6 @@ import axios from "axios";
 import { FaArrowRight } from "react-icons/fa6";
 import { useLocale } from "next-intl";
 import { useRouter } from "@/i18n/routing";
-import { FaFileUpload } from "react-icons/fa";
 
 export default function ContactForm({
   translations,
@@ -187,9 +186,9 @@ export default function ContactForm({
           {translations["send"]}
           <FaArrowRight className="ml-2" />
         </Button>
+      <ToastContainer />
       </form>
 
-      <ToastContainer />
     </div>
   );
 }

@@ -18,7 +18,7 @@ export async function POST(request) {
     ? [
         {
           filename: cv.pathname,
-          path: cv.url,
+          path: cv.file,
         },
       ]
     : [];
@@ -27,7 +27,7 @@ export async function POST(request) {
     to: ["info@pvcogranby.com"],
     cc: "mahdi@viacommunication.com",
     subject: `PVCO - Demande d'emploi (${email})`,
-    // attachments: attachs,
+    attachments: attachs,
     html: `
     <!doctype html>
 <html lang="en">
@@ -352,7 +352,7 @@ export async function POST(request) {
                   </br>
                   <p>Poste: <b>${poste}</b></p>
                   <p>Message: <b>${additional_infos}</b></p>
-                  <p>Fichier: <b><a href="${cv.url}" target="_blank">Voir le fichier</a></b></p>
+                  ${cv ? `<p>Fichier: <b><a href="${cv.file}" target="_blank"> Voir le fichier </a></b></p>` : ""}
                   
                   </br>
                   </br>

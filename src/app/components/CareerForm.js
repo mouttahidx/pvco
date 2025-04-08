@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -23,6 +23,7 @@ export default function CareerForm({ translations, theme = "light" }) {
     });
 
     if (res.status == 200) {
+      toast.success(translations["email_success"],{position: "bottom-right"});
       return true;
     }
 
@@ -54,6 +55,8 @@ export default function CareerForm({ translations, theme = "light" }) {
     recaptchaRef.current = value;
   }
 
+
+
   async function send(values) {
     let res = await sendEmail(values);
     if (res) {
@@ -66,7 +69,6 @@ export default function CareerForm({ translations, theme = "light" }) {
       });
 
       setError(false);
-      toast.success(translations["email_success"]);
       setLoading(false);
 
       // router.push("/thank-you");
@@ -95,7 +97,10 @@ export default function CareerForm({ translations, theme = "light" }) {
             });
 
             const newBlob = await response.json();
-            blob = { file: newBlob.url, pathname: newBlob.pathname };
+            console.log(newBlob);
+            if(newBlob.url){
+              blob = { file: newBlob.url, pathname: newBlob.pathname };
+            }
           }
 
           if (!recaptchaRef.current) {
