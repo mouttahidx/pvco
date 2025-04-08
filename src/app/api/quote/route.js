@@ -12,16 +12,21 @@ export async function POST(request) {
       pass: process.env.EMAIL_PASSWORD,
     },
   });
-  
-  const { email, name, phone, service, additional_infos, fileAttached } = await request.json();
-  const attachs = fileAttached ? [{
-    filename: fileAttached.file,
-    path: fileAttached.pathname,
-  }] : [];
+
+  const { email, name, phone, service, additional_infos, fileAttached } =
+    await request.json();
+  const attachs = fileAttached
+    ? [
+        {
+          filename: fileAttached.pathname,
+          path: fileAttached.file,
+        },
+      ]
+    : [];
   const mailOptions = {
     from: process.env.EMAIL,
     to: ["info@pvcogranby.com"],
-    cc: ["mahdi@viacommunication.com","amine@viacommunication.com"],
+    cc: ["mahdi@viacommunication.com", "amine@viacommunication.com"],
     subject: `PVCO - Demande de soumission (${email})`,
     attachments: attachs,
     html: `
@@ -396,7 +401,7 @@ export async function POST(request) {
     await sendMailPromise();
     return NextResponse.json({ message: "Email sent" });
   } catch (err) {
-    console.log(err)
+    console.log(err);
     return NextResponse.json({ error: err }, { status: 500 });
   }
   // return res.status(200).json({ data: email + " " + message });
