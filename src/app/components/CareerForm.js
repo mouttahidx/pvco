@@ -7,16 +7,12 @@ import { Button, FileInput, Loader, TextInput } from "@mantine/core";
 import { hasLength, isEmail, isNotEmpty, useForm } from "@mantine/form";
 import axios from "axios";
 import { FaArrowRight } from "react-icons/fa6";
-import { useLocale } from "next-intl";
-import { useRouter } from "@/i18n/routing";
 import { FaFileUpload } from "react-icons/fa";
 
 export default function CareerForm({ translations, theme = "light" }) {
   const [loading, setLoading] = useState(false);
   const recaptchaRef = useRef("");
   const [error, setError] = useState(false);
-  const locale = useLocale();
-  const router = useRouter();
   const cvRef = useRef();
   let blob = null;
 
