@@ -128,7 +128,7 @@ export const routing = defineRouting({
       en: "/our-products/rv-resort-living",
     },
 
-    // Interrior Glass
+    // Interior Glass
     "/our-products/interior-glass-railings": {
       fr: "/nos-produits/rampes-de-verre-pour-linterieur",
       en: "/our-products/interior-glass-railings",

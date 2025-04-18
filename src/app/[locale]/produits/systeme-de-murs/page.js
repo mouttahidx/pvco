@@ -114,31 +114,10 @@ export default function WallsPage() {
               <Image
                 width={600}
                 height={600}
-                alt={t("safety_title")}
-                src="/img/walls-under/sunspace_safety.jpg"
-                className=" object-cover w-full h-[200px] rounded-t-lg"
-                unoptimized
-
-              />
-              <div className="flex flex-col p-4 gap-y-3  grow">
-                <h2 className="font-semibold text-dark-secondary text-base">
-                  {t("safety_title")}
-                </h2>
-                <p
-                  className="font-light"
-                  dangerouslySetInnerHTML={{ __html: t.raw("safety_text") }}
-                />
-              </div>
-            </div>
-            <div className="shadow-lg box-content flex flex-col rounded-lg">
-              <Image
-                width={600}
-                height={600}
                 alt={t("walls_title")}
                 src="/img/walls-under/sunspace_walls_under.jpg"
                 className=" object-cover w-full h-[200px] rounded-t-lg"
                 unoptimized
-
               />
               <div className="flex flex-col p-4 gap-y-3 grow">
                 <h2 className="font-semibold text-dark-secondary text-base">
@@ -150,24 +129,22 @@ export default function WallsPage() {
                 />
               </div>
             </div>
-
             <div className="shadow-lg box-content flex flex-col rounded-lg">
               <Image
                 width={600}
                 height={600}
-                alt={t("electrical_title")}
-                src="/img/walls-under/sunroom_wire_chases.jpg"
+                alt={t("safety_title")}
+                src="/img/walls-under/sunspace_safety.jpg"
                 className=" object-cover w-full h-[200px] rounded-t-lg"
                 unoptimized
-
               />
               <div className="flex flex-col p-4 gap-y-3  grow">
                 <h2 className="font-semibold text-dark-secondary text-base">
-                  {t("electrical_title")}
+                  {t("safety_title")}
                 </h2>
                 <p
                   className="font-light"
-                  dangerouslySetInnerHTML={{ __html: t.raw("electrical_text") }}
+                  dangerouslySetInnerHTML={{ __html: t.raw("safety_text") }}
                 />
               </div>
             </div>
