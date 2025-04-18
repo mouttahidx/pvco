@@ -11,7 +11,7 @@ export default function Product({ link, img, title, desc }) {
         width={500}
         height={800}
         src={img}
-        className="min-h-[250px] max-h-[350px] w-full object-cover rounded-t-3xl"
+        className="min-h-[250px] h-[350px] w-full object-cover rounded-t-3xl"
         alt={title}
         unoptimized
       />

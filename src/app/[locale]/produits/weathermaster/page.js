@@ -17,9 +17,9 @@ export default function Sunrooms() {
   const p = useTranslations("WeatherMasterModels");
   const models_images = [
     "/img/weathermaster/weather-master_1.jpg",
-    "/img/weathermaster/weather-master_2.jpg",
-    "/img/weathermaster/weather-master_3.jpg",
-    "/img/weathermaster/weather-master_4.jpg",
+    "/img/weathermaster/weathermasterdoor/large/sunspace-weathermaster-doors_0007.jpg",
+    "/img/weathermaster/weathermasterhorizontal/weathermaster-horizontal%20(12).webp",
+    "/img/weathermaster/weathermasterplus/weathermaster-plus%20(8).webp",
   ];
   return (
     <>
