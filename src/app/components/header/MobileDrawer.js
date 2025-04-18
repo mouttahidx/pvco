@@ -192,14 +192,14 @@ export default function MobileDrawer({ translations }) {
                           >
                             {translations["w3"]}
                           </Link>
-                          <Link
+                          {/* <Link
                             className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
                             component={Link}
                             href={data.weathermaster_models[3]}
                             key={translations["w4"]}
                           >
                             {translations["w4"]}
-                          </Link>
+                          </Link> */}
                         </div>
                       </Accordion.Panel>
                     </Accordion.Item>

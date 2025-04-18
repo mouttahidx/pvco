@@ -123,11 +123,11 @@ export default function DropDownServices({ translations }) {
                       <NavigationLink href={data.weathermaster_models[2]}>
                         {translations["w3"]}
                       </NavigationLink>
-                      <Menu.Divider />
+                      {/* <Menu.Divider /> */}
 
-                      <NavigationLink href={data.weathermaster_models[3]}>
+                      {/* <NavigationLink href={data.weathermaster_models[3]}>
                         {translations["w4"]}
-                      </NavigationLink>
+                      </NavigationLink> */}
                     </Menu.Dropdown>
                   </Menu>
                 );
