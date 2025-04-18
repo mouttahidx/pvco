@@ -3,14 +3,14 @@ import Gallery from "@/app/components/Gallery";
 import GalleryProductPage from "@/app/components/GalleryProductPage";
 import ProductPageCTA from "@/app/components/ProductPageCTA";
 import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { FaCheck, FaCloudDownloadAlt } from "react-icons/fa";
 
 export async function generateMetadata() {
   const t = await getTranslations("WallsPage");
-
+  const locale = await getLocale();
   return {
     title: `${t("title")} | ${process.env.NEXT_PUBLIC_APP_NAME}`,
     description: `${t("title")} | ${t("meta_description")}`,
@@ -353,12 +353,12 @@ export default function WallsPage() {
           <div className="p-8 bg-light-gray rounded-3xl">
             <h2 className="text-dark-secondary text-lg">{t("pdf_download")}</h2>
             <div className="bg-primary h-[2px] w-14 mt-1"></div>
-            <Link href="/pdf/Sunspace-Walls-Under.pdf" target="_blank">
+            <a href={locale === fr ? "/pdf/Sunspace-Walls-Under-fr.pdf" :"/pdf/Sunspace-Walls-Under.pdf"} target="_blank">
               <div className="flex justify-between uppercase text-dark-secondary text-base mt-8 bg-white p-4 rounded-3xl">
                 {t("title")}
                 <FaCloudDownloadAlt className="fill-primary size-6" />
               </div>
-            </Link>
+            </a>
           </div>
 
           {/* CTA */}
