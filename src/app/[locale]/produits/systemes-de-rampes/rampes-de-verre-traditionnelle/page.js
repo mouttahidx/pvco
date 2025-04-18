@@ -196,19 +196,7 @@ export default function RailingModelTraditionalGlass() {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (2).webp",
                 },
                 {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (3).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (4).webp",
-                },
-                {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (5).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (6).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (7).webp",
                 },
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (8).webp",
@@ -219,9 +207,7 @@ export default function RailingModelTraditionalGlass() {
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (10).webp",
                 },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (11).webp",
-                },
+           
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (12).webp",
                 },
@@ -231,30 +217,7 @@ export default function RailingModelTraditionalGlass() {
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (14).webp",
                 },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (15).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (16).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (17).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (18).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (19).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (20).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (21).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (22).webp",
-                },
+                
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (23).webp",
                 },
@@ -264,18 +227,11 @@ export default function RailingModelTraditionalGlass() {
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (25).webp",
                 },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (26).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (27).webp",
-                },
+               
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (28).webp",
                 },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (29).webp",
-                },
+               
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (30).webp",
                 },
@@ -288,19 +244,7 @@ export default function RailingModelTraditionalGlass() {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (2).webp",
                 },
                 {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (3).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (4).webp",
-                },
-                {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (5).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (6).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (7).webp",
                 },
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (8).webp",
@@ -311,9 +255,7 @@ export default function RailingModelTraditionalGlass() {
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (10).webp",
                 },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (11).webp",
-                },
+           
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (12).webp",
                 },
@@ -323,30 +265,7 @@ export default function RailingModelTraditionalGlass() {
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (14).webp",
                 },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (15).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (16).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (17).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (18).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (19).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (20).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (21).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (22).webp",
-                },
+                
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (23).webp",
                 },
@@ -356,18 +275,11 @@ export default function RailingModelTraditionalGlass() {
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (25).webp",
                 },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (26).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (27).webp",
-                },
+               
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (28).webp",
                 },
-                {
-                  src: "/img/railing/aluminiumrailing/railing-traditional-glass (29).webp",
-                },
+               
                 {
                   src: "/img/railing/aluminiumrailing/railing-traditional-glass (30).webp",
                 },
