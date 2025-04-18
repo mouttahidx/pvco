@@ -161,7 +161,6 @@ export default function MobileDrawer({ translations }) {
                       </Accordion.Panel>
                     </Accordion.Item>
                   </Accordion>
-
                   <Accordion defaultValue="">
                     <Accordion.Item key="" value={"sunspace product"}>
                       <Accordion.Control className="hover:bg-primary rounded duration-300">
@@ -205,7 +204,6 @@ export default function MobileDrawer({ translations }) {
                       </Accordion.Panel>
                     </Accordion.Item>
                   </Accordion>
-
                   <Link
                     className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
                     component={Link}
@@ -214,7 +212,6 @@ export default function MobileDrawer({ translations }) {
                   >
                     {translations["p3"]}
                   </Link>
-
                   <Accordion defaultValue="">
                     <Accordion.Item key="" value={"sunspace product"}>
                       <Accordion.Control className="hover:bg-primary rounded duration-300">
@@ -258,7 +255,6 @@ export default function MobileDrawer({ translations }) {
                       </Accordion.Panel>
                     </Accordion.Item>
                   </Accordion>
-
                   <Accordion defaultValue="">
                     <Accordion.Item key="" value={"sunspace product"}>
                       <Accordion.Control className="hover:bg-primary rounded duration-300">
@@ -295,7 +291,6 @@ export default function MobileDrawer({ translations }) {
                       </Accordion.Panel>
                     </Accordion.Item>
                   </Accordion>
-                  
                   <Link
                     className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
                     component={Link}
@@ -304,7 +299,6 @@ export default function MobileDrawer({ translations }) {
                   >
                     {translations["p6"]}
                   </Link>
-
                   <Link
                     className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
                     component={Link}
@@ -348,10 +342,10 @@ export default function MobileDrawer({ translations }) {
                   <Link
                     className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
                     component={Link}
-                    href={data.links[11]}
-                    key={translations["p12"]}
+                    href={data.links[10]}
+                    key={translations["p13"]}
                   >
-                    {translations["p12"]}
+                    {translations["p13"]}
                   </Link>
                   <Link
                     className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}

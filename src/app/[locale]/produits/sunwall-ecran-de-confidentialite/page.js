@@ -218,7 +218,6 @@ export default function SunwallPage() {
               slides={[
                 { src: "/img/sunwall/sunwall (1).webp" },
                 { src: "/img/sunwall/sunwall (2).webp" },
-                { src: "/img/sunwall/sunwall (3).webp" },
                 { src: "/img/sunwall/sunwall (4).webp" },
                 { src: "/img/sunwall/sunwall (5).webp" },
                 { src: "/img/sunwall/sunwall (6).webp" },
@@ -229,7 +228,6 @@ export default function SunwallPage() {
               large={[
                 { src: "/img/sunwall/sunwall (1).webp" },
                 { src: "/img/sunwall/sunwall (2).webp" },
-                { src: "/img/sunwall/sunwall (3).webp" },
                 { src: "/img/sunwall/sunwall (4).webp" },
                 { src: "/img/sunwall/sunwall (5).webp" },
                 { src: "/img/sunwall/sunwall (6).webp" },

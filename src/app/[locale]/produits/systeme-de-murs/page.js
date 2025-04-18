@@ -2,7 +2,6 @@ import ButtonClient from "@/app/components/ButtonClient";
 import Gallery from "@/app/components/Gallery";
 import GalleryProductPage from "@/app/components/GalleryProductPage";
 import ProductPageCTA from "@/app/components/ProductPageCTA";
-import { Link } from "@/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
@@ -10,7 +9,6 @@ import { FaCheck, FaCloudDownloadAlt } from "react-icons/fa";
 
 export async function generateMetadata() {
   const t = await getTranslations("WallsPage");
-  const locale = await getLocale();
   return {
     title: `${t("title")} | ${process.env.NEXT_PUBLIC_APP_NAME}`,
     description: `${t("title")} | ${t("meta_description")}`,
@@ -19,7 +17,7 @@ export async function generateMetadata() {
 
 export default function WallsPage() {
   const t = useTranslations("WallsPage");
-  const btn = useTranslations("Btn");
+  const locale = useLocale();
   return (
     <>
       {/* hero  */}
@@ -123,7 +121,7 @@ export default function WallsPage() {
                 <h2 className="font-semibold text-dark-secondary text-base">
                   {t("walls_title")}
                 </h2>
-                <p
+                <div
                   className="font-light"
                   dangerouslySetInnerHTML={{ __html: t.raw("walls_text") }}
                 />
@@ -353,7 +351,7 @@ export default function WallsPage() {
           <div className="p-8 bg-light-gray rounded-3xl">
             <h2 className="text-dark-secondary text-lg">{t("pdf_download")}</h2>
             <div className="bg-primary h-[2px] w-14 mt-1"></div>
-            <a href={locale === fr ? "/pdf/Sunspace-Walls-Under-fr.pdf" :"/pdf/Sunspace-Walls-Under.pdf"} target="_blank">
+            <a href={locale === "fr" ? "/pdf/Sunspace-Walls-Under-fr.pdf" :"/pdf/Sunspace-Walls-Under.pdf"} target="_blank">
               <div className="flex justify-between uppercase text-dark-secondary text-base mt-8 bg-white p-4 rounded-3xl">
                 {t("title")}
                 <FaCloudDownloadAlt className="fill-primary size-6" />
@@ -477,39 +475,25 @@ export default function WallsPage() {
               <GalleryProductPage
                 slides={[
                   { src: "/img/walls-under/wallsunder (1).webp" },
-                  { src: "/img/walls-under/wallsunder (2).webp" },
                   { src: "/img/walls-under/wallsunder (3).webp" },
-                  { src: "/img/walls-under/wallsunder (4).webp" },
                   { src: "/img/walls-under/wallsunder (5).webp" },
-                  { src: "/img/walls-under/wallsunder (6).webp" },
-                  { src: "/img/walls-under/wallsunder (7).webp" },
-                  { src: "/img/walls-under/wallsunder (8).webp" },
                   { src: "/img/walls-under/wallsunder (9).webp" },
-                  { src: "/img/walls-under/wallsunder (10).webp" },
                   { src: "/img/walls-under/wallsunder (11).webp" },
                   { src: "/img/walls-under/wallsunder (12).webp" },
                   { src: "/img/walls-under/wallsunder (13).webp" },
                   { src: "/img/walls-under/wallsunder (14).webp" },
                   { src: "/img/walls-under/wallsunder (15).webp" },
-                  { src: "/img/walls-under/wallsunder (16).webp" },
                 ]}
                 large={[
                   { src: "/img/walls-under/wallsunder (1).webp" },
-                  { src: "/img/walls-under/wallsunder (2).webp" },
                   { src: "/img/walls-under/wallsunder (3).webp" },
-                  { src: "/img/walls-under/wallsunder (4).webp" },
                   { src: "/img/walls-under/wallsunder (5).webp" },
-                  { src: "/img/walls-under/wallsunder (6).webp" },
-                  { src: "/img/walls-under/wallsunder (7).webp" },
-                  { src: "/img/walls-under/wallsunder (8).webp" },
                   { src: "/img/walls-under/wallsunder (9).webp" },
-                  { src: "/img/walls-under/wallsunder (10).webp" },
                   { src: "/img/walls-under/wallsunder (11).webp" },
                   { src: "/img/walls-under/wallsunder (12).webp" },
                   { src: "/img/walls-under/wallsunder (13).webp" },
                   { src: "/img/walls-under/wallsunder (14).webp" },
                   { src: "/img/walls-under/wallsunder (15).webp" },
-                  { src: "/img/walls-under/wallsunder (16).webp" },
                 ]}
                 title={t("gallery_title")}
                 three={true}
@@ -526,38 +510,24 @@ export default function WallsPage() {
                 slides={[
                   { src: "/img/walls-under/wallsunder (17).webp" },
                   { src: "/img/walls-under/wallsunder (18).webp" },
-                  { src: "/img/walls-under/wallsunder (19).webp" },
-                  { src: "/img/walls-under/wallsunder (20).webp" },
                   { src: "/img/walls-under/wallsunder (21).webp" },
                   { src: "/img/walls-under/wallsunder (22).webp" },
                   { src: "/img/walls-under/wallsunder (23).webp" },
                   { src: "/img/walls-under/wallsunder (24).webp" },
                   { src: "/img/walls-under/wallsunder (25).webp" },
-                  { src: "/img/walls-under/wallsunder (26).webp" },
                   { src: "/img/walls-under/wallsunder (27).webp" },
-                  { src: "/img/walls-under/wallsunder (28).webp" },
                   { src: "/img/walls-under/wallsunder (29).webp" },
-                  { src: "/img/walls-under/wallsunder (30).webp" },
-                  { src: "/img/walls-under/wallsunder (31).webp" },
-                  { src: "/img/walls-under/wallsunder (32).webp" },
                 ]}
                 large={[
                   { src: "/img/walls-under/wallsunder (17).webp" },
                   { src: "/img/walls-under/wallsunder (18).webp" },
-                  { src: "/img/walls-under/wallsunder (19).webp" },
-                  { src: "/img/walls-under/wallsunder (20).webp" },
                   { src: "/img/walls-under/wallsunder (21).webp" },
                   { src: "/img/walls-under/wallsunder (22).webp" },
                   { src: "/img/walls-under/wallsunder (23).webp" },
                   { src: "/img/walls-under/wallsunder (24).webp" },
                   { src: "/img/walls-under/wallsunder (25).webp" },
-                  { src: "/img/walls-under/wallsunder (26).webp" },
                   { src: "/img/walls-under/wallsunder (27).webp" },
-                  { src: "/img/walls-under/wallsunder (28).webp" },
                   { src: "/img/walls-under/wallsunder (29).webp" },
-                  { src: "/img/walls-under/wallsunder (30).webp" },
-                  { src: "/img/walls-under/wallsunder (31).webp" },
-                  { src: "/img/walls-under/wallsunder (32).webp" },
                 ]}
                 title={t("gallery_title2")}
                 three={true}

@@ -217,9 +217,6 @@ export default function RailingModelTraditional() {
                   src: "/img/railing/aluminiumpicket/railing-traditional-picket (3).webp",
                 },
                 {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (4).webp",
-                },
-                {
                   src: "/img/railing/aluminiumpicket/railing-traditional-picket (5).webp",
                 },
                 {
@@ -229,58 +226,10 @@ export default function RailingModelTraditional() {
                   src: "/img/railing/aluminiumpicket/railing-traditional-picket (7).webp",
                 },
                 {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (8).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (9).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (10).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (11).webp",
-                },
-                {
                   src: "/img/railing/aluminiumpicket/railing-traditional-picket (12).webp",
                 },
                 {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (13).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (14).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (15).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (16).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (17).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (18).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (19).webp",
-                },
-                {
                   src: "/img/railing/aluminiumpicket/railing-traditional-picket (20).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (21).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (23).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (24).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (25).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (26).webp",
                 },
                 {
                   src: "/img/railing/aluminiumpicket/railing-traditional-picket (27).webp",
@@ -300,9 +249,6 @@ export default function RailingModelTraditional() {
                   src: "/img/railing/aluminiumpicket/railing-traditional-picket (3).webp",
                 },
                 {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (4).webp",
-                },
-                {
                   src: "/img/railing/aluminiumpicket/railing-traditional-picket (5).webp",
                 },
                 {
@@ -312,58 +258,10 @@ export default function RailingModelTraditional() {
                   src: "/img/railing/aluminiumpicket/railing-traditional-picket (7).webp",
                 },
                 {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (8).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (9).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (10).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (11).webp",
-                },
-                {
                   src: "/img/railing/aluminiumpicket/railing-traditional-picket (12).webp",
                 },
                 {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (13).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (14).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (15).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (16).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (17).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (18).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (19).webp",
-                },
-                {
                   src: "/img/railing/aluminiumpicket/railing-traditional-picket (20).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (21).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (23).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (24).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (25).webp",
-                },
-                {
-                  src: "/img/railing/aluminiumpicket/railing-traditional-picket (26).webp",
                 },
                 {
                   src: "/img/railing/aluminiumpicket/railing-traditional-picket (27).webp",

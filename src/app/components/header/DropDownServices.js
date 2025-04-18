@@ -4,14 +4,15 @@ import { Menu } from "@mantine/core";
 import NavigationLink from "./NavLink";
 import data from "@/utils/productsData.json";
 import { FaAngleDown, FaAngleRight } from "react-icons/fa";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 
 export default function DropDownServices({ translations }) {
   const path = usePathname() || null;
+  const [opened, setOpened] = useState(false);
 
   useEffect(() => {
-    console.log(path);
+    setOpened(false);
   }, [path]);
   return (
     <>
@@ -19,6 +20,7 @@ export default function DropDownServices({ translations }) {
         <Menu
           closeOnClickOutside={false}
           shadow="md"
+          opened={opened}
           position="bottom-start"
           offset={10}
           withArrow
@@ -26,6 +28,7 @@ export default function DropDownServices({ translations }) {
           openDelay={50}
           closeDelay={500}
           trapFocus={false}
+          onChange={setOpened}
           transitionProps={{ transition: "slide-up", duration: 250 }}
         >
           <Menu.Target>
@@ -215,6 +218,10 @@ export default function DropDownServices({ translations }) {
                     </Menu.Dropdown>
                   </Menu>
                 );
+              }
+
+              if(i === 11){
+                return (<span key={i}></span>)
               }
 
               return (
