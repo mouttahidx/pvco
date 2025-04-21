@@ -342,7 +342,7 @@ export default function MobileDrawer({ translations }) {
                   <Link
                     className={`border-b last:border-none py-2 w-full hover:bg-primary px-4 rounded duration-300`}
                     component={Link}
-                    href={data.links[10]}
+                    href={data.links[12]}
                     key={translations["p13"]}
                   >
                     {translations["p13"]}

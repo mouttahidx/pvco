@@ -1,15 +1,21 @@
 "use client";
-import { Link } from "@/i18n/routing";
-import { Menu } from "@mantine/core";
-import React, { useState } from "react";
+import { Link, usePathname } from "@/i18n/routing";
+import React, { useEffect, useState } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import { FaCircleXmark } from "react-icons/fa6";
 
 export default function OurProductsNav({ translations }) {
   const [show, setShow] = useState(false);
+  const path = usePathname() || null;
+  
+    useEffect(() => {
+      setShow(false);
+    }, [path]);
+
   const showProducts = () => {
     setShow((curr) => !show);
   };
+
   return (
     <span onClick={showProducts} className="cursor-pointer hover:underline underline-offset-2 flex items-center gap-x-1">
       {translations["ourProducts"]} {show ? <FaAngleUp /> : <FaAngleDown />}
