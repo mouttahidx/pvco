@@ -17,6 +17,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export async function generateMetadata() {
   return {
@@ -52,7 +53,7 @@ export default async function LocaleLayout({ children, params }) {
     <html lang={locale} {...mantineHtmlProps}>
       <head>
         <link rel="icon" type="image/x-icon" href="/favicon.png" />
-
+        <GoogleTagManager gtmId="GTM-W3Z7XRRL" />
         <ColorSchemeScript defaultColorScheme="light" />
       </head>
       <body className="overflow-x-hidden !scroll-smooth">
