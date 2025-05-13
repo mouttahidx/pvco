@@ -20,7 +20,7 @@ export const routing = defineRouting({
       fr: "/a-propos-de-sunspace",
       en: "/about-sunspace-sunrooms",
     },
-    "/thank-you": {
+    "/merci": {
       fr: "/merci",
       en: "/thank-you",
     },

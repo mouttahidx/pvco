@@ -71,7 +71,7 @@ export default function ContactForm({
       toast.success(translations["email_success"]);
       setLoading(false);
 
-      // router.push("/thank-you");
+      router.push("/merci");
       return true;
     }
     setLoading(false);
