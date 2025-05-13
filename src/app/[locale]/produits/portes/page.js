@@ -44,10 +44,13 @@ export default function Page({ locale }) {
         <div className="grid gap-6 md:grid-cols-2">
           <h2 className="text-4xl font-bold text-left">Nos produits </h2>
           <p>
-            Notre sélection de portes d’entrée inclut des modèles classiques,
-            modernes et champêtres afin que vous puissiez trouver celle qui
-            convient le mieux au style de votre habitation. N’hésitez pas à nous
-            demander conseil pour choisir votre porte d’entrée!
+            Nous distribuons les portes d’entrées, portes-jardins et
+            portes-patio de Vaillancourt Portes et Fenêtres, une entreprise
+            fondée en 1947. Les portes sont conçues et fabriquées au Québec.
+            Nous avons une sélection de portes de modèles classiques, champêtres
+            et contemporain afin que vous puissiez trouver celle qui convient le
+            mieux au style de votre habitation. N’hésitez pas à nous demander
+            conseil pour choisir votre porte!
           </p>
         </div>
 

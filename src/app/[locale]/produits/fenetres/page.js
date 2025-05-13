@@ -43,10 +43,12 @@ export default function Page({ locale }) {
         <div className="grid gap-6 md:grid-cols-2">
           <h2 className="text-4xl font-bold text-left">Nos produits </h2>
           <p>
-            Nos fenêtres à battant sont conçues sur mesure pour s’adapter à
-            votre demeure. Elles peuvent comporter des sections inégales, un ou
-            deux battants, un carrelage ou autre. Informez-vous sur les options
-            qui s’offrent à vous!
+            Nous distribuons les produits de Vaillancourt Portes et Fenêtres,
+            une entreprise québécoise établie depuis 1947. Vaillancourt offre
+            des fenêtres de qualité supérieure, fabriquées localement et conçues
+            pour résister au climat québécois. Disponibles dans un choix
+            illimité de couleurs, ces produits performants et garantis à vie,
+            ces produits assurent confort et style à votre domicile.
           </p>
         </div>
 

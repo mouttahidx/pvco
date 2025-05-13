@@ -8,10 +8,10 @@ export default function EndOfPageCTA() {
       <div className="max-w-6xl mx-auto py-16 px-4">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           <h2 className="text-4xl font-bold text-center md:text-left">
-            Détaillant autorisé des fournisseurs suivants :
+            Fier détaillant des produits de :
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 items-center gap-10">
-            <Image
+          <div className="grid grid-cols-2 md:grid-cols-2 items-center gap-10">
+            {/* <Image
               unoptimized
               width={1200}
               height={1200}
@@ -26,7 +26,7 @@ export default function EndOfPageCTA() {
               alt="logo royer"
               src={"/img/sunspace.webp"}
               className="w-full"
-            />
+            /> */}
             <Image
               unoptimized
               width={1200}
@@ -35,14 +35,14 @@ export default function EndOfPageCTA() {
               src={"/img/vaillancourt.png"}
               className="w-full"
             />
-            <Image
+            {/* <Image
               unoptimized
               width={1200}
               height={1200}
               alt="logo royer"
               src={"/img/LOGO-ROYER.png"}
               className="w-full"
-            />
+            /> */}
           </div>
         </div>
       </div>

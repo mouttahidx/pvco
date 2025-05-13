@@ -20,8 +20,8 @@ export default function WindowsTabs() {
         <Tabs.Tab value="1">Fenêtres à battant</Tabs.Tab>
         <Tabs.Tab value="2">Fenêtres à auvent</Tabs.Tab>
         <Tabs.Tab value="3">Fenêtres architecturales</Tabs.Tab>
-        <Tabs.Tab value="4">Fenêtres coulissantes simples et doubles</Tabs.Tab>
-        <Tabs.Tab value="5">Fenêtres à guillotine simples et doubles</Tabs.Tab>
+        <Tabs.Tab value="4">Fenêtres coulissantes</Tabs.Tab>
+        <Tabs.Tab value="5">Fenêtres à guillotine</Tabs.Tab>
       </Tabs.List>
 
       <Tabs.Panel value="1">
@@ -31,14 +31,19 @@ export default function WindowsTabs() {
           data-aos-delay="300"
           data-aos-duration="1000"
         >
-          <Image
-            unoptimized
-            width={1800}
-            height={1000}
-            src={"/img/windows/window3.jpg"}
-            alt={" image"}
-            className="w-full h-[300px] lg:h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
-          />
+          <div className="min-h-[600px] text-center">
+            <Image
+              unoptimized
+              width={1800}
+              height={1000}
+              src={"/img/windows/window3.jpg"}
+              alt={" image"}
+              className="w-full  h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
+            />
+            <h2 className="mt-4 font-semibold">
+              Fenêtre à battant hybride avec barrotin
+            </h2>
+          </div>
           {/* second div */}
           <div className="pb-14 pt-16">
             <h2 className="section-title">Fenêtres à battant</h2>
@@ -117,14 +122,20 @@ export default function WindowsTabs() {
           data-aos-delay="300"
           data-aos-duration="1000"
         >
-          <Image
-            unoptimized
-            width={1800}
-            height={1000}
-            src={"/img/windows/window5-new.webp"}
-            alt={" image"}
-            className="w-full h-[300px] lg:h-[600px] object-bottom aspect-auto object-contain rounded-3xl"
-          />
+          <div className="min-h-[600px] text-center">
+            <Image
+              unoptimized
+              width={1800}
+              height={1000}
+              src={"/img/windows/window5-new.webp"}
+              alt={" image"}
+              className="w-full  h-[600px] object-bottom aspect-auto object-contain rounded-3xl"
+            />
+            <h2 className="mt-4 font-semibold">
+              Fenêtre à auvent peinturée vue de l’extérieure
+            </h2>
+          </div>
+
           {/* second div */}
           <div className="pb-14 pt-16">
             <h2 className="section-title">Fenêtres à auvent</h2>
@@ -147,7 +158,7 @@ export default function WindowsTabs() {
               }}
             >
               <Tabs.List>
-                <Tabs.Tab value="1">PVC BLANC</Tabs.Tab>
+                <Tabs.Tab value="1">PVC</Tabs.Tab>
                 <Tabs.Tab value="2">HYBRIDE</Tabs.Tab>
               </Tabs.List>
 
@@ -213,14 +224,19 @@ export default function WindowsTabs() {
           data-aos-delay="300"
           data-aos-duration="1000"
         >
-          <Image
-            unoptimized
-            width={1800}
-            height={1000}
-            src={"/img/windows/window4.jpg"}
-            alt={" image"}
-            className="w-full h-[300px] lg:h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
-          />
+          <div className="min-h-[600px] text-center">
+            <Image
+              unoptimized
+              width={1800}
+              height={1000}
+              src={"/img/windows/window4.jpg"}
+              alt={" image"}
+              className="w-full  h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
+            />
+            <h2 className="mt-4 font-semibold">
+              Fenêtre architecturales en PVC blanc
+            </h2>
+          </div>
           {/* second div */}
           <div className="pb-14 pt-16">
             <h2 className="section-title">Fenêtres architecturales</h2>
@@ -244,7 +260,7 @@ export default function WindowsTabs() {
               }}
             >
               <Tabs.List>
-                <Tabs.Tab value="1">PVC BLANC</Tabs.Tab>
+                <Tabs.Tab value="1">PVC</Tabs.Tab>
                 <Tabs.Tab value="2">HYBRIDE</Tabs.Tab>
               </Tabs.List>
 
@@ -285,19 +301,22 @@ export default function WindowsTabs() {
           data-aos-delay="300"
           data-aos-duration="1000"
         >
-          <Image
-            unoptimized
-            width={1800}
-            height={1000}
-            src={"/img/windows/window6-new.webp"}
-            alt={" image"}
-            className="w-full h-[300px] lg:h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
-          />
+          <div className="min-h-[600px] text-center">
+            <Image
+              unoptimized
+              width={1800}
+              height={1000}
+              src={"/img/windows/window6-new.webp"}
+              alt={" image"}
+              className="w-full  h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
+            />
+            <h2 className="mt-4 font-semibold">
+              Fenêtre coulissante en PVC blanc
+            </h2>
+          </div>
           {/* second div */}
           <div className="pb-14 pt-16">
-            <h2 className="section-title">
-              Fenêtres coulissantes simples et doubles
-            </h2>
+            <h2 className="section-title">Fenêtres coulissantes</h2>
             <p className="my-6">
               Économiques et hautement durables, les fenêtres coulissantes
               s’ouvrent en douceur à l’aide d’un mécanisme de rails. Elles
@@ -345,19 +364,23 @@ export default function WindowsTabs() {
           data-aos-delay="300"
           data-aos-duration="1000"
         >
-          <Image
-            unoptimized
-            width={1800}
-            height={1000}
-            src={"/img/windows/window7-new.webp"}
-            alt={" image"}
-            className="w-full h-[300px] lg:h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
-          />
+          <div className="min-h-[600px] text-center">
+            <Image
+              unoptimized
+              width={1800}
+              height={1000}
+              src={"/img/windows/window7-new.webp"}
+              alt={" image"}
+              className="w-full  h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
+            />
+            <h2 className="mt-4 font-semibold">
+              Fenêtre à guillotine simple en PVC blanc
+            </h2>
+          </div>
+
           {/* second div */}
           <div className="pb-14 pt-16">
-            <h2 className="section-title">
-              Fenêtres à guillotine simples et doubles
-            </h2>
+            <h2 className="section-title">Fenêtres à guillotine</h2>
             <p className="my-6">
               Les fenêtres à guillotine modernes allient l’élégance de leur
               style traditionnel et un système de contrepoids qui les rend
@@ -379,7 +402,7 @@ export default function WindowsTabs() {
               }}
             >
               <Tabs.List>
-                <Tabs.Tab value="1">PVC BLANC</Tabs.Tab>
+                <Tabs.Tab value="1">PVC</Tabs.Tab>
               </Tabs.List>
 
               <Tabs.Panel value="1">
@@ -391,6 +414,11 @@ export default function WindowsTabs() {
                   Leur système d’ouverture convient parfaitement aux espaces
                   restreints, comme une salle de bain, et procure une excellente
                   aération de la pièce.
+                  <br /> <br />
+                  La fenêtre à guillotine est disponible en configurations
+                  simple ou double. Le modèle simple comprend une section fixe
+                  et un volet mobile, tandis que le modèle double comporte deux
+                  volets mobiles.
                 </p>
               </Tabs.Panel>
             </Tabs>

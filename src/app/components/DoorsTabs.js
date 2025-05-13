@@ -17,9 +17,9 @@ export default function DoorsTabs() {
       }}
     >
       <Tabs.List justify="center">
-        <Tabs.Tab value="Entrée">Entrée</Tabs.Tab>
-        <Tabs.Tab value="Patio">Patio</Tabs.Tab>
-        <Tabs.Tab value="third">Jardin</Tabs.Tab>
+        <Tabs.Tab value="Entrée">Portes d&apos;entrées</Tabs.Tab>
+        <Tabs.Tab value="Patio">Portes-patio</Tabs.Tab>
+        <Tabs.Tab value="third">Portes-jardin</Tabs.Tab>
       </Tabs.List>
 
       <Tabs.Panel value="Entrée">
@@ -35,7 +35,7 @@ export default function DoorsTabs() {
             height={1000}
             src={"/img/product (3).webp"}
             alt={" image"}
-            className="w-full h-[300px] lg:h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
+            className="w-full  h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
           />
           {/* second div */}
           <div className="pb-14 pt-16">
@@ -62,7 +62,7 @@ export default function DoorsTabs() {
             >
               <Tabs.List>
                 <Tabs.Tab value="acier">Acier</Tabs.Tab>
-                <Tabs.Tab value="fibre">Fibre de verre</Tabs.Tab>
+                {/* <Tabs.Tab value="fibre">Fibre de verre</Tabs.Tab> */}
               </Tabs.List>
               <Tabs.Panel value="acier">
                 <p className="py-10">
@@ -75,8 +75,8 @@ export default function DoorsTabs() {
                   <br />
                   <br />
                   Nous offrons aussi un grand choix de fenêtres de porte parmi
-                  celles de Novatech, Verre Select, Vitre-Art et Masonite. Vous
-                  trouverez certainement un design qui vous plaira!
+                  celles de Novatech et Verre Select. Vous trouverez
+                  certainement un design qui vous plaira!
                 </p>
               </Tabs.Panel>
               <Tabs.Panel value="fibre">
@@ -113,15 +113,15 @@ export default function DoorsTabs() {
             height={1000}
             src={"/img/patio-new.webp"}
             alt={" image"}
-            className="w-full h-[300px] lg:h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
+            className="w-full  h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
           />
           {/* second div */}
           <div className="pb-14 pt-16">
-            <h2 className="section-title">Portes patio</h2>
+            <h2 className="section-title">Portes-patio</h2>
             <p className="my-6">
-              En aluminium ou en PVC, blanche ou de couleur, votre porte patio
-              sera fabriquée sur mesure afin de s’agencer avec votre habitation.
-              Choisissez parmi les options que nous offrons pour la
+              En PVC, hybride ou en aluminium, blanc ou de couleur, votre porte
+              patio sera fabriquée sur mesure afin de s’agencer avec votre
+              habitation. Choisissez parmi les options que nous offrons pour la
               personnaliser davantage selon vos goûts et votre décor.
             </p>
             <Tabs
@@ -146,11 +146,13 @@ export default function DoorsTabs() {
 
               <Tabs.Panel value="hybrid">
                 <p className="py-10">
-                  Il s’agit d’une porte coulissante avec cadre de bois robuste
-                  recouvert d’aluminium et des volets en PVC recouverts
-                  d’aluminium pour une étanchéité maximale. Cette porte patio se
-                  distingue par la beauté du fini extérieur. Plusieurs couleurs
-                  sont offertes sans frais additionnels.
+                  La porte-patio Élément est fabriquée en PVC à l’intérieur et
+                  recouverte d’aluminium à l’extérieur offrant ainsi une
+                  solidité structurale. Cette porte-patio se distingue par la
+                  beauté de son fini extérieur. Plusieurs couleurs sont offertes
+                  sans frais additionnels. <br />
+                  <br />
+                  Modèle disponible - Élément
                 </p>
               </Tabs.Panel>
 
@@ -166,21 +168,37 @@ export default function DoorsTabs() {
 
               <Tabs.Panel value="pvc">
                 <p className="py-10">
-                  Cette porte coulissante comporte un cadre de bois robuste
-                  recouvert de PVC. Elle est performante énergétiquement et un
-                  design attrayant. Avec les options offertes, la porte patio en
-                  PVC peut aussi être personnalisée pour ajouter une touche de
-                  distinction à votre demeure.
+                  Les portes-patio en PVC comportent un cadre de bois robuste
+                  recouvert de PVC. Elles sont performantes énergétiquement et
+                  ont design attrayant. Grâce aux options disponibles, les
+                  portes-patio en PVC peuvent également être personnalisées pour
+                  ajouter une touche de distinction à votre demeure (couleur,
+                  poignée et options de sécurité).
+                  <br />
+                  <br />
+                  Modèles disponibles
+                  <br />
+                  - R-550
+                  <br />
+                  - R-630
+                  <br />- Imagine
                 </p>
               </Tabs.Panel>
 
               <Tabs.Panel value="aluminium">
                 <p className="py-10">
-                  Ce type de porte coulissante est munie d’un cadre et de volets
-                  en aluminium. Ses 4 volets (2 rangs de panneaux coulissants en
-                  aluminium) offrent une excellente performance acoustique et
-                  énergétique. Grâce à sa conception, la porte patio en
-                  aluminium est très robuste et durable.
+                  Ce type de portes-patio est munie d’un cadre et de volets en
+                  aluminium. Offertes en format deux ou quatre volets, elles
+                  offrent une excellente performance et une vue panoramique.
+                  Grâce à leur conception, les portes-patio en aluminium sont
+                  très robustes et durables. Le modèle Loft est équipé d’un
+                  mécanisme levant-coulissant qui permet de soulever et de faire
+                  coulisser la porte sans effort.
+                  <br />
+                  <br />
+                  Modèles disponibles
+                  <br />
+                  - Urbania <br />- Loft
                 </p>
               </Tabs.Panel>
             </Tabs>
@@ -201,11 +219,11 @@ export default function DoorsTabs() {
             height={1000}
             src={"/img/product (3).webp"}
             alt={" image"}
-            className="w-full h-[300px] lg:h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
+            className="w-full  h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
           />
           {/* second div */}
           <div className="pb-14 pt-16">
-            <h2 className="section-title">Portes de jardin</h2>
+            <h2 className="section-title">Portes-jardin</h2>
             <p className="my-6">
               Les portes de jardin confèrent un style unique à une demeure. De
               plus, si vous choisissez l’option de deux portes mobiles, vous

@@ -73,7 +73,7 @@ export default function Page({ locale }) {
           height={1000}
           src={"/img/workers.webp"}
           alt={n("aboutUs") + " image"}
-          className="w-full h-[300px] lg:h-[550px] object-bottom aspect-auto object-cover rounded-3xl"
+          className="w-full  h-[550px] object-bottom aspect-auto object-cover rounded-3xl"
         />
       </section>
 

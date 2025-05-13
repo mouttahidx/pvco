@@ -16,7 +16,7 @@ export default function GarageTabs() {
         height={1000}
         src={"/img/product (6).webp"}
         alt={" image"}
-        className="w-full h-[300px] lg:h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
+        className="w-full  h-[600px] object-bottom aspect-auto object-cover rounded-3xl"
       />
       {/* second div */}
       <div className="pb-14 pt-16">

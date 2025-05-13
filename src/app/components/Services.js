@@ -27,7 +27,7 @@ export default function Services() {
             height={1000}
             src={"/img/services/services-new.webp"}
             alt={" image"}
-            className="w-full h-[300px] lg:h-[500px] object-bottom aspect-auto object-cover rounded-3xl"
+            className="w-full  h-[500px] object-bottom aspect-auto object-cover rounded-3xl"
           />
           {/* second div */}
           <div className="py-14">
@@ -60,7 +60,7 @@ export default function Services() {
             height={1000}
             src={"/img/services/tab2-new.webp"}
             alt={" image"}
-            className="w-full h-[300px] lg:h-[500px] object-bottom aspect-auto object-cover rounded-3xl"
+            className="w-full  h-[500px] object-bottom aspect-auto object-cover rounded-3xl"
           />
           {/* second div */}
           <div className="py-14">
@@ -93,7 +93,7 @@ export default function Services() {
             height={1000}
             src={"/img/services/tab3-new.webp"}
             alt={" image"}
-            className="w-full h-[300px] lg:h-[500px] object-bottom aspect-auto object-cover rounded-3xl"
+            className="w-full  h-[500px] object-bottom aspect-auto object-cover rounded-3xl"
           />
           {/* second div */}
           <div className="py-14">
@@ -126,7 +126,7 @@ export default function Services() {
             height={1000}
             src={"/img/services/tab4-new.webp"}
             alt={" image"}
-            className="w-full h-[300px] lg:h-[500px] object-bottom aspect-auto object-cover rounded-3xl"
+            className="w-full  h-[500px] object-bottom aspect-auto object-cover rounded-3xl"
           />
           {/* second div */}
           <div className="py-14">
@@ -161,7 +161,7 @@ export default function Services() {
             height={1000}
             src={"/img/services/tab5-new.webp"}
             alt={" image"}
-            className="w-full h-[300px] lg:h-[500px] object-bottom aspect-auto object-cover rounded-3xl"
+            className="w-full  h-[500px] object-bottom aspect-auto object-cover rounded-3xl"
           />
           {/* second div */}
           <div className="py-14">
@@ -195,7 +195,7 @@ export default function Services() {
             height={1000}
             src={"/img/services/tab6-new.webp"}
             alt={" image"}
-            className="w-full h-[300px] lg:h-[500px] object-bottom aspect-auto object-cover rounded-3xl"
+            className="w-full  h-[500px] object-bottom aspect-auto object-cover rounded-3xl"
           />
           {/* second div */}
           <div className="py-14">
