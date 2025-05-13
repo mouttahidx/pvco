@@ -54,7 +54,7 @@ export default async function LocaleLayout({ children, params }) {
     <html lang={locale} {...mantineHtmlProps}>
       <head>
         <link rel="icon" type="image/x-icon" href="/favicon.png" />
-        <GoogleTagManager gtmId="GTM-W3Z7XRRL"/>
+        <GoogleTagManager gtmId="GTM-W3Z7XRRL" />
         <Script id="fb-pixel" strategy="afterInteractive">
           {`
              !function(f,b,e,v,n,t,s)
@@ -72,6 +72,14 @@ export default async function LocaleLayout({ children, params }) {
         <ColorSchemeScript defaultColorScheme="light" />
       </head>
       <body className="overflow-x-hidden !scroll-smooth">
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-W3Z7XRRL"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         <MantineProvider theme={theme}>
           <NextIntlClientProvider messages={messages}>
             <AOSInit />
