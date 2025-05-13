@@ -15,7 +15,7 @@ export default function QuoteForm({ translations, theme = "light" }) {
   const [loading, setLoading] = useState(false);
   const recaptchaRef = useRef("");
   const [error, setError] = useState(false);
-
+  const router = useRouter();
   const cvRef = useRef();
   let blob = null;
 
