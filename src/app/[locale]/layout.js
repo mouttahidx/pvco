@@ -18,6 +18,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { GoogleTagManager } from "@next/third-parties/google";
+import Script from "next/script";
 
 export async function generateMetadata() {
   return {
@@ -53,7 +54,21 @@ export default async function LocaleLayout({ children, params }) {
     <html lang={locale} {...mantineHtmlProps}>
       <head>
         <link rel="icon" type="image/x-icon" href="/favicon.png" />
-        <GoogleTagManager gtmId="GTM-W3Z7XRRL" />
+        <GoogleTagManager gtmId="GTM-W3Z7XRRL"/>
+        <Script id="fb-pixel" strategy="afterInteractive">
+          {`
+             !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '937715668439378');
+              fbq('track', 'PageView');
+            `}
+        </Script>
         <ColorSchemeScript defaultColorScheme="light" />
       </head>
       <body className="overflow-x-hidden !scroll-smooth">
