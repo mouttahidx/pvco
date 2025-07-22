@@ -20,7 +20,7 @@ export default function PostCard({
   id,
 }) {
   const locale = useLocale();
- 
+  console.log(image)
   if (locale === "en" && lang === 1) {
     return (
       <div
@@ -78,7 +78,7 @@ export default function PostCard({
           <Link href={"/blogue/" + slug } className="flex flex-col grow">
             <Image
               src={
-                image ? "https://old.pvcogranby.com" + image : "/img/1-new.webp"
+                image ? image : "/img/1-new.webp"
               }
               unoptimized
               width={1200}
