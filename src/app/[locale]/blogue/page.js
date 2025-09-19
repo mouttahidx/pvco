@@ -1,9 +1,7 @@
 import PostsClient from "@/app/components/blogComponents/PostsClient";
-import ButtonClient from "@/app/components/ButtonClient";
 import EndOfPageCTA from "@/app/components/EndOfPageCTA";
 import axios from "axios";
 import { getTranslations } from "next-intl/server";
-import Image from "next/image";
 
 export async function generateMetadata() {
   const t = await getTranslations("BlogPage");
@@ -29,9 +27,9 @@ export default async function Page({ params }) {
       <section className="bg-black bg-cover bg-center">
         <div className="bg-black bg-opacity-55 px-4 pt-32 md:pt-56 py-32 text-white text-center">
           <h1 className="text-4xl md:text-5xl xl:text-6xl  font-bold max-w-6xl mx-auto leading-snug mb-8">
-            Blogue
+            Blogue   
           </h1>
-        </div>
+        </div> 
       </section>
 
       {/* Products section */}

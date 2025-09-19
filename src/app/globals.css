@@ -5,8 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary:#FD6941;
-  
+  --primary: #FD6941;
+
 }
 
 
@@ -16,32 +16,37 @@ body {
 }
 
 @layer components {
-  .textInput{
-    @apply placeholder:!text-black text-black
+  .textInput {
+    @apply text-black placeholder-black;
   }
+
   .section-title {
     @apply bg-inherit font-bold text-black leading-normal text-2xl lg:text-4xl;
   }
+
   html,
   body {
     overflow-x: hidden;
   }
+
   .menu-item-active {
     @apply underline underline-offset-2 duration-300;
   }
+
   .menu-item {
-    @apply p-1 px-2 hover:rounded ;
+    @apply p-1 px-2 hover:rounded;
   }
 
   .menu-item:hover {
     @apply underline underline-offset-2 duration-500;
   }
 
-  p,li{
-    color:#777777;
+  p,
+  li {
+    color: #777777;
   }
 
-  iframe{
+  iframe {
     @apply rounded-3xl
   }
 }
@@ -49,48 +54,80 @@ body {
 @layer utilities {
   @layer base {
     .no-tailwindcss-base {
-      padding-left: 10px ;
+      padding-left: 10px;
       padding-right: 10px;
       overflow-x: hidden !important;
     }
+
     .no-tailwindcss-base a {
       @apply text-primary;
     }
+
     .no-tailwindcss-base td {
       display: table-cell;
       width: 50%;
     }
+
     .no-tailwindcss-base tr {
       vertical-align: top;
     }
-    .no-tailwindcss-base .elementor-element-c7e296c .e-con-inner{
+
+    .no-tailwindcss-base .elementor-element-c7e296c .e-con-inner {
       @apply grid md:grid-cols-3
     }
 
-    .no-tailwindcss-base svg{
-      width:64px;
+    .no-tailwindcss-base svg {
+      width: 64px;
     }
 
-    .no-tailwindcss-base .elementor-heading-title{
+    .no-tailwindcss-base .elementor-heading-title {
       @apply text-primary
     }
-   
+
     @media screen and (max-width: 885px) {
+
+      .no-tailwindcss-base thead {
+        display: none;
+        /* we’ll add labels via ::before */
+      }
+
+      .no-tailwindcss-base,
+      .no-tailwindcss-base tbody,
+      .no-tailwindcss-base tr,
       .no-tailwindcss-base td {
         display: block;
-        width: 100% !important;
+        /* <-- apply to ALL cells, not just first-child */
+        width: 100%;
       }
-      .no-tailwindcss-base img {
-        margin-bottom: 15px;
-        display: block;
-        max-width: 100%;
-        float: none !important;
-        margin-left: 0 !important;
+
+      .no-tailwindcss-base tr {
+        margin: 0 0 1rem;
+        border: 1px solid #eee;
+        border-radius: .5rem;
+        overflow: hidden;
       }
+
+      .no-tailwindcss-base td {
+        display: grid;
+        /* label | value layout */
+        grid-template-columns: minmax(8ch, 40%) 1fr;
+        gap: .5rem;
+        padding: .75rem .9rem;
+        border: none;
+        border-bottom: 1px solid #f2f2f2;
+      }
+
+      .no-tailwindcss-base td:last-child {
+        border-bottom: none;
+      }
+
+  
+
     }
+
     .no-tailwindcss-base,
     .no-tailwindcss-base *,
-    .no-tailwindcss-base > * {
+    .no-tailwindcss-base>* {
       font-size: revert;
       font-weight: revert;
       margin: revert;

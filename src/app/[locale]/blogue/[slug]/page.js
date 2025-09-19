@@ -50,7 +50,7 @@ export default async function Page({ params }) {
 
   let featured_image = null;
   try {
-     const mediaRes = post.id && post.featured_media
+     const mediaRes = (post.id && post.featured_media)
        ? await axios.get(
            "https://old.pvcogranby.com/wp-json/wp/v2/media/" +
              post.featured_media,
@@ -63,9 +63,9 @@ export default async function Page({ params }) {
            }
          )
        : null;
-
+         console.log(mediaRes.data.source_url)
      if (mediaRes) {
-       featured_image = "https://old.pvcogranby.com" + mediaRes.data.source_url;
+       featured_image = mediaRes.data.source_url;
      }
   } catch (error) {
     console.warn(error)
@@ -78,7 +78,7 @@ export default async function Page({ params }) {
         className="bg-cover bg-center"
         style={{ backgroundImage: `url('${featured_image || '/img/1-new.webp'}')` }}
       >
-        <div className="text-white px-2 pb-44 pt-64 bg-black bg-opacity-55">
+        <div className="text-white px-2 pb-44 pt-64 bg-black bg-opacity-65">
           <h1
             className="text-3xl lg:text-5xl text-center leading-loose text-white rounded w-fit px-2 max-w-6xl mx-auto font-bold"
             dangerouslySetInnerHTML={{ __html: post.title.rendered }}
