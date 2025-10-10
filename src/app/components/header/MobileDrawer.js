@@ -84,12 +84,7 @@ export default function MobileDrawer({ translations }) {
       >
         {/* add menu and submenu */}
         <div className="flex flex-col">
-          <Link
-            href="/"
-            className="border-b py-2 pl-4 w-full hover:bg-primary rounded duration-300"
-          >
-            {translations["home"]}
-          </Link>
+       
           <Accordion defaultValue="">
             <Accordion.Item key="" value={"products"}>
               <Accordion.Control className="hover:bg-primary rounded duration-300">
@@ -373,18 +368,21 @@ export default function MobileDrawer({ translations }) {
               {translations["portfolio"]}
             </Link>
             <Link
+            rel="nofollow"
               href={"/a-propos"}
               className="border-b py-2 pl-4 w-full hover:bg-primary rounded duration-300 "
             >
               {translations["aboutUs"]}
             </Link>
             <Link
+            rel="nofollow"
               href={"/carrieres"}
               className="border-b py-2 pl-4 w-full hover:bg-primary rounded duration-300 "
             >
               {translations["careers"]}
             </Link>
             <Link
+            rel="nofollow"
               href={"/contact"}
               className="border-b py-2 pl-4 w-full hover:bg-primary rounded duration-300 "
             >
@@ -392,6 +390,7 @@ export default function MobileDrawer({ translations }) {
             </Link>
 
             <Link
+            rel="nofollow"
               href="/contact"
               className=" py-2 mt-4 px-4 bg-primary duration-300 w-full text-center font-bold rounded-full border border-black text-black"
             >

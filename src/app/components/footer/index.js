@@ -90,6 +90,7 @@ export default function Footer() {
           <Link
             href="/a-propos"
             className="font-semibold mb-4 text-primary block "
+            rel="nofollow"
           >
             À propos
           </Link>
@@ -112,18 +113,21 @@ export default function Footer() {
             Blogue
           </Link>
           <Link
+            rel="nofollow"
             href="/contact"
             className="font-semibold mb-4 text-primary block "
           >
             Contact
           </Link>
           <Link
+            rel="nofollow"
             href={"/politique-de-confidentialite"}
             className="text-sm text-gray-400 mt-1 block"
           >
             Politique de confidentialité
           </Link>
           <Link
+            rel="nofollow"
             href={"/termes-et-conditions"}
             className="text-sm text-gray-400 mt-3 block"
           >

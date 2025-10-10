@@ -77,6 +77,7 @@ export default function MobileHeader() {
           </Link>
           <div className="col-span-3 flex  items-center justify-end">
             <Link
+            rel="nofollow"
               href="#contact"
               className="border-primary border-2 uppercase font-bold duration-200 bg-primary  text-black rounded-3xl border-black text-center p-2 text-xs xl:text-sm mr-4"
             >

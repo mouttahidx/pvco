@@ -24,7 +24,7 @@ export default function ProductPageCTA() {
                 </span>
               </div>
               <p className="text-black text-xs text-center">{t("cta_desc")}</p>
-              <ButtonClient text={btn("contactUs")} href={"/contact"} />
+              <ButtonClient text={btn("contactUs")} href={"/contact"} rel="nofollow" />
             </div>
 </div>  )
 }

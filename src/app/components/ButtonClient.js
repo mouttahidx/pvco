@@ -11,7 +11,8 @@ export default function ButtonClient({
   color = "#FD6941",
   size = "sm",
   target,
-  locale
+  locale,
+  rel
 }) {
   const textColor = variant === "filled" && '!text-black !border-black';
   return (
@@ -26,6 +27,7 @@ export default function ButtonClient({
       color={color}
       size={size}
       target={target && "_blank"}
+      rel={rel}
     >
       {text}
     </Button>

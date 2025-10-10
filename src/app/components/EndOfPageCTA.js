@@ -67,6 +67,7 @@ export default function EndOfPageCTA() {
             color="#ffffff"
             variant="outline"
             href={"/contact"}
+            rel="nofollow"
             className={"mt-8 md:mt-14"}
           />
         </div>

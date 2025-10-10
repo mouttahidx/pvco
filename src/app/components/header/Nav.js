@@ -50,9 +50,9 @@ export default function Nav() {
       <DropDownServices translations={translations} />
       <NavigationLink href="/services">{t("services")}</NavigationLink>
       <NavigationLink href="/realisations">{t("portfolio")}</NavigationLink>
-      <NavigationLink href="/a-propos">{t("aboutUs")}</NavigationLink>
-      <NavigationLink href="/carrieres">{t("careers")}</NavigationLink>
-      <NavigationLink href="/contact">{t("contact")}</NavigationLink>
+      <NavigationLink rel="nofollow" href="/a-propos">{t("aboutUs")}</NavigationLink>
+      <NavigationLink rel="nofollow" href="/carrieres">{t("careers")}</NavigationLink>
+      <NavigationLink rel="nofollow" href="/contact">{t("contact")}</NavigationLink>
       {/* <FreeQuote /> */}
 
       {/* <LanguageSelect /> */}
