@@ -98,7 +98,7 @@ export default function AccessoriesTabs() {
           <div className="pb-14 pt-16">
             <h2 className="section-title">Rouleaux d’aluminium</h2>
             <p className="my-6">
-              Parce qu'il résiste à la corrosion et est un très bon isolant,
+              Parce qu&apos;il résiste à la corrosion et est un très bon isolant,
               l’aluminium en rouleau est un matériau de choix pour de nombreuses
               applications en construction. Durable et malléable, il offre de
               multiples possibilités.
